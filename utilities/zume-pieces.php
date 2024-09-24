@@ -36,7 +36,7 @@ class Zume_V5_Pieces {
             30 => '/assets/images/pieces_pages/10-peer-mentoring.png',
             31 => '',
             32 => '',
-//            33 => '/assets/images/zume_images/V5.1/1Waving1Not.svg', // @note throwing error and 33 not used. These vars should migrate to global.php:zume_training_items() as master.
+            33 => '/assets/images/zume_images/V5.1/1Waving1Not.svg', // @note throwing error and 33 not used. These vars should migrate to global.php:zume_training_items() as master.
         );
 
         // audio tools
@@ -73,6 +73,7 @@ class Zume_V5_Pieces {
             30 => true,
             31 => false,
             32 => false,
+            33 => false,
         );
 
         // audio tools
@@ -109,6 +110,7 @@ class Zume_V5_Pieces {
             30 => true,
             31 => false,
             32 => false,
+            33 => true,
         );
 
         $video_id = array(
@@ -144,6 +146,7 @@ class Zume_V5_Pieces {
             30 => 30,
             31 => 31,
             32 => 32,
+            33 => 33,
         );
 
         $post_id = array(
@@ -179,6 +182,7 @@ class Zume_V5_Pieces {
             30 => 20761, // peer mentoring groups
             31 => 20762, // four fields tool
             32 => 20763, // generation mapping
+            33 => 23797, // 3 Circles
         );
 
         /**
