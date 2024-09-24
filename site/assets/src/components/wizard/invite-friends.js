@@ -155,6 +155,10 @@ ${
                 }
                 ${
                     !this.loading && this.errorMessage === '' ? html`
+                        <div class="mw-60 w-8rem">
+                            <img src=${this.training.qr_url}>
+                        </div>
+
                         <textarea class="input" rows="9">${inviteText}</textarea>
                         ${
                             navigator.clipboard ? html`

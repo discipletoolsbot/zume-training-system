@@ -2,5 +2,14 @@
     border-radius: 20px;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0, 0.5);
     padding-bottom: spacing(2);
+}
+
+.reveal:not([data-initial-top]) {
     top: 0 !important;
+}
+
+.reveal[data-not-fullscreen] {
+    bottom: unset !important;
+    height: unset !important;
+    min-height: unset !important
 }

@@ -42,12 +42,11 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
                         WHERE post_name = %s
                         AND post_type = 'zume_pieces'
-                        LIMIT 1"
-            , $lang_code, $url_parts[0] ), ARRAY_A );
+                        LIMIT 1",
+            $lang_code, $url_parts[0] ), ARRAY_A );
 
             // no match, return
             if ( ! isset( $post_items['post_id'], $post_items['piece'] ) ) {
-                dt_write_log( $post_items );
                 return;
             }
 
@@ -62,8 +61,8 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
                             FROM zume_posts p
                             JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
                             JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece' AND pm1.meta_value = %s
-                            WHERE post_type = 'zume_pieces';"
-                    , $lang_code, $post_items['piece'] ) );
+                            WHERE post_type = 'zume_pieces';",
+                $lang_code, $post_items['piece'] ) );
                 if ( ! $new_slug ) {
                     return;
                 } else {

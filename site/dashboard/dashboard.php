@@ -43,7 +43,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         if ( $post && str_contains( $page_slug, $this->root ) && ! dt_is_rest() ) {
 
-            if ( $lang_code === 'en' ) {
+            $path = dt_get_url_path();
+            if ( $lang_code === 'en' && strpos( $path, 'en/' ) !== 0 ) {
                 $this->base_url = '/' . $page_slug;
             } else {
                 $this->base_url = '/' . $lang_code . '/' . $page_slug;

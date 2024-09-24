@@ -52,7 +52,7 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
                 <div id="map-header">
                     <button
                         id="exit-btn"
-                        class="btn outline | d-flex gap--2 mb-0 px-1 py--2"
+                        class="btn outline | d-flex gap--2 px-1 py--2 | absolute under left"
                         aria-label="<?php echo esc_html__( 'Close', 'zume' ) ?>"
                         type="button"
                     >

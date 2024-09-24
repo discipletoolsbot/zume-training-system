@@ -9,7 +9,6 @@ function zume_content( $lang_code = 'en' ) {
 
 
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
-    $checkin_base_url = site_url() . '/' . $lang_code . '/checkin/?code=';
     $activity_base_url = trailingslashit( site_url() ) . 'app/qr/?l=' . $lang_code . '&a=';
     $other_page_base_url = trailingslashit( site_url() ) . 'app/qr/?l=' . $lang_code . '&o=';
 
@@ -52,8 +51,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '5678',
-                create_qr_url( $checkin_base_url . '5678' ),
+                zume_checkin_wizard_url( '5678' ),
+                create_qr_url( zume_checkin_wizard_url( '5678' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5678',
             ],
@@ -427,8 +426,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2468',
-                create_qr_url( $checkin_base_url . '2468' ),
+                zume_checkin_wizard_url( '2468' ),
+                create_qr_url( zume_checkin_wizard_url( '2468' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2468',
             ],
@@ -756,8 +755,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '6543',
-                create_qr_url( $checkin_base_url . '6543' ),
+                zume_checkin_wizard_url( '6543' ),
+                create_qr_url( zume_checkin_wizard_url( '6543' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6543',
             ],
@@ -1102,8 +1101,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '8764',
-                create_qr_url( $checkin_base_url . '8764' ),
+                zume_checkin_wizard_url( '8764' ),
+                create_qr_url( zume_checkin_wizard_url( '8764' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8764',
             ],
@@ -1483,8 +1482,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '6542',
-                create_qr_url( $checkin_base_url . '6542' ),
+                zume_checkin_wizard_url( '6542' ),
+                create_qr_url( zume_checkin_wizard_url( '6542' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6542',
             ],
@@ -1723,8 +1722,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '1235',
-                create_qr_url( $checkin_base_url . '1235' ),
+                zume_checkin_wizard_url( '1235' ),
+                create_qr_url( zume_checkin_wizard_url( '1235' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1235',
             ],
@@ -1946,8 +1945,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '4322',
-                create_qr_url( $checkin_base_url . '4322' ),
+                zume_checkin_wizard_url( '4322' ),
+                create_qr_url( zume_checkin_wizard_url( '4322' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4322',
             ],
@@ -2163,8 +2162,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '9870',
-                create_qr_url( $checkin_base_url . '9870' ),
+                zume_checkin_wizard_url( '9870' ),
+                create_qr_url( zume_checkin_wizard_url( '9870' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9870',
             ],
@@ -2363,8 +2362,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '1355',
-                create_qr_url( $checkin_base_url . '1355' ),
+                zume_checkin_wizard_url( '1355' ),
+                create_qr_url( zume_checkin_wizard_url( '1355' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1355',
             ],
@@ -2858,8 +2857,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '5430',
-                create_qr_url( $checkin_base_url . '5430' ),
+                zume_checkin_wizard_url( '5430' ),
+                create_qr_url( zume_checkin_wizard_url( '5430' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5430',
             ],
@@ -3152,8 +3151,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '3354',
-                create_qr_url( $checkin_base_url . '3354' ),
+                zume_checkin_wizard_url( '3354' ),
+                create_qr_url( zume_checkin_wizard_url( '3354' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3354',
             ],
@@ -3263,8 +3262,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '4568',
-                create_qr_url( $checkin_base_url . '4568' ),
+                zume_checkin_wizard_url( '4568' ),
+                create_qr_url( zume_checkin_wizard_url( '4568' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4568',
             ],
@@ -3386,8 +3385,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '8767',
-                create_qr_url( $checkin_base_url . '8767' ),
+                zume_checkin_wizard_url( '8767' ),
+                create_qr_url( zume_checkin_wizard_url( '8767' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8767',
             ],
@@ -3508,8 +3507,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '6787',
-                create_qr_url( $checkin_base_url . '6787' ),
+                zume_checkin_wizard_url( '6787' ),
+                create_qr_url( zume_checkin_wizard_url( '6787' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6787',
             ],
@@ -3638,8 +3637,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '3450',
-                create_qr_url( $checkin_base_url . '3450' ),
+                zume_checkin_wizard_url( '3450' ),
+                create_qr_url( zume_checkin_wizard_url( '3450' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3450',
             ],
@@ -3780,8 +3779,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2344',
-                create_qr_url( $checkin_base_url . '2344' ),
+                zume_checkin_wizard_url( '2344' ),
+                create_qr_url( zume_checkin_wizard_url( '2344' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2344',
             ],
@@ -3908,8 +3907,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '1116',
-                create_qr_url( $checkin_base_url . '1116' ),
+                zume_checkin_wizard_url( '1116' ),
+                create_qr_url( zume_checkin_wizard_url( '1116' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1116',
             ],
@@ -4053,8 +4052,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '5431',
-                create_qr_url( $checkin_base_url . '5431' ),
+                zume_checkin_wizard_url( '5431' ),
+                create_qr_url( zume_checkin_wizard_url( '5431' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5431',
             ],
@@ -4177,8 +4176,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '8768',
-                create_qr_url( $checkin_base_url . '8768' ),
+                zume_checkin_wizard_url( '8768' ),
+                create_qr_url( zume_checkin_wizard_url( '8768' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8768',
             ],
@@ -4330,8 +4329,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2347',
-                create_qr_url( $checkin_base_url . '2347' ),
+                zume_checkin_wizard_url( '2347' ),
+                create_qr_url( zume_checkin_wizard_url( '2347' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2347',
             ],
@@ -4462,8 +4461,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '9434',
-                create_qr_url( $checkin_base_url . '9434' ),
+                zume_checkin_wizard_url( '9434' ),
+                create_qr_url( zume_checkin_wizard_url( '9434' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9434',
             ],
@@ -4576,8 +4575,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2348',
-                create_qr_url( $checkin_base_url . '2348' ),
+                zume_checkin_wizard_url( '2348' ),
+                create_qr_url( zume_checkin_wizard_url( '2348' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2348',
             ],
@@ -4707,8 +4706,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '6785',
-                create_qr_url( $checkin_base_url . '6785' ),
+                zume_checkin_wizard_url( '6785' ),
+                create_qr_url( zume_checkin_wizard_url( '6785' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6785',
             ],
@@ -4861,8 +4860,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '9872',
-                create_qr_url( $checkin_base_url . '9872' ),
+                zume_checkin_wizard_url( '9872' ),
+                create_qr_url( zume_checkin_wizard_url( '9872' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9872',
             ],
@@ -5009,8 +5008,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '4327',
-                create_qr_url( $checkin_base_url . '4327' ),
+                zume_checkin_wizard_url( '4327' ),
+                create_qr_url( zume_checkin_wizard_url( '4327' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4327',
             ],
@@ -5134,8 +5133,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2871',
-                create_qr_url( $checkin_base_url . '2871' ),
+                zume_checkin_wizard_url( '2871' ),
+                create_qr_url( zume_checkin_wizard_url( '2871' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2871',
             ],
@@ -5263,8 +5262,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '4328',
-                create_qr_url( $checkin_base_url . '4328' ),
+                zume_checkin_wizard_url( '4328' ),
+                create_qr_url( zume_checkin_wizard_url( '4328' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4328',
             ],
@@ -5396,8 +5395,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '6548',
-                create_qr_url( $checkin_base_url . '6548' ),
+                zume_checkin_wizard_url( '6548' ),
+                create_qr_url( zume_checkin_wizard_url( '6548' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6548',
             ],
@@ -5533,8 +5532,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '7657',
-                create_qr_url( $checkin_base_url . '7657' ),
+                zume_checkin_wizard_url( '7657' ),
+                create_qr_url( zume_checkin_wizard_url( '7657' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '7657',
             ],
@@ -5657,8 +5656,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2767',
-                create_qr_url( $checkin_base_url . '2767' ),
+                zume_checkin_wizard_url( '2767' ),
+                create_qr_url( zume_checkin_wizard_url( '2767' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2767',
             ],
@@ -5766,8 +5765,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '1397',
-                create_qr_url( $checkin_base_url . '1397' ),
+                zume_checkin_wizard_url( '1397' ),
+                create_qr_url( zume_checkin_wizard_url( '1397' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1397',
             ],
@@ -5817,8 +5816,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '2341',
-                create_qr_url( $checkin_base_url . '2341' ),
+                zume_checkin_wizard_url( '2341' ),
+                create_qr_url( zume_checkin_wizard_url( '2341' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2341',
             ],
@@ -5866,8 +5865,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '3455',
-                create_qr_url( $checkin_base_url . '3455' ),
+                zume_checkin_wizard_url( '3455' ),
+                create_qr_url( zume_checkin_wizard_url( '3455' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3455',
             ],
@@ -5915,8 +5914,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '4329',
-                create_qr_url( $checkin_base_url . '4329' ),
+                zume_checkin_wizard_url( '4329' ),
+                create_qr_url( zume_checkin_wizard_url( '4329' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4329',
             ],
@@ -5964,8 +5963,8 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $checkin_base_url . '5451',
-                create_qr_url( $checkin_base_url . '5451' ),
+                zume_checkin_wizard_url( '5451' ),
+                create_qr_url( zume_checkin_wizard_url( '5451' ) ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5451',
             ],

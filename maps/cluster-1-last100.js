@@ -69,7 +69,7 @@ jQuery(document).ready(function(){
                 <div id="map-header">
                   <button
                       id="exit-btn"
-                      class="btn outline | d-flex gap--2 mb-0 px-1 py--2"
+                      class="btn outline | d-flex gap--2 px-1 py--2 | absolute under left"
                       aria-label="${jsObject.translation.close}"
                       type="button"
                   >

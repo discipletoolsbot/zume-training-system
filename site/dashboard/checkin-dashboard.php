@@ -91,16 +91,37 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'language' => $this->lang_code,
                 'site_url' => get_site_url(),
+                'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '/assets/images' ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'user_stage' => zume_get_user_stage(),
                 'training_items' => zume_training_items(),
+                'session_keys' => zume_session_alias_keys(),
                 'host_progress' => zume_get_user_host(),
+                'session_items' => zume_training_items_for_session( $this->get_session_type() ),
+                'profile' => zume_get_user_profile(),
                 'share_translations' => Zume_Training_Share::translations(),
                 'translations' => $this->translations(),
             ]) ?>][0]
         </script>
 
         <?php
+    }
+
+    private function get_session_type() {
+        /* Get the session that we have just checked into */
+        $url = new DT_URL( dt_get_url_path() );
+        $code = $url->query_params->get( 'code' );
+
+        $checkin_keys = zume_session_alias_keys();
+
+        $session_key = isset( $checkin_keys[$code] ) ? $checkin_keys[$code] : '';
+
+        if ( empty( $session_key ) ) {
+            return '';
+        }
+        $key_parts = explode( '_', $session_key );
+
+        return $key_parts[1];
     }
 
     public function body(){
@@ -139,42 +160,34 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
 
         ?>
 
-            <?php require __DIR__ . '/../parts/nav.php'; ?>
-            <div class="text-center">
+            <?php require __DIR__ . '/../parts/checkin-nav.php'; ?>
 
-                <?php if ( $error ) : ?>
-
-                    <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Woops', 'zume' ) ?></h1>
-                    <hr class="mt0">
-                    <p><?php echo esc_html__( 'Something went wrong with your checkin process.', 'zume' ) ?></p>
-                    <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn "><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
-
-                <?php else : ?>
-
-                    <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Congratulations!', 'zume' ) ?></h1>
-                    <hr class="mt0">
-                    <div class="container-md stack-2 | py-0">
-                        <div><span class="icon z-icon-check-mark success f-7 border-circle p--2" data-border-color="success" data-border-width="7"></span></div>
-                        <div class="stack">
-                            <h2 class="h3 brand-light"><?php echo esc_html__( 'Checked into session:', 'zume' ) ?></h2>
-                            <p class="bold f-5"><?php echo esc_html( sprintf( __( '%1$d of %2$d', 'zume' ), $session_number, $number_of_sessions ) ) ?></p>
-                        </div>
-                        <div class="stack">
-                            <h2 class="h3 brand-light"><?php echo esc_html__( 'Course Progress:', 'zume' ) ?></h2>
-                            <p class="bold f-5"><?php echo esc_html( sprintf( __( '%d%%', 'zume' ), $percentage_progress ) ) ?></p>
-                        </div>
-                        <a href="<?php echo esc_url( zume_dashboard_page_url( 'my-progress' ) ) ?>" class="btn "><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
-                    </div>
-
-                <?php endif; ?>
-
+            <div class="container-xsm">
+                <checkin-dashboard></checkin-dashboard>
             </div>
 
         <?php
     }
 
     public static function translations() {
-        return [];
+        return [
+            'woops' => __( 'Woops', 'zume' ),
+            'something_went_wrong' => __( 'Something went wrong with your checkin process.', 'zume' ),
+            'dashboard' => __( 'Dashboard', 'zume' ),
+            'check_off_items' => __( 'Check off any tools or concepts you have obeyed, shared or trained others with.', 'zume' ),
+            'close' => __( 'Close', 'zume' ),
+            'congratulations' => __( 'Congratulations', 'zume' ),
+            'checked_in' => __( "You're checked in", 'zume' ),
+            'learn_more' => __( 'Learn more', 'zume' ),
+            'heard' => __( 'Heard', 'zume' ),
+            'heard_explanation' => __( 'Have I heard about this tool or concept?', 'zume' ),
+            'obeyed' => __( 'Obeyed', 'zume' ),
+            'obeyed_explanation' => __( 'Have I obeyed this tool or concept? If a tool, have I practiced it on my own? If a concept, have you reflected on how it changes your perspective?', 'zume' ),
+            'shared' => __( 'Shared', 'zume' ),
+            'shared_explanation' => __( 'Have I shared this tool or concept? If a tool, have you shown anyone how to use this tool? If a concept, have you shared this concept with anyone?', 'zume' ),
+            'trained' => __( 'Trained', 'zume' ),
+            'trained_explanation' => __( 'Have I trained others to share this tool or concept? If a tool, have I trained someone to share the tool with someone else? If a concept, have I trained someone to share the concept with someone else?', 'zume' ),
+        ];
     }
 }
 Zume_Training_Checkin_Dashboard::instance();

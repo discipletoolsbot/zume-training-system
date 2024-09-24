@@ -113,6 +113,10 @@
     border: none;
 }
 
+.border-between > :not(:last-child) {
+    border-bottom: 2px solid var(--border-color, color('gray-100'));
+}
+
 .border-1 {
     border-width: 1px;
     border-style: solid;

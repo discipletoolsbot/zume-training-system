@@ -50,6 +50,7 @@ export class Wizard extends LitElement {
 
     constructor() {
         super()
+
         this.stepIndex = 0
         this.steps = []
         this.step = {}
@@ -67,6 +68,7 @@ export class Wizard extends LitElement {
     }
     connectedCallback() {
         super.connectedCallback()
+        this.redirectToCheckinInUserLanguage()
         this.wizard = new WizardModuleManager( this.user )
         window.addEventListener('popstate', this._handleHistoryPopState)
         window.addEventListener('wizard:load', this._handleLoadWizard)
@@ -101,6 +103,38 @@ export class Wizard extends LitElement {
             this.loadWizard(this.type, this.params)
             return
         }
+    }
+
+    redirectToCheckinInUserLanguage() {
+        const cookieLanguage = zumeApiShare.getCookie('zume_language')
+
+        if (!cookieLanguage) {
+            return
+        }
+
+        if (this.type !== 'checkin') {
+            return
+        }
+
+        const checkinURL = new URL(location.href)
+
+        const pathParts = checkinURL.pathname.split('/')
+
+        const maybeLanguageCode = pathParts[1]
+        if ( !Object.keys(jsObject.languages).includes(maybeLanguageCode) ) {
+            /* The URL doesn't contain a language code */
+            checkinURL.pathname = '/' + cookieLanguage + checkinURL.pathname
+        } else if ( maybeLanguageCode !== cookieLanguage ) {
+            /* The URL contains a language code but it doesn't match the user's UI language */
+            pathParts[1] = cookieLanguage
+            checkinURL.pathname = pathParts.join('/')
+        } else {
+            /* We're all set, no need to redirect */
+            return
+        }
+
+        /* Redirect the user to the checkin wizard in their selected language */
+        location.href = checkinURL.href
     }
 
     loadWizard(wizard, queryParams = {}) {
@@ -167,7 +201,7 @@ export class Wizard extends LitElement {
         return html`
         <div class="container center">
 
-            <header class="py-1 px--4 w-100 position-relative">
+            <header class="pt--1 px--4 w-100 position-relative">
                 <div class="text-end" id="wizard-skip-button">${this.headerButtons()}</div>
                 <div class="center">${this.stepCounter()}</div>
             </header>
@@ -515,6 +549,8 @@ export class Wizard extends LitElement {
         const urlParts = url.pathname.split('/')
         const path = urlParts[urlParts.length - 1]
 
+        /* not in a modal. */
+        /* If the slug is a wizard name, goto the first step of the wizard */
         if (!this.noUrlChange && Object.values(Wizards).includes(path) ) {
             this._gotoStep(0, false)
             return
@@ -531,6 +567,7 @@ export class Wizard extends LitElement {
             path === slug
         }
 
+        /* Check if the slug is somewhere in the middle of the wizard and go there */
         this.steps.forEach(({slug, module}, i) => {
             if ( currentModule !== module ) {
                 currentModule = module
@@ -550,7 +587,7 @@ export class Wizard extends LitElement {
         /* The previous step isn't in this wizard, so reload the current wizard journey */
         if (!this.steps.some(({slug}) => testSlug(slug))) {
             this.steps = this.wizard.getSteps( this.type )
-            this._gotoStep( this.steps.length - 1 )
+            this._gotoStep(0)
         }
     }
 

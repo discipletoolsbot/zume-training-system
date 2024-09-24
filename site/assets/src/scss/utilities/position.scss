@@ -31,6 +31,11 @@
         right: 0;
     }
 
+    &.under {
+        bottom: 0;
+        transform: translateY(calc(100% + spacing(0)));
+    }
+
     &.inset {
         top: 0;
         left: 0;

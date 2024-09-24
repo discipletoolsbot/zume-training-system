@@ -59,51 +59,59 @@ export class DashCoach extends DashPage {
                       ` : ''
                   }
                   ${
-                      !this.showTeaser && this.coaches.length > 0 ?
-                          this.coaches.map((coach) => html`
-                              <div class="card stack">
-                                <h3>${coach.name}</h3>
-                                ${
-                                  coach.communication_apps.length ? html`
-                                    <ul class="stack">
-                                      ${
-                                        coach.communication_apps.includes('email') ? html`
-                                          <li>${jsObject.translations.email}: <a href="mailto:${coach.email}">${coach.email}</a></li>
-                                        ` : ''
-                                      }
-                                      ${
-                                        coach.communication_apps.includes('phone') ? html`
-                                          <li>${jsObject.translations.phone}: ${coach.phone}</li>
-                                        ` : ''
-                                      }
-                                      ${coach.communication_apps.map((app) => {
-                                        if (app === 'signal') {
-                                          return html`
-                                            <li><a class="btn" href="sgnl://signal.me/#p/${coach.signal}">${jsObject.translations.signal}</a></li>
-                                          `
-                                        }
-                                        if (app === 'telegram') {
-                                          return html`
-                                            <li><a class="btn" href="https://t.me/${coach.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
-                                          `
-                                        }
-                                        if (app === 'whatsapp') {
-                                          return html`
-                                            <li><a class="btn" href="https://wa.me/${coach.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
-                                          `
-                                        }
-                                        if (app === 'messenger') {
-                                          return html`
-                                            <li><a class="btn" href="https://m.me/${coach.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
-                                          `
-                                        }
-                                      })}
-                                    </ul>
-                                  ` : ''
-                                }
+                      !this.showTeaser && this.coaches.length > 0 ? html`
+                        <div class="grid grid-min-18rem">
+                          ${
+                              this.coaches.map((coach) => html`
+                                  <div class="card stack">
+                                    <h3>${coach.name}</h3>
+                                    ${
+                                      coach.communication_apps.length ? html`
+                                        <ul class="stack">
+                                          ${
+                                            coach.communication_apps.includes('email') ? html`
+                                              <li>${jsObject.translations.email}: <a href="mailto:${coach.email}">${coach.email}</a></li>
+                                            ` : ''
+                                          }
+                                          ${
+                                            coach.communication_apps.includes('phone') ? html`
+                                              <li>${jsObject.translations.phone}: ${coach.phone}</li>
+                                            ` : ''
+                                          }
+                                          ${coach.communication_apps.map((app) => {
+                                            /* Mute these buttons for now until we have time to test them */
+                                            /* Number needs checking to make sure it's formatted correctly, only numbers and + at the start */
+                                            return ''
+                                            if (app === 'signal') {
+                                              return html`
+                                                <li><a class="btn" href="sgnl://signal.me/#p/${coach.signal}">${jsObject.translations.signal}</a></li>
+                                              `
+                                            }
+                                            if (app === 'telegram') {
+                                              return html`
+                                                <li><a class="btn" href="https://t.me/${coach.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
+                                              `
+                                            }
+                                            if (app === 'whatsapp') {
+                                              return html`
+                                                <li><a class="btn" href="https://wa.me/${coach.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
+                                              `
+                                            }
+                                            if (app === 'messenger') {
+                                              return html`
+                                                <li><a class="btn" href="https://m.me/${coach.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
+                                              `
+                                            }
+                                          })}
+                                        </ul>
+                                      ` : ''
+                                    }
 
-                              </div>
-                          `)
+                                  </div>
+                              `)
+                          }
+                        </div>
+                      `
                       : ''
                   }
                 </div>

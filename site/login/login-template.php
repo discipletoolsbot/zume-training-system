@@ -310,7 +310,7 @@ switch ( $request_action ) {
                 3: "Good",
                 4: "Strong"
             }
-            const minStrength = 3
+            const minStrength = 1
 
             const form = document.getElementById('resetpassform')
             const password = document.getElementById('pass1');
@@ -521,7 +521,7 @@ switch ( $request_action ) {
                                                 3: "Good",
                                                 4: "Strong"
                                             }
-                                            const minStrength = 3
+                                            const minStrength = 1
                                             let isSubmitting = false
 
                                             const form = document.getElementById('loginform')

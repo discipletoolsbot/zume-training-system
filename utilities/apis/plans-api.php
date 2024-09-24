@@ -109,6 +109,10 @@ class Zume_Plans_Endpoints
 
         $training_group['completed_sessions'] = $completed_sessions;
 
+        /* Include Invite QR url in the training */
+        $invite_url = dt_create_site_url() . '/app/plan-invite?code=' . $training_group['join_key'];
+        $training_group['qr_url'] = create_qr_url( $invite_url );
+
         return $training_group;
     }
     public function create_plan( WP_REST_Request $request ){
