@@ -72,6 +72,10 @@ class Zume_Scripts extends Zume_Magic_Page
                 margin-left: auto;
                 margin-right: auto;
             }
+            .activity__content > * + * {
+                margin-bottom: 0;
+                margin-top: var(--s0);
+            }
         </style>
         <?php
     }

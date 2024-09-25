@@ -19,16 +19,11 @@
         font-size: font-size(2)
     }
 
-    p {
-        margin-bottom: spacing(2);
+    ul > * + * {
+        margin-top: spacing(-3);
     }
-
-    ul, ol {
-        margin-bottom: spacing(2);
-    }
-
     ol > * + * {
-        margin-top: spacing(0);
+        margin-top: spacing(-1);
     }
 
     strong {

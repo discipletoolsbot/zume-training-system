@@ -133,10 +133,10 @@ function pieces_content( $postid, $lang, $strings ) {
         <?php endif; ?>
 
         <!-- post-video block -->
-        <div class="stack"><?php echo wp_kses_post( wpautop( $post_video_content ) ) ?></div>
+        <div class="stack-1"><?php echo wp_kses_post( wpautop( $post_video_content ) ) ?></div>
 
         <!-- question block -->
-        <div class="stack">
+        <div class="stack-1">
             <h3 class="center"><?php echo esc_html( $strings['ay'] ) ?? '' ?></h3>
             <?php echo wp_kses_post( wpautop( $ask_content ) ) ?>
         </div>
