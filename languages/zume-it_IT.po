@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-09-27 09:59+0000\n"
+"Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
@@ -7072,7 +7072,7 @@ msgstr "Ordina una copia cartacea"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
-msgstr "Le slide della Formazione Zúme in %s"
+msgstr "Le slide della Formazione Zúme Online"
 
 #: site/pages/resources.php:122
 msgid ""
@@ -7215,7 +7215,7 @@ msgstr ""
 
 #: site/parts/download-slides.php:18
 msgid "Download Course Slides"
-msgstr "Scarica il Manuale Gratuitamente"
+msgstr "Scarica le Slide del Corso Gratuitamente"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
@@ -7231,7 +7231,7 @@ msgid ""
 msgstr ""
 "L'intero corso Zúme può essere scaricato ed eseguito tramite Powerpoint o "
 "Keynote. Si tratta di un'ottima soluzione per la formazione in aree con "
-"Internet debole. I video sono incorporati nelle diapositive e possono essere "
+"Internet debole. I video sono incorporati nelle slide e possono essere "
 "riprodotti facilmente anche senza internet. Il sistema di codici QR richiede "
 "comunque l'accesso online per il check-in dei partecipanti e per le risorse "
 "delle attività."
