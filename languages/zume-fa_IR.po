@@ -2,23 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-08-28 00:40+0000\n"
+"PO-Revision-Date: 2024-09-29 08:59+0000\n"
 "Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
-"Language-Team: Persian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/fa_IR/>\n"
+"Language-Team: Persian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/fa_IR/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -27,11 +27,11 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Epic 404 - موردی یافت نشد"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "صفحه مورد نظر شما یافت نشد یا حذف شده است"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -684,62 +684,63 @@ msgid "No Results"
 msgstr "بدون نتیجه"
 
 #: maps/heatmap.php:3150
-#, fuzzy
 msgid "trainee"
-msgstr "آموزش دیده"
+msgstr "شاگرد"
 
 #: maps/heatmap.php:3153
 msgid "practitioner"
-msgstr ""
+msgstr "خادم"
 
 #: maps/heatmap.php:3156
 msgid "visitor"
-msgstr ""
+msgstr "ملاقات‎کننده"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "یک شاگرد جدید از ‎%1$s ثبت نام کرده است!"
 
 #: maps/heatmap.php:3170
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "یک ‎%1$s در ‎%2$s درخواست آموزش ‎%3$s داده است!"
 
 #: maps/heatmap.php:3174
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "گروه تعلیمی جدید در ‎%1$s برنامه‎ریزی شد. ‎%2$s"
 
 #: maps/heatmap.php:3216
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "یک ‎%1$s جلسه ‎\"%2$s\"‎ را در ‎%3$s شروع کرده است. ‎%4$s"
 
 #: maps/heatmap.php:3254
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "یک ‎%1$s در حال مطالعه‎\"%2$s\" ‎ در ‎%3$s می‎باشد. ‎%4$s"
 
 #: maps/heatmap.php:3296
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "یک ‎%1$s‏، ‎\"%2$s\"‎ را با دیگران در ‎%3$s به اشتراک گذاشت. ‎%4$s"
 
 #: maps/heatmap.php:3334
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "یک ‎%1$s دیگران را برای استفاده از ‎\"%2$s\"‎ در ‎%3$s آموزش داد. ‎%4$s"
 
 #: maps/heatmap.php:3373
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"یک مربی در حال الگوسازی‎\"%1$s\" ‎ برای یک شاگرد در ‎%2$s می‎باشد. ‎%3$s"
 
 #: maps/heatmap.php:3412
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"یک مربی در حال همکاری با ‎\"%1$s\"‎ برای یک شاگرد در ‎%2$s می‎باشد. ‎%3$s"
 
 #: maps/heatmap.php:3451
 #, php-format
@@ -747,69 +748,71 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"یک مربی در خصوص ‎\"%1$s\"‎ برای یک شاگرد، در ‎%2$s، وارد مرحله نظارت شده است. "
+"‎%3$s"
 
 #: maps/heatmap.php:3490
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"یک مربی به طور کامل یک شاگرد را در خصوص‎\"%1$s\" ‎ در ‎%2$s مأمور کرده است. ‎%3$s"
 
 #: maps/heatmap.php:3496
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "یک‎\"%1$s\" ‎ در برنامه، پس از تعلیم در ‎%2$s ایجاد شد. ‎%3$s"
 
 #: maps/html/heatmap-html.php:36
 msgid "Loading the planet"
-msgstr ""
+msgstr "بارگیری سیاره"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "تعیین محل جمعیت جهان"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "محاسبه فعالیت جنبشی"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "قهوه دم شده"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "بیایید این کار را انجام دهیم"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
-msgstr "محل"
+msgstr "جمعیت"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "مورد نیاز"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "گزارش شده"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "هدف"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "جستجو"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "هر شهر یا مکانی را از طریق ورودی جستجو، جستجو کنید."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "بزرگنمایی"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -817,22 +820,24 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"برای زوم کردن بخش‎هایی از نقشه، بوسیله اسکرول موس خود یا با استفاده از دو "
+"انگشت بر صفحات لمسی و موبایل‎ها، بزرگنمایی کنید."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "بکشید"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
-msgstr ""
+msgstr "برای دیدن بخش‎های مختلف نقشه، بر روی نقشه کلیک کنید و به هر سمتی بکشید."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "کلیک کنید"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -840,10 +845,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"روی یک بخش کلیک کنید و صفحه جزئیات را به همراه اطلاعات بیشتر درباره‎ی محل "
+"مورد نظر آشکار سازید."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "سقوط پیشرفت"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -869,44 +876,43 @@ msgstr "فعالیت"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "به هدف رسید"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr ""
+msgstr "کلیسا‎های مورد نیاز"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "کلیسا‎های گزارش شده"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
-msgstr "آموزش دیده"
+msgstr "شاگردان مورد نیاز"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "شاگردان گزارش شده"
 
 #: maps/js-translation-strings.php:13
 msgid "Activities Reported"
-msgstr ""
+msgstr "فعالیت‎های گزارش شده"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "خادمین مورد نیاز"
 
 #: maps/js-translation-strings.php:15
 msgid "Practitioners Reported"
-msgstr ""
+msgstr "خادمین گزارش شده"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "فعالیت جنبشی 100 ساعت گذشته"
 
 #: maps/js-translation-strings.php:18
 msgid "Countries"
-msgstr ""
+msgstr "کشورها"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
 msgid "Languages"
@@ -914,28 +920,28 @@ msgstr "زبان‎ها"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "همه‎ی انواع"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "همه‎ی کشور‎ها"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
-msgstr "زبان"
+msgstr "همه‎ی زبان‎ها"
 
 #: maps/js-translation-strings.php:23
 msgid "Results"
-msgstr ""
+msgstr "نتایج"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
 msgstr ""
+"اسناد اضافی. (جهت زوم کردن بر روی نتایج، نقشه را بزرگنمایی یا فیلتر کنید)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "درحال مطالعه"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:233
 msgid "Practicing"
@@ -948,7 +954,7 @@ msgstr "مربی‎گری"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "هدف از نقشه"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -956,75 +962,85 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"نقشه‎ی 100 ساعت گذشته نشان می‎دهد که روح‎القدس قوم خود را در سراسر جهان از طریق "
+"Zúme به سوی شاگردسازی سوق می‎دهد. 100 ساعت از همین حالا شروع می‎شود و به طور "
+"تقریبی فعالیت 4 روز گذشته را پوشش می‎دهد."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "انواع فعالیت‎ها"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"شخص «در حال مطالعه»، وارد سیستم نشده است اما در حال مطالعه مطالب درسی است."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"شخص «در حال تعلیم»، وارد سیستم شده است و در حال گذراندن فرایند تعلیم است."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"شخص «در حال تمرین»، درحال به اشتراک‎گذاری مهارت‎ها و مفاهیم، تعلیم دیگران برای "
+"به اشتراک‎گذاری، گزارش رشد حرکتی و غیره است."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
-msgstr ""
+msgstr "شخص «در حال مربی‎گری»، با یک مربی هم سن و سال Zúme در تعامل است."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
 msgid "How to Get on The Map"
-msgstr ""
+msgstr "چگونه بر روی نقشه قرار بگیریم"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "همواره زمانی که در حال مطالعه محتوا هستید، وارد سیستم شوید."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "همواره زمانی که در حال گذراندن جلسه‎ای هستید، وارد سیستم شوید."
 
 #: maps/js-translation-strings.php:40
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
 msgstr ""
+"همواره در حین به اشتراک‎گذاری و تعلیم دیگران، پیشرفت خود را در بخش تعلیم "
+"بروزرسانی کنید."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "همواره کلیساهای کوچک جدیدی را که آغاز می‎کنید، گزارش دهید."
 
 #: maps/map-2-network-activities.php:158
 msgid "Activities"
-msgstr ""
+msgstr "فعالیت‎ها"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
-msgstr "آموزش دیده"
+msgstr "شاگردان"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr ""
+msgstr "نقشه‎ی شاگردان Zúme"
 
 #: maps/map-3-trainees.php:124
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
+"هدف اشباع: 1 شاگرد به ازای هر 5000 نفر در ایالات متحده آمریکا؛ و 1 شاگرد به "
+"ازای هر 50000 نفر در جهان."
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1032,72 +1048,81 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"ما می‎خواهیم دنیا را از شاگردان اضافه‎کننده اشباع کنیم. «نقشه‎ی شاگردان Zúme» "
+"نشان می‎دهد که برای اشباع جهان از شاگردان تعلیم یافته اضافه‎کننده، به چه چیزی "
+"احتیاج است و چه چیزی گزارش شده است."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "هدف اشباع"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
 msgstr ""
+"1 شاگرد تعلیم یافته اضافه‎کننده به ازای هر 5000 نفر در ایالات متحده آمریکا"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "1 شاگرد تعلیم یافته اضافه‎کننده به ازای هر 50000 نفر در جهان"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "ابعاد مورد استفاده"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"«موارد مورد نیاز» به کمبود‎ها‎ی موجود در مکان فهرست شده بر طبق جمعیت، اشاره "
+"دارد."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"«گزارش شده» به شاگردانی اشاره دارد که خود را در انجمن Zúme ثبت نام نموده‎اند."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
-msgstr ""
+msgstr "به انجمن Zúme بپیوندید."
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "پروفایلتان را با موقعیت مکانی خود به‎روزرسانی کنید."
 
 #: maps/map-4-practitioners.php:121
 msgid "Practitioners"
-msgstr ""
+msgstr "خادمین"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "نقشه‎ی خادمین Zúme"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"هدف اشباع: 1 شاگرد به ازای هر 5000 نفر در ایالات متحده آمریکا، 1 شاگرد به "
+"ازای هر 50000 نفر در جهان"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
-msgstr "2 کلیساهای ساده"
+msgstr "کلیساها"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
-msgstr "2 کلیساهای ساده"
+msgstr "نقشه‎ی کلیساهای Zúme"
 
 #: maps/map-5-churches.php:124
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
+"هدف اشباع: 2 کلیسای کوچک به ازای هر 5000 نفر در ایالات متحده آمریکا، و 2 "
+"کلیسای کوچک به ازای هر 50000 نفر در جهان"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1105,28 +1130,32 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"ما میخواهیم دنیا را از شاگردان اضافه‎کننده و کلیساها اشباع کنیم. «نقشه‎ی "
+"کلیساهای Zúme» نشان می‎دهد که برای اشباع جهان از کلیساهای کوچک تکثیر کننده، "
+"به چه چیزی احتیاج است و چه چیزی گزارش شده است."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "2 کلیسای کوچک به ازای هر 5000 نفر در ایالات متحده آمریکا"
 
 #: maps/map-5-churches.php:145
 msgid "2 simple churches per 50,000 people globally"
-msgstr ""
+msgstr "2 کلیسای کوچک به ازای هر 50000 نفر در جهان"
 
 #: maps/map-5-churches.php:150
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"«گزارش شده» به کلیساهایی اشاره دارد که خود را در انجمن Zúme ثبت نام کرده‎اند."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "کلیسای خود را در بخش «کلیساهای من» در پیشخوان اضافه کنید."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:477
 #: site/course/course-content.php:538 site/course/course-content.php:547
@@ -1172,7 +1201,7 @@ msgstr "چهار زمین"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
-msgstr ""
+msgstr "‎ H.O.S.T(میزبان)"
 
 #: site/activities/coaching-checklist-host.php:100
 msgid "H.O.S.T."
@@ -1533,9 +1562,8 @@ msgstr "نامشخص"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
-msgstr "برنامه سه ماهه"
+msgstr "برنامه‎ی سه ماهه"
 
 #: site/activities/three-month-plan-printable.php:47
 #: site/activities/three-month-plan.php:68 site/dashboard/dashboard.php:227
@@ -1577,7 +1605,7 @@ msgstr "پاسخ"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:329
 msgid "Note"
-msgstr ""
+msgstr "توجه کنید (یا یادداشت)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -4245,11 +4273,12 @@ msgstr "استراحت کنید"
 
 #: site/course/presenter.php:28
 msgid "Presenter"
-msgstr ""
+msgstr "مجری"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
 msgstr ""
+"به شاگردان تعلیم دهید که چگونه با محتوای دوره‎ی 20 ساعته، شاگردسازی کنند."
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4328,9 +4357,9 @@ msgid "Checked into session:"
 msgstr "ورود به جلسه:"
 
 #: site/dashboard/checkin-dashboard.php:160
-#, fuzzy, php-format
+#, php-format
 msgid "%1$d of %2$d"
-msgstr "۱%‏‎$d از ۲%‎$d"
+msgstr "‎%1$d از ‎%2$d"
 
 #: site/dashboard/checkin-dashboard.php:163
 msgid "Course Progress:"
@@ -4355,16 +4384,15 @@ msgstr "حذف"
 
 #: site/dashboard/dashboard.php:173
 msgid "Status"
-msgstr ""
+msgstr "وضعیت"
 
 #: site/dashboard/dashboard.php:174
 msgid "Active"
 msgstr "فعال"
 
 #: site/dashboard/dashboard.php:175
-#, fuzzy
 msgid "Inactive"
-msgstr "فعال"
+msgstr "غیر فعال"
 
 #: site/dashboard/dashboard.php:176
 msgid "Completed"
@@ -4463,11 +4491,12 @@ msgstr "منطقه‎ی زمانی"
 
 #: site/dashboard/dashboard.php:199 site/dashboard/wizard.php:327
 msgid "Meeting link"
-msgstr ""
+msgstr "لینک جلسه"
 
 #: site/dashboard/dashboard.php:200
 msgid "Zoom, Google Meet, Microsoft Teams etc."
 msgstr ""
+"زوم (Zoom)، گوگل میت (Google Meet)، ماکروسافت تیمز (Microsoft Teams) و غیره."
 
 #: site/dashboard/dashboard.php:201
 msgid "Edit Profile"
@@ -4661,6 +4690,8 @@ msgid ""
 "My Churches tool makes it easy for you to track your simple church and the "
 "simple church generations that grow out of your spiritual family."
 msgstr ""
+"ابزار کلیساهای من، پیگیری کردن کلیسای کوچکتان و نسل ‎کلیساهای کوچک را که از "
+"خانواده روحانیتان رشد می‎کنند، برای شما آسان می‎سازد."
 
 #: site/dashboard/dashboard.php:244
 msgid "My Maps"
@@ -4687,28 +4718,24 @@ msgid "My Training is Locked"
 msgstr "تعلیم من بسته شده است"
 
 #: site/dashboard/dashboard.php:248
-#, fuzzy
 msgid "Present Course"
-msgstr "دوره‎ی فشرده"
+msgstr "دوره‎ی حاضر"
 
 #: site/dashboard/dashboard.php:250
-#, fuzzy
 msgid "Course Content"
-msgstr "مفاهیم دوره"
+msgstr "محتوای دوره"
 
 #: site/dashboard/dashboard.php:251
 msgid "Course"
 msgstr "دوره"
 
 #: site/dashboard/dashboard.php:252
-#, fuzzy
 msgid "Enter Course"
-msgstr "خروج از دوره"
+msgstr "وارد دوره شوید"
 
 #: site/dashboard/dashboard.php:253
-#, fuzzy
 msgid "Course Slides"
-msgstr "دانلود کتاب راهنمای رایگان"
+msgstr "اسلاید‎های دوره"
 
 #: site/dashboard/dashboard.php:256 site/pages/resources.php:128
 #: site/parts/download-slides.php:37 site/parts/download-slides.php:49
@@ -4742,14 +4769,12 @@ msgid "Group Members"
 msgstr "اعضای گروه"
 
 #: site/dashboard/dashboard.php:273
-#, fuzzy
 msgid "Group Members Link"
-msgstr "اعضای گروه"
+msgstr "لینک اعضای گروه"
 
 #: site/dashboard/dashboard.php:274
-#, fuzzy
 msgid "Group Details"
-msgstr "گروه ها"
+msgstr "جزئیات گروه"
 
 #: site/dashboard/dashboard.php:275
 msgid "Mark Completed"
@@ -4777,9 +4802,8 @@ msgid "Invite Friends"
 msgstr "از دوستان خود دعوت کنید"
 
 #: site/dashboard/dashboard.php:282
-#, fuzzy
 msgid "My Churches are Locked"
-msgstr "نقشه‎های من بسته شده است"
+msgstr "کلیساهای من قفل شده است"
 
 #: site/dashboard/dashboard.php:284
 msgid "Unlock the My Churches area by joining the community."
@@ -4810,13 +4834,12 @@ msgid "Start Date"
 msgstr "تاریخ شروع"
 
 #: site/dashboard/dashboard.php:291
-#, fuzzy
 msgid "Mark Active"
-msgstr "فعال"
+msgstr "گزینه فعال را علامت بزنید"
 
 #: site/dashboard/dashboard.php:292
 msgid "Mark Inactive"
-msgstr ""
+msgstr "گزینه غیر‎فعال را علامت بزنید"
 
 #: site/dashboard/dashboard.php:293
 msgid "Church"
@@ -4936,18 +4959,16 @@ msgid "100 Hour Map"
 msgstr "نقشه‎ی ۱۰۰ ساعته"
 
 #: site/dashboard/dashboard.php:314
-#, fuzzy
 msgid "Trainee vision map"
-msgstr "نقشه‎ی رویای تعلیمی"
+msgstr "نقشه‎ی دید شاگرد"
 
 #: site/dashboard/dashboard.php:315
-#, fuzzy
 msgid "Simple church vision map"
-msgstr "نقشه‎ی بنای کلیسای کوچک"
+msgstr "نقشه دید کلیسای کوچک"
 
 #: site/dashboard/dashboard.php:316
 msgid "Missing answer"
-msgstr ""
+msgstr "پاسخ از قلم افتاده"
 
 #: site/dashboard/dashboard.php:317 site/dashboard/wizard.php:190
 #: site/dashboard/wizard.php:244 site/dashboard/wizard.php:259
@@ -4990,34 +5011,33 @@ msgstr "مَسنجر فیس‎بوک"
 
 #: site/dashboard/dashboard.php:325 site/dashboard/wizard.php:313
 msgid "Clear"
-msgstr ""
+msgstr "پاک کنید"
 
 #: site/dashboard/dashboard.php:326 site/dashboard/wizard.php:314
 msgid "Today"
-msgstr ""
+msgstr "امروز"
 
 #: site/dashboard/dashboard.php:330
-#, fuzzy
 msgid "Coaching Portal"
-msgstr "چک لیست رهبری"
+msgstr "درگاه مربیگری"
 
 #: site/dashboard/dashboard.php:331
 msgid "Visibility"
-msgstr ""
+msgstr "میزان دید"
 
 #: site/dashboard/dashboard.php:332 site/dashboard/dashboard.php:333
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "گروه ‎%s"
 
 #: site/dashboard/dashboard.php:332
 msgid "Private"
-msgstr ""
+msgstr "خصوصی"
 
 #: site/dashboard/dashboard.php:333
 msgid "Public"
-msgstr ""
+msgstr "عمومی"
 
 #: site/dashboard/dashboard.php:339
 msgid ""
@@ -5108,7 +5128,7 @@ msgstr "تعهدات دیگر:"
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
-msgstr ""
+msgstr "راهنمای گام به گام"
 
 #: site/dashboard/wizard.php:168
 msgctxt ""
@@ -5455,10 +5475,10 @@ msgid "Review Schedule"
 msgstr "برنامه را مرور کنید"
 
 #: site/dashboard/wizard.php:296
-#, fuzzy, php-format
+#, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr "۱%‏s$‎ از ۲%s$‎ انتخاب شد"
+msgstr "‎%1$s ‎ از‎‏ ‎%2$s انتخاب شد"
 
 #: site/dashboard/wizard.php:297
 msgctxt "All 10 sessions scheduled"
@@ -5599,10 +5619,10 @@ msgid "Passwords do not match. Please, try again."
 msgstr "رمز عبور یکسان نیست. لطفا، دوباره تلاش کنید."
 
 #: site/login/login-template.php:217
-#, fuzzy, php-format
+#, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
 msgstr ""
-"رمز ورود شما مجدداً تنظیم شد. ۱%s$‎ می‎توانید از اینجا به سیستم وارد شوید ۲%s$"
+"رمز ورود شما مجدداً تنظیم شد. ‎%1$s‎ می‎توانید از اینجا وارد سیستم شوید ‎%2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -5965,47 +5985,47 @@ msgid "How does Zúme Training Work?"
 msgstr "عملکرد تعلیم Zúme چگونه است؟"
 
 #: site/pages/about.php:164 site/pages/home.php:207
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
-"۱%‏‎ S$‎ با ثبت‎نام رایگان ۲%s$‎ می‎توانید به تمام مطالب تعلیمی و مربی‎گری آنلاین "
-"دسترسی کامل داشته باشید."
+"‎%1$s ثبت‎نام رایگان ‎%2$s به شما دسترسی کامل به تمام مطالب تعلیمی و مربی‎گری "
+"آنلاین را می‎دهد."
 
 #: site/pages/about.php:168 site/pages/home.php:211
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr ""
-"۱%‏s$‎ ویدئوهای آموزشی ۲%s$‎ به گروه شما کمک می‎کند تا اصول اولیه‎ی شاگردان "
+"‎%1$s ویدئوهای آموزشی ‎%2$s ‎ به گروه شما کمک می‎کند تا اصول اولیه‎ی شاگردان اضافه‎"
 "تکثیرکننده را درک کنند."
 
 #: site/pages/about.php:172 site/pages/home.php:215
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
-"۱%‏s$‎ بحث‎و گفتگوهای گروهی ۲%s$‎ به گروه شما کمک می‎کند تا در مورد مطالب بیان "
-"شده فکر کنند."
+"‎%1$s بحث ‎و گفتگوهای گروهی ‎%2$s به گروه شما کمک می‎کند تا در مورد مطالب بیان "
+"شده تفکر کنند."
 
 #: site/pages/about.php:176 site/pages/home.php:219
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
-"۱%‏s$‎ تمرین‎های ساده ۲%s$‎ به گروه شما کمک می‎کند که آموخته‎های خود را به‎کار "
+"‎%1$s تمرین‎های ساده ‎%2$s ‎به گروه شما کمک می‎کند تا آموخته‎های خود را به‎کار "
 "گیرند."
 
 #: site/pages/about.php:180 site/pages/home.php:223
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"۱%‏s$‎ چالش‎های جلسه ۲%s$‎ به گروه شما کمک می‎کند تا بین جلسات به یادگیری و رشد "
+"‎%1$s ‎ چالش‎های جلسه ‎%2$s به گروه شما کمک می‎کند تا بین جلسات به یادگیری و رشد "
 "ادامه دهند."
 
 #: site/pages/about.php:199
@@ -6725,6 +6745,8 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"برخی از اطلاعات شخصی به منظور عملکرد مناسب وبسایت ردیابی و باقی اطلاعات برای "
+"مربیگری و پشتیبانی اضافی درخواست و ذخیره شد."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6835,6 +6857,8 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"شما می‎توانید موارد زیر را در هر زمانی با ارتباط گرفتن با ما از طریق فرم «"
+"دریافت مربی» و انتخاب «کمک تخصصی» از داشبورد کاربری خود، انجام دهید."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6845,9 +6869,10 @@ msgid "Change/correct any data we have about you."
 msgstr "اطلاعاتی که از شما داریم را تغییر / تصحیح کنید."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
-msgstr "هر اطلاعاتی که درباره شما داریم را پاک کنیم."
+msgstr ""
+"به ما این امکان را دهید تا حساب کاربری یا هر اطلاعاتی را که از شما داریم پاک "
+"کنیم."
 
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
@@ -6855,7 +6880,7 @@ msgstr "هر نگرانی که درباره استفاده ما از اطلاع�
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "از هرگونه تماس آتی با ما صرف نظر کنید."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6871,7 +6896,7 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "منابع قابل دانلود برای کمک به اجرای برنامه تعلیمی zume."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6898,17 +6923,19 @@ msgstr "یک نسخه‎ی چاپی سفارش دهید"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
-msgstr ""
+msgstr "اسلاید‎های دوره آنلاین"
 
 #: site/pages/resources.php:122
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"محتوای دوره‎ی Zúme، ویدئو‎ها و فعالیت‎ها، می‎توانند از طریق ارائه‎دهنده آنلاین در "
+"مرورگر وب شما، ارائه شوند."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "لینک‎های به اشتراک‎گذاری محتوا و مهارت‎های دوره تعلیمی zume"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -7035,13 +7062,12 @@ msgstr ""
 "و همین امروز شروع کنید."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
-msgstr "دانلود کتاب راهنمای رایگان"
+msgstr "دانلود اسلاید‎های دوره"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "دانلود فایل حجیم. (1 گیگابایت)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7051,14 +7077,18 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"کل دوره Zúme می‎تواند دانلود و از طریق پاورپوینت یا کی‎نوت اجرا شود. این راه‎"
+"حلی عالی برای تعلیم در مناطق با اینترنت ضعیف است. ویدئوها در اسلاید‎ها قرار "
+"داده شده و به راحتی بدون اینترنت قابل پخش هستند. سیستم کد QR همچنان برای "
+"ورود شاگردان به سیستم و منابع فعالیت آن‎ها به اینترنت احتیاج دارد."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "پاورپوینت"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "کی‎نوت"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -7113,6 +7143,9 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
+"دوره تعلیمی Zúme یک تجربه یادگیری آنلاین و کاربردی می‎باشد که برای گروه‎های "
+"کوچکی که از مسیح پیروی می‎کنند طراحی شده است. یک جنبش آنلاین و کاربردی شاگرد "
+"سازی"
 
 #: utilities/apis/connect-api.php:86
 msgid "your friend"
@@ -7156,9 +7189,8 @@ msgid "Connected to Coach!"
 msgstr "به یک مربی وصل شُدید!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
-msgstr "انجمن"
+msgstr "انجمن اضافه شده"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
 msgid "Create a Training"
@@ -7214,24 +7246,24 @@ msgid "Join the community"
 msgstr "به یک جماعت کلیسایی بپیوندید"
 
 #: utilities/apis/plans-api.php:122
-#, fuzzy, php-format
+#, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "اولین تعلیم من- s%"
+msgstr "اولین تعلیم من- ‎%s"
 
 #: utilities/apis/plans-api.php:124
-#, fuzzy, php-format
+#, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr "تعلیم ۱%‎$d‏- ۲%‏‎$s"
+msgstr "تعلیم ‎%1$d‏ - ‎%2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "پشته IP"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "پشته IP"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -7338,9 +7370,8 @@ msgid "User Preferred Email"
 msgstr "ایمیل ترجیحی کاربر"
 
 #: zume-training-system.php:350
-#, fuzzy
 msgid "Coaching Contact ID"
-msgstr "چک لیست رهبری"
+msgstr "شناسه تماس مربیگری‎"
 
 #: zume-training-system.php:358
 msgid "Preferred Contact Methods"
@@ -7352,17 +7383,16 @@ msgstr "مسنجِر"
 
 #. Plugin Name of the plugin/theme
 msgid "Zúme - Training System"
-msgstr ""
+msgstr "Zúme – سیستم تعلیمی"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr ""
+msgstr "https://github.com/ZumeProject/zume-training-system"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
-msgstr "چرخه آموزش"
+msgstr "Zúme سیستم تعلیمی"
 
 #~ msgid ""
 #~ "You may opt out of any future contact from us at any time. You can do the "

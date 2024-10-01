@@ -2,24 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-08-27 03:59+0000\n"
+"PO-Revision-Date: 2024-09-24 22:38+0000\n"
 "Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
-"Language-Team: Russian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ru_RU/>\n"
+"Language-Team: Russian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ru_RU/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -689,62 +689,61 @@ msgid "No Results"
 msgstr "Нет результатов"
 
 #: maps/heatmap.php:3150
-#, fuzzy
 msgid "trainee"
-msgstr "Обучили"
+msgstr "ученик"
 
 #: maps/heatmap.php:3153
 msgid "practitioner"
-msgstr ""
+msgstr "специалист-практик"
 
 #: maps/heatmap.php:3156
 msgid "visitor"
-msgstr ""
+msgstr "посетитель"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Зарегистрирован новый ученик из %1$s!"
 
 #: maps/heatmap.php:3170
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "‎%1$s в %2$s запросил %3$s коучинг!"
 
 #: maps/heatmap.php:3174
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Новая учебная группа запланирована на %1$s. %2$s"
 
 #: maps/heatmap.php:3216
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "‎%1$s начинает СЕССИЮ %2$s в %3$s. %4$s"
 
 #: maps/heatmap.php:3254
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "‎%1$s изучает «%2$s» в %3$s. %4$s"
 
 #: maps/heatmap.php:3296
-#, php-format
+#, fuzzy, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "‎%1$ поделился «%2$s» с кем-то в %3$s. %4$s"
 
 #: maps/heatmap.php:3334
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "‎%1$s научил кого-то использовать «%2$s» в %3$s. %4$s"
 
 #: maps/heatmap.php:3373
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Наставник моделирует «%1$s» для ученика в %2$s. %3$s"
 
 #: maps/heatmap.php:3412
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Наставник помогает с «%1$s» для ученика в %2$s. %3$s"
 
 #: maps/heatmap.php:3451
 #, php-format
@@ -752,69 +751,72 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Наставник перешел к этапу наблюдения за учеником относительно «%1$s» в %2$s. "
+"%3$s"
 
 #: maps/heatmap.php:3490
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"Наставник полностью запустил процесс обучения ученика в отношении «%1$s» в "
+"%2$s. %3$s"
 
 #: maps/heatmap.php:3496
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "‎%1$s создал посттренинговый план в %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
 msgid "Loading the planet"
-msgstr ""
+msgstr "Загрузка планеты"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Определение численности мирового населения"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Расчет активности движения"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Без зазрения совести варим кофе"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Давайте сделаем это"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
-msgstr "Место расположения"
+msgstr "Население"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "Потребность"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Указанный"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Цель"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Найдите любой город или место с помощью поискового ввода."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Масштаб"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -822,22 +824,26 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Прокручивайте масштаб с помощью мыши или приближайте с помощью планшетов и "
+"телефонов, чтобы сосредоточиться на участках карты."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Перетащите"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"Нажмите и перетащите карту в любом направлении, чтобы посмотреть на другую "
+"часть карты."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Нажмите"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -845,10 +851,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Нажмите на отдельном участке и откройте панель с подробной информацией о "
+"местоположении."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "АНАЛИЗ ПРОГРЕССА"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -874,44 +882,43 @@ msgstr "ЗАДАНИЕ"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Цель достигнута"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr ""
+msgstr "Требуются церкви"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Указанные церкви"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
-msgstr "Обучили"
+msgstr "Требуются ученики"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Указанные ученики"
 
 #: maps/js-translation-strings.php:13
 msgid "Activities Reported"
-msgstr ""
+msgstr "Указанные мероприятия"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Требуются специалисты-практики"
 
 #: maps/js-translation-strings.php:15
 msgid "Practitioners Reported"
-msgstr ""
+msgstr "Указанные специалисты-практики"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Последние 100 часов активности движения"
 
 #: maps/js-translation-strings.php:18
 msgid "Countries"
-msgstr ""
+msgstr "Страны"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
 msgid "Languages"
@@ -919,28 +926,29 @@ msgstr "Языки"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Все виды"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Все страны"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
-msgstr "язык"
+msgstr "Все языки"
 
 #: maps/js-translation-strings.php:23
 msgid "Results"
-msgstr ""
+msgstr "Результаты"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
 msgstr ""
+"Дополнительные записи (увеличить или отфильтровать карту, чтобы "
+"сфокусировать результаты)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "Изучение"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:233
 msgid "Practicing"
@@ -953,7 +961,7 @@ msgstr "Наставничество"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Цель карты"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -961,75 +969,83 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"На карте «Последние 100 часов» показано, как Святой Дух по всему миру "
+"побуждает Свой народ к ученичеству через Zúme. 100 часов начинаются сейчас и "
+"охватывают деятельность примерно за последние 4 дня."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Виды деятельности"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr ""
+msgstr "Тот, кто «учится», не вошел в систему, но изучает материал курса."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
-msgstr ""
+msgstr "Тот, кто «тренируется», вошел в систему и проходит процесс обучения."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Тот, кто «практикует», предпринимает действия, делясь инструментами и "
+"концепциями, обучая других, отчитываясь о росте движения и т. д."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
-msgstr ""
+msgstr "Тот, кто находится в «коучинге», взаимодействует с наставником Zúme."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
 msgid "How to Get on The Map"
-msgstr ""
+msgstr "Как попасть на карту"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Всегда регистрируйтесь, когда изучаете материалы."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Всегда регистрируйтесь, когда проходите занятие."
 
 #: maps/js-translation-strings.php:40
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
 msgstr ""
+"Всегда обновляйте информацию о своем прогрессе в разделе обучения, когда вы "
+"делитесь с другими и обучаете их."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Всегда сообщайте о новых простых церквях, которые вы начинаете."
 
 #: maps/map-2-network-activities.php:158
 msgid "Activities"
-msgstr ""
+msgstr "Мероприятия"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
-msgstr "Обучили"
+msgstr "Ученики"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr ""
+msgstr "Карта учеников Zúme"
 
 #: maps/map-3-trainees.php:124
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
+"Цель насыщения: 1 ученик на 5 000 человек в США; и 1 ученик на 50 000 "
+"человек по всему миру."
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1037,72 +1053,81 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"Мы хотим насытить мир умножающимися учениками. «Карта учеников Zúme» "
+"показывает, что требуется и что указано для глобального насыщения обученными "
+"умножающимися учениками."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "Цель насыщения"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "‎1 обученный умножающийся ученик на 5 000 человек в США"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "‎1 обученный умножающийся ученик на 50 000 человек во всем мире"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "Используемые термины измерения"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"‎«Требуется» – это то, чего не хватает в местах, перечисленных в соответствии "
+"с численностью населения."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"‎«Указанный» относится к ученикам, которые зарегистрировались в сообществе "
+"Zúme."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
-msgstr ""
+msgstr "Присоединяйтесь к сообществу Zúme."
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "Обновите свой профиль, указав свое местоположение."
 
 #: maps/map-4-practitioners.php:121
 msgid "Practitioners"
-msgstr ""
+msgstr "Специалисты-практики"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Карта специалистов-практиков Zúme"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"Цель насыщения: 1 ученик на 5 000 человек в США; и 1 ученик на 50 000 "
+"человек по всему миру."
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
-msgstr "2 Простые Церкви"
+msgstr "Церкви"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
-msgstr "2 Простые Церкви"
+msgstr "Карта церквей Zúme"
 
 #: maps/map-5-churches.php:124
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
+"Цель насыщения: 2 простые церкви на 5 000 человек в США и 2 простые церкви "
+"на 50 000 человек во всем мире"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1110,28 +1135,32 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"Мы хотим насытить мир умножающимися учениками и церквями. На «Карте церквей "
+"Zúme» показано, что требуется и что указано для глобального насыщения "
+"умножающихся простых церквей."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "‎2 простые церкви на 5 000 человек в США"
 
 #: maps/map-5-churches.php:145
 msgid "2 simple churches per 50,000 people globally"
-msgstr ""
+msgstr "‎2 простые церкви на 50 000 человек по всему миру"
 
 #: maps/map-5-churches.php:150
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"‎«Указанный» – это церкви, которые зарегистрировались в сообществе Zúme."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "Добавьте свои церкви в разделе «Мои церкви» на панели инструментов."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:477
 #: site/course/course-content.php:538 site/course/course-content.php:547
@@ -1177,7 +1206,7 @@ msgstr "Четыре сферы"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:100
 msgid "H.O.S.T."
@@ -1546,7 +1575,6 @@ msgstr "Неизвестно"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "Трехмесячный план"
 
@@ -1590,7 +1618,7 @@ msgstr "Ответ"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:329
 msgid "Note"
-msgstr ""
+msgstr "Примечание"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -4301,11 +4329,11 @@ msgstr "СДЕЛАЙТЕ ПЕРЕРЫВ"
 
 #: site/course/presenter.php:28
 msgid "Presenter"
-msgstr ""
+msgstr "Ведущий"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
-msgstr ""
+msgstr "В течение 20-часового курса обучите учеников, как взращивать учеников."
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4411,16 +4439,15 @@ msgstr "Удалить"
 
 #: site/dashboard/dashboard.php:173
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #: site/dashboard/dashboard.php:174
 msgid "Active"
 msgstr "Активный"
 
 #: site/dashboard/dashboard.php:175
-#, fuzzy
 msgid "Inactive"
-msgstr "Активный"
+msgstr "Неактивный"
 
 #: site/dashboard/dashboard.php:176
 msgid "Completed"
@@ -4519,11 +4546,11 @@ msgstr "Часовой пояс"
 
 #: site/dashboard/dashboard.php:199 site/dashboard/wizard.php:327
 msgid "Meeting link"
-msgstr ""
+msgstr "Ссылка на встречу"
 
 #: site/dashboard/dashboard.php:200
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Zoom, Google Meet, Microsoft Teams etc."
 
 #: site/dashboard/dashboard.php:201
 msgid "Edit Profile"
@@ -4719,6 +4746,9 @@ msgid ""
 "My Churches tool makes it easy for you to track your simple church and the "
 "simple church generations that grow out of your spiritual family."
 msgstr ""
+"С помощью инструмента «Мои церкви» вы сможете легко отслеживать свою простую "
+"церковь и поколения простых церквей, которые вырастают из вашей духовной "
+"семьи."
 
 #: site/dashboard/dashboard.php:244
 msgid "My Maps"
@@ -4745,28 +4775,24 @@ msgid "My Training is Locked"
 msgstr "«Мое обучение» заблокировано"
 
 #: site/dashboard/dashboard.php:248
-#, fuzzy
 msgid "Present Course"
-msgstr "Интенсивный курс"
+msgstr "Текущий курс"
 
 #: site/dashboard/dashboard.php:250
-#, fuzzy
 msgid "Course Content"
-msgstr "Концепции курса"
+msgstr "Содержание курса"
 
 #: site/dashboard/dashboard.php:251
 msgid "Course"
 msgstr "Курс"
 
 #: site/dashboard/dashboard.php:252
-#, fuzzy
 msgid "Enter Course"
-msgstr "Выход из курса"
+msgstr "Зарегистрироваться на курс"
 
 #: site/dashboard/dashboard.php:253
-#, fuzzy
 msgid "Course Slides"
-msgstr "Загрузить бесплатное Руководство"
+msgstr "Слайды курса"
 
 #: site/dashboard/dashboard.php:256 site/pages/resources.php:128
 #: site/parts/download-slides.php:37 site/parts/download-slides.php:49
@@ -4800,14 +4826,12 @@ msgid "Group Members"
 msgstr "Члены группы"
 
 #: site/dashboard/dashboard.php:273
-#, fuzzy
 msgid "Group Members Link"
-msgstr "Члены группы"
+msgstr "Ссылка на членов группы"
 
 #: site/dashboard/dashboard.php:274
-#, fuzzy
 msgid "Group Details"
-msgstr "Группы"
+msgstr "Подробная информация о группе"
 
 #: site/dashboard/dashboard.php:275
 msgid "Mark Completed"
@@ -4835,9 +4859,8 @@ msgid "Invite Friends"
 msgstr "Пригласить друзей"
 
 #: site/dashboard/dashboard.php:282
-#, fuzzy
 msgid "My Churches are Locked"
-msgstr "«Мои карты» заблокированы"
+msgstr "‎«Мои церкви» заблокированы"
 
 #: site/dashboard/dashboard.php:284
 msgid "Unlock the My Churches area by joining the community."
@@ -4868,13 +4891,12 @@ msgid "Start Date"
 msgstr "Дата начала"
 
 #: site/dashboard/dashboard.php:291
-#, fuzzy
 msgid "Mark Active"
-msgstr "Активный"
+msgstr "Отметить «Активный»"
 
 #: site/dashboard/dashboard.php:292
 msgid "Mark Inactive"
-msgstr ""
+msgstr "Отметить «Неактивный»"
 
 #: site/dashboard/dashboard.php:293
 msgid "Church"
@@ -4998,18 +5020,16 @@ msgid "100 Hour Map"
 msgstr "Карта «100 часов»"
 
 #: site/dashboard/dashboard.php:314
-#, fuzzy
 msgid "Trainee vision map"
 msgstr "Карта видения обучения"
 
 #: site/dashboard/dashboard.php:315
-#, fuzzy
 msgid "Simple church vision map"
 msgstr "Карта насаждения простых церквей"
 
 #: site/dashboard/dashboard.php:316
 msgid "Missing answer"
-msgstr ""
+msgstr "Отсутствующий ответ"
 
 #: site/dashboard/dashboard.php:317 site/dashboard/wizard.php:190
 #: site/dashboard/wizard.php:244 site/dashboard/wizard.php:259
@@ -5052,34 +5072,33 @@ msgstr "Facebook Messenger"
 
 #: site/dashboard/dashboard.php:325 site/dashboard/wizard.php:313
 msgid "Clear"
-msgstr ""
+msgstr "Ясно"
 
 #: site/dashboard/dashboard.php:326 site/dashboard/wizard.php:314
 msgid "Today"
-msgstr ""
+msgstr "Сегодня"
 
 #: site/dashboard/dashboard.php:330
-#, fuzzy
 msgid "Coaching Portal"
-msgstr "Контрольный тренерский перечень"
+msgstr "Контрольный перечень наставника"
 
 #: site/dashboard/dashboard.php:331
 msgid "Visibility"
-msgstr ""
+msgstr "Видимость"
 
 #: site/dashboard/dashboard.php:332 site/dashboard/dashboard.php:333
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "Группа %s"
 
 #: site/dashboard/dashboard.php:332
 msgid "Private"
-msgstr ""
+msgstr "Личный"
 
 #: site/dashboard/dashboard.php:333
 msgid "Public"
-msgstr ""
+msgstr "Публичный"
 
 #: site/dashboard/dashboard.php:339
 msgid ""
@@ -5173,7 +5192,7 @@ msgstr "Другие обязательства:"
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
-msgstr ""
+msgstr "Мастер настройки"
 
 #: site/dashboard/wizard.php:168
 msgctxt ""
@@ -6075,8 +6094,8 @@ msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
-"%1$Простые упражнения%2$ помогают вашей группе применить полученные знания "
-"на практике."
+"‎%1$Простые упражнения%2$ помогут вашей группе применить полученные знания на "
+"практике."
 
 #: site/pages/about.php:180 site/pages/home.php:223
 #, fuzzy, php-format
@@ -6084,7 +6103,7 @@ msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"%1$Задачи занятия%2$ помогут вашей группе продолжать учиться и расти между "
+"‎%1$Задачи занятия%2$ помогут вашей группе продолжать учиться и расти между "
 "занятиями."
 
 #: site/pages/about.php:199
@@ -6816,6 +6835,9 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"Часть личной информации отслеживается для правильного функционирования "
+"сайта, другая же информация запрашивается и сохраняется для дополнительного "
+"наставничества и поддержки."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6932,6 +6954,8 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"В любое время вы можете сделать следующее, связавшись с нами через форму «"
+"Получить наставника» и выбрав «Техническая помощь» на панели пользователя."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6942,9 +6966,10 @@ msgid "Change/correct any data we have about you."
 msgstr "Измените/исправьте любые данные о вас, которые у нас есть."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
-msgstr "Попросите нас удалить любые данные о вас, которые у нас есть."
+msgstr ""
+"Попросите нас удалить вашу учетную запись или любые данные о вас, которые у "
+"нас есть."
 
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
@@ -6953,7 +6978,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "Откажитесь от дальнейших контактов с нами."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6969,7 +6994,7 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "Загружаемые ресурсы для помощи в проведении тренинга Zúme."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6996,17 +7021,20 @@ msgstr "Заказать печатную копию"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
-msgstr ""
+msgstr "Слайды онлайн-курса"
 
 #: site/pages/resources.php:122
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Содержание курса Zúme, видео и упражнения могут быть представлены с помощью "
+"онлайн-презентатора в вашем веб-браузере."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
 msgstr ""
+"Ссылки для распространения концепций и инструментов учебного курса Zúme."
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -7135,13 +7163,12 @@ msgstr ""
 "сегодня."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
-msgstr "Загрузить бесплатное Руководство"
+msgstr "Загрузить слайды курса"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "Загрузка большого файла (1 гигабайт)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7151,14 +7178,19 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Весь курс Zúme можно скачать и запустить через Powerpoint или Keynote. Это "
+"отличное решение для обучения в местах со слабым интернетом. Видеоролики "
+"встроены в слайды, и их легко воспроизводить без интернета. Система QR-кодов "
+"по-прежнему требует онлайн-доступа для регистрации обучаемых и ресурсов для "
+"проведения занятий."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Powerpoint"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Keynote"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -7213,6 +7245,9 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
+"Тренинг Zúme – это разработанное для следующих за Иисусом малых групп, "
+"которые проходят обучение в режиме онлайн и в жизни. Онлайн-тренинг по "
+"созданию движения учеников."
 
 #: utilities/apis/connect-api.php:86
 msgid "your friend"
@@ -7256,9 +7291,8 @@ msgid "Connected to Coach!"
 msgstr "Подключен к наставнику!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
-msgstr "Сообщество"
+msgstr "Объединенное сообщество"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
 msgid "Create a Training"
@@ -7327,11 +7361,11 @@ msgstr "Обучение %1$d – %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -7438,9 +7472,8 @@ msgid "User Preferred Email"
 msgstr "Предпочтительная электронная почта пользователя"
 
 #: zume-training-system.php:350
-#, fuzzy
 msgid "Coaching Contact ID"
-msgstr "Контрольный тренерский перечень"
+msgstr "ID контакт наставника"
 
 #: zume-training-system.php:358
 msgid "Preferred Contact Methods"
@@ -7452,17 +7485,16 @@ msgstr "Messenger"
 
 #. Plugin Name of the plugin/theme
 msgid "Zúme - Training System"
-msgstr ""
+msgstr "Zúme – система обучения"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr ""
+msgstr "https://github.com/ZumeProject/zume-training-system"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
-msgstr "Тренировочный Цикл"
+msgstr "Система обучения Zúme"
 
 #~ msgid ""
 #~ "You may opt out of any future contact from us at any time. You can do the "
