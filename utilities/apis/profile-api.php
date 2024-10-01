@@ -127,7 +127,7 @@ class Zume_Profile_Model {
         $communications_email = isset( $fields['communications_email'] ) ? $fields['communications_email'] : '';
         $location_grid_meta = isset( $fields['location_grid_meta'] ) ? $fields['location_grid_meta'] : [];
         $preferred_language = isset( $fields['preferred_language'] ) ? $fields['preferred_language'] : '';
-        $contact_preference = isset( $fields['contact_preference'] ) ? $fields['contact_preference'] : [];
+        $contact_preference = isset( $fields['contact_preferences'] ) ? $fields['contact_preferences'] : [];
 
         $user_updates = [];
         $updates = [];

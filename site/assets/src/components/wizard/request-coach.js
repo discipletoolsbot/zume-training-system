@@ -64,7 +64,12 @@ export class RequestCoach extends LitElement {
                 }
             })
             .catch((error) => {
-                if (error.message === 'already_has_coach') {
+              if (error.code === 'coach_request_failed') {
+                this.message = this.t.connect_fail
+                this.setErrorMessage(this.t.error_with_request)
+                return
+              }
+              else if (error.code === 'already_has_coach') {
                     this.message = ''
                     this.setErrorMessage(this.t.already_coached)
                     return

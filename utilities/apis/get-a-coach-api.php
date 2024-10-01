@@ -75,6 +75,7 @@ class Zume_Get_A_Coach_Endpoints
      */
     private static function manage_user_coaching( $user_id, $coach_id = null, $data = [] )
     {
+        $update_training_fields = [];
         $profile = zume_get_user_profile( $user_id );
 
         $coaching_contact_id = $profile['coaching_contact_id'];
@@ -84,30 +85,7 @@ class Zume_Get_A_Coach_Endpoints
         }
 
         $preferred_language = empty( $data ) ? $profile['preferred_language'] : $data['preferred-language']['value'];
-
         $preferred_language = empty( $preferred_language ) ? 'en' : $preferred_language;
-
-        if ( !empty( $data ) ) {
-            $fields['preferred_language'] = $preferred_language;
-
-            if ( isset( $data['contact-preferences'] ) ) {
-                $contact_preferences = [];
-
-                foreach ( $data['contact-preferences'] as $preference => $value ) {
-                    if ( $value === 'false' ) {
-                        continue;
-                    }
-                    $contact_preferences[] = [ 'value' => $preference ];
-                }
-
-                $fields['contact_preference'] = [
-                    'values' => $contact_preferences,
-                    'force_values' => true,
-                ];
-            }
-
-            $result = Zume_Profile_Model::update( $fields );
-        }
 
         $fields = [
             'title' => $profile['name'],
@@ -120,7 +98,27 @@ class Zume_Get_A_Coach_Endpoints
             'language_preference' => $preferred_language,
             'trainee_user_id' => $profile['user_id'],
             'trainee_contact_id' => $profile['contact_id'],
+            'contact_email' => [
+                'values' => [
+                    [ 'value' => $profile['communications_email'] ],
+                ],
+            ],
         ];
+
+        if ( isset( $data['contact-preferences'] ) && !empty( $data['contact-preferences'] ) ) {
+            $contact_preferences = [];
+            foreach ( $data['contact-preferences'] as $preference => $value ) {
+                if ( $value === 'false' ) {
+                    continue;
+                }
+                $contact_preferences[] = [ 'value' => $preference ];
+            }
+
+            $fields['communication_preferences'] = $update_training_fields['contact_preferences'] = [
+                'values' => $contact_preferences,
+                'force_values' => true,
+            ];
+        }
 
         if ( $coach_id !== null ) {
             $fields['coached_by'] = [
@@ -157,6 +155,11 @@ class Zume_Get_A_Coach_Endpoints
             ];
         }
 
+        if ( !empty( $update_training_fields ) ) {
+            $update_training_fields['preferred_language'] = $preferred_language;
+            $result = Zume_Profile_Model::update( $update_training_fields );
+        }
+
         $site = Site_Link_System::get_site_connection_vars( self::SITE_CONNECTION_POST_ID );
         if ( ! $site ) {
             dt_write_log( __METHOD__ . ' FAILED TO GET SITE LINK TO GLOBAL ' );
@@ -184,6 +187,8 @@ class Zume_Get_A_Coach_Endpoints
         $result = wp_remote_post( $url, $args );
         if ( is_wp_error( $result ) || $result['response']['code'] !== 200 ) {
             dt_write_log( __METHOD__ . " FAILED TO $method COACHING CONTACT FOR " . $profile['name'] );
+            dt_write_log( $fields );
+            dt_write_log( $result );
             return new WP_Error( 'coach_request_failed', "Failed to $method coaching contact", array( 'status' => 400 ) );
         }
 
@@ -199,7 +204,6 @@ class Zume_Get_A_Coach_Endpoints
                 'question-about-content' => '&nbsp;&nbsp;* Help with the course content',
                 'help-with-group' => '&nbsp;&nbsp;* Help with what to do after starting a group',
             ];
-
 
             $comments = "This contact is requesting:\n";
             foreach ( $data['how-can-we-serve'] as $key => $value ) {
