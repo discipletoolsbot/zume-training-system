@@ -1912,7 +1912,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'version_4_available' => true,
                     'translator_enabled' => true,
                     'version_5_ready' => true,
-                    'pieces_pages' => false,
+                    'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
             ),
