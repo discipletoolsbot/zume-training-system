@@ -266,6 +266,11 @@ class Zume_Connect_Endpoints
                         [ 'value' => $coach_id ],
                     ],
                 ],
+                'contact_email' => [
+                    'values' => [
+                        [ 'value' => $profile['communications_email'] ],
+                    ],
+                ],
                 'assigned_to' => $coach_user_id,
             ];
             if ( ! empty( $profile['location'] ) ) {
@@ -309,6 +314,11 @@ class Zume_Connect_Endpoints
                 'language_preference' => $preferred_language,
                 'trainee_user_id' => $profile['user_id'],
                 'trainee_contact_id' => $profile['contact_id'],
+                'contact_email' => [
+                    'values' => [
+                        [ 'value' => $profile['communications_email'] ],
+                    ],
+                ],
                 'connected_plans' => [
                     'values' => [
                         [ 'value' => $plan['join_key'] ],
