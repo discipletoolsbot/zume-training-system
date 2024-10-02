@@ -82,7 +82,7 @@ function zume_join_friends_training_wizard_url( $code = null ) {
 function zume_checkin_wizard_url( $code = null ) {
     $params = empty( $code ) ? [] : [ 'code' => $code ];
     $redirect_url = zume_wizard_url( 'checkin', $params );
-    return zume_login_url( 'register', $redirect_url );
+    return zume_login_url( 'login', $redirect_url );
 }
 
 /**
