@@ -43,6 +43,16 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
         if ( isset( $url_parts[0] ) && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
 
+            $key_code = $this->get_checkin_code();
+            if ( $key_code !== false ) {
+                if ( is_user_logged_in() ) {
+                    wp_redirect( zume_wizard_url( 'checkin', [ 'code' => $key_code ] ) );
+                    exit;
+                }
+                wp_redirect( zume_checkin_wizard_url( $key_code ) );
+                exit;
+            }
+
             $this->register_url_and_access();
             $this->header_content();
 
@@ -205,13 +215,19 @@ class Zume_Training_Checkin extends Zume_Magic_Page
         <?php
     }
 
-    public function body(){
-        global $zume_user_profile;
-
+    public function get_checkin_code() {
         $key_code = false;
         if ( isset( $_GET['code'] ) ) {
             $key_code = sanitize_text_field( wp_unslash( $_GET['code'] ) );
         }
+
+        return $key_code;
+    }
+
+    public function body(){
+        global $zume_user_profile;
+
+        $key_code = $this->get_checkin_code();
 
         ?>
 
