@@ -401,7 +401,13 @@ class Zume_Course_Builder {
 
         $template = [
             1 => __( '(1 min)', 'zume' ),
+            2 => __( '(2 min)', 'zume' ),
+            3 => __( '(3 min)', 'zume' ),
+            4 => __( '(4 min)', 'zume' ),
             5 => __( '(5 min)', 'zume' ),
+            6 => __( '(6 min)', 'zume' ),
+            7 => __( '(7 min)', 'zume' ),
+            8 => __( '(8 min)', 'zume' ),
             10 => __( '(10 min)', 'zume' ),
             15 => __( '(15 min)', 'zume' ),
             20 => __( '(20 min)', 'zume' ),

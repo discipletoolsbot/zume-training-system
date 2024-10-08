@@ -49,7 +49,8 @@ class Zume_Book_Generator extends Zume_Magic_Page
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return zume_training_magic_url_base_allowed_js();
+        return $allowed_js;
+//        return zume_training_magic_url_base_allowed_js();
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
@@ -59,27 +60,48 @@ class Zume_Book_Generator extends Zume_Magic_Page
     public function header_style(){
         ?>
         <style>
-            .slides-card2 {border:0 !important;}
-            .progress-bar-wrapper {display:none;}
             .watch-btn {display:none;}
-            .piece { margin: 0 auto; max-width: 1200px;}
-            .slides-card2 { height: fit-content !important;}
             .qr-code img { width: 200px;}
             .title-icon {display:none;}
-            .two-column>* {align-items:flex-start !important;}
-            .slides-card2 .activity-card {
-                padding: calc(var(--slide-unit) * 2);
-                background-color: #e7f6fc;
-                border-radius: calc(var(--slide-unit) * 2);
-                border: calc(var(--slide-unit) * .3) solid var(--z-brand-lighter);
-                box-shadow: 0 calc(var(--slide-unit) * .3) calc(var(--slide-unit) * .2) 0 #0c1a2130;
+            .two-column>* {
+                align-items:flex-start !important;
             }
-            .slide-switcher { border-top: 1px dashed var(--z-brand-lighter); margin-top:1em;}
+            .slide-wrapper {
+
+                padding:4em 0;
+                margin: 0 auto;
+            }
+            .slide-switcher {
+                border-bottom: 1px dashed var(--z-brand-lighter);
+            }
             @media print{
                 body{ background-color:white}
             }
             body {
                 border-right: 1px solid white !important;
+            }
+            .two-column.left>:first-child {
+                width: calc(25% - var(--gap-width) / 2) !important;
+            }
+
+            .two-column.left>:nth-child(2) {
+                width: calc(75% - var(--gap-width) / 2) !important;
+            }
+            .two-column>:first-child:after {
+                height: 100% !important;
+            }
+            .title-icon {
+                display:none !important;
+            }
+            .slides-card {
+                max-height:none !important;
+            }
+            .stack ul {
+                margin-bottom: 1rem;
+                list-style-position: outside;
+                line-height: 1.6;
+                margin-left: 1.5rem;
+                list-style-type: disc;
             }
         </style>
         <?php
@@ -90,409 +112,425 @@ class Zume_Book_Generator extends Zume_Magic_Page
         switch ( $slide['type'] ) {
             case 'title':
                 ?>
-                <title-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div>
-                        <div class="slides-card">
-                            <div class="cover-slide | title-slide | text-center">
-                                <div class="stack-1 | w-100 grow-1 justify-content-center">
-                                    <div class="center | w-40"><img src="<?php echo $slide['center'][0] ?>" /></div>
-                                    <h2><?php echo $slide['center'][1] ?></h2>
+                    <div class="slide-switcher" >
+                        <slide-switcher>
+                            <div class="slide-wrapper">
+                                <div class="slides-card" style="margin-top:200px; margin-bottom: 200px;">
+                                    <div class="cover-slide | title-slide | text-center">
+                                        <div class="stack-1 | w-100 justify-content-center">
+                                            <div class="center"><img src="<?php echo $slide['center'][0] ?>" /></div>
+                                            <h2><?php echo $slide['center'][1] ?></h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </slide-switcher>
                     </div>
-                </title-slide>
                 <?php
                 break;
             case 'checkin':
                 ?>
-                <checkin-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon"><span class="icon z-icon-phone"></span></div>
-                                    <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack">
-                                    <p><?php echo $slide['right'][0] ?></p>
-                                    <div class="qr-code">
-                                        <a
-                                            href="${this.slide['right'][1]}"
-                                            class="bypass-nav-click"
-                                            target="_blank"
-                                        >
-                                            <img src="${this.slide['right'][2]}" />
-                                        </a>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?></span>
+                                            <div class="title-icon"><span class="icon z-icon-phone"></span></div>
+                                        </div>
                                     </div>
-                                    <p><?php echo $slide['right'][3] ?> <span style="font-weight:bold;"><?php echo $slide['right'][4] ?></span></p>
+                                    <div class="content-area">
+                                        <div class="stack">
+                                            <p><?php echo $slide['right'][0] ?></p>
+                                            <div class="qr-code">
+                                                <img src="<?php echo $slide['right'][2] ?>" />
+                                            </div>
+                                            <p><?php echo $slide['right'][3] ?> <span style="font-weight:bold;"><?php echo $slide['right'][4] ?></span></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </checkin-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'pray':
                 ?>
-                <pray-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-pray"></span>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?></span>
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-pray"></span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="stack">
-                                        <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                        <span class="subtitle"><?php echo $slide['length'] ?></span>
+                                    <div class="content-area">
+                                        <div class="activity-card stack--2" expanded-padding>
+                                            <?php echo $this->render_content( $slide['right'] ) ?>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="activity-card stack--2" expanded-padding>
-                                    <?php echo $this->render_content( $slide['right'] ) ?>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </pray-slide>
-                <?php
-                break;
-            case 'review':
-                ?>
-                <review-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-review"></span>
-                                    </div>
-                                    <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack content-area__text">
-                                    <?php echo $this->render_content( $slide['right'], false, true ) ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </review-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'overview':
                 ?>
-                <overview-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-overview"></span>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?></span>
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-overview"></span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack content-area__text">
-                                    <?php echo $this->render_content( $slide['right'], false, true ) ?>
+                                    <div class="content-area">
+                                        <div class="stack content-area__text">
+                                            <?php echo $this->render_content( $slide['right'], false, true ) ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </overview-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
+            case 'review':
+                ?>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-review"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-area">
+                                        <div class="stack content-area__text">
+                                            <?php echo $this->render_content( $slide['right'], false, true ) ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </slide-switcher>
+                </div>
+                <?php
+                break;
+
             case 'challenge':
             case 'center':
                 ?>
-                <center-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="cover-slide">
-                            <h2 class="title text-center"><?php echo $slide['center'][0] ?? '' ?> <?php echo $slide['length'] ?? '' ?></h2>
-                            <div class="center w-70 grow-1 justify-content-center">
-                                <div class="stack--2 activity-card">
-                                    <?php echo $this->render_content( $slide['right'], true ) ?>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="cover-slide2">
+                                    <h2 class="title text-center"><?php echo $slide['center'][0] ?? '' ?> <?php echo $slide['length'] ?? '' ?></h2>
+                                    <div class="center w-70 justify-content-center">
+                                        <div class="stack--2 activity-card">
+                                            <?php echo $this->render_content( $slide['right'], true ) ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </center-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'watch':
                 ?>
-                <watch-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-course"></span>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo esc_html__( 'READ', 'zume' ) ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                            <img style="width:250px;" src="https://zume.training/make/qr?s=qrl&amp;sf=50&amp;wq=0&amp;d=https%3A%2F%2Fzume.training%2Fapp%2Fqr%2F%3Fl%3Den%26a%3Daccountability" />
+                                        </div>
                                     </div>
-                                    <div class="stack">
-                                        <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                        <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack content-area__text">
-                                    <?php echo $this->render_content( $slide['right'], true ) ?>
-                                    <div>
-                                        <button
-                                            class="watch-btn | btn tight d-flex align-items-center gap--1"
-                                            type="button"
-                                            @click=${this.nextSlide}
-                                        >
-                                            <span><?php echo $slide['left'][0] ?></span>
-                                            <span class="icon z-icon-watch f-3"></span>
-                                        </button>
+                                    <div class="content-area">
+                                        <div class="stack content-area__text">
+                                            <?php echo '<p><strong>'.$slide['right'][0].'</strong></p>' ?>
+                                            <?php
+                                            $split = explode( '_', $slide['key'] );
+                                            $id = str_replace( 't', '', $split[0] );
+                                            $script_id = Zume_Course::get_transcript_by_key( $id );
+                                            $scripts = list_zume_scripts( $this->lang );
+                                            echo $scripts[$script_id]['content'] ?? '';
+                                            ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </watch-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'video':
-                ?>
-                <video-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">video</video-slide>
-                <?php
                 break;
             case 'look_back':
                 ?>
-                <look-back-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-look-back"></span>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div>
+                                        <div class="title-area">
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-look-back"></span>
+                                            </div>
+                                            <div class="stack">
+                                                <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                                <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="stack">
-                                        <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                        <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                    <div class="content-area">
+                                        <div class="activity-card | stack--2" expanded-padding>
+                                            <?php echo $this->render_content( $slide['right'] ) ?>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="activity-card | stack--2" expanded-padding>
-                                    <?php echo $this->render_content( $slide['right'] ) ?>
                                 </div>
                             </div>
                         </div>
+                    </slide-switcher>
                     </div>
-                </look-back-slide>
                 <?php
                 break;
             case 'discuss':
                 ?>
-                <discuss-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        ${this.renderProgressBar()}
-                        <div class="two-column left">
-                            <div>
-                                <div class="title-area">
-                                    <div class="title-icon">
-                                        <span class="icon z-icon-discuss"></span>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-discuss"></span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="stack">
-                                        <h2 class="title"><?php echo $slide['left'][0] ?></h2>
-                                        <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                    <div class="content-area">
+                                        <div class="stack content-area__text">
+                                            <?php echo $this->render_content( $slide['right'] ) ?>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack content-area__text">
-                                    <?php echo $this->render_content( $slide['right'] ) ?>
                                 </div>
                             </div>
                         </div>
+                    </slide-switcher>
                     </div>
-                </discuss-slide>
                 <?php
                 break;
             case 'left_content':
             case 'activity':
                 ?>
-                <activity-slide slide="">
-                    <div class="slides-card activity-slide | position-relative">
-                        <div class="cover-slide">
-                            <button
-                                type="button"
-                                class="activity-btn | btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 bypass-nav-click d-flex gap--2"
-                                @click=${this.openMenu}
-                            >
-                                <span class="icon z-icon-info"></span><span>${jsObject.translations.view_activity}</span>
-                            </button>
-                            <h2 class="title text-center" data-small>${this.slide['center'][0]} ${this.slide['length']}</h2>
-                            <div class="two-column right">
-                                <div>
-                                    <div class="activity-card | stack--2" data-expanded-padding>
-                                        ${this.renderContent(this.slide['left'], true)}
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column left">
+                                    <div class="title-area">
+                                        <div class="stack">
+                                            <h2 class="title"><?php echo $slide['center'][0] ?></h2>
+                                            <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
+                                            <img style="width:250px;" src="https://zume.training/make/qr?s=qrl&amp;sf=50&amp;wq=0&amp;d=https%3A%2F%2Fzume.training%2Fapp%2Fqr%2F%3Fl%3Den%26a%3Daccountability" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="content-area">
-                                    <div class="stack center | text-center">
-                                        <div class="qr-code"><a href="${this.slide['right'][0]}" target="_blank" class="bypass-nav-click"><img src="${this.slide['right'][1]}" /></a></div>
-                                        <p>${this.slide['right'][2]}</p>
+                                    <div class="content-area">
+                                        <div class="activity-card | stack--2" data-expanded-padding>
+                                            <?php echo $this->render_content( $slide['left'], true ) ?>
+                                        </div>
+                                        <div class="stack content-area__text">
+                                            <?php
+                                            $split = explode( '_', $slide['key'] );
+                                            $id = str_replace( 't', '', $split[0] );
+                                            $script_id = Zume_Course::get_transcript_by_key( $id );
+                                            $activities = list_zume_activities( $this->lang );
+//                                            dt_write_log($activities);
+                                            ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </activity-slide>
+                    </slide-switcher>
+                </div>
+
                 <?php
                 break;
             case 'obey':
                 ?>
-                <obey-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        ${this.renderProgressBar()}
-                        <div class="obey-slide">
-                            <div class="two-column left">
-                                <div>
-                                    <div class="title-area">
-                                        <div class="title-icon">
-                                            <span class="icon z-icon-obey-concept"></span>
+                    <div class="slide-switcher">
+                        <slide-switcher>
+                            <div class="slide-wrapper">
+                                <div class="slides-card" style="padding-bottom:1em;">
+                                    <div class="two-column left">
+                                        <div class="title-area">
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-obey-concept"></span>
+                                            </div>
+                                            <h2 class="title"><?php echo $slide['left'][0] ?></h2>
                                         </div>
-                                        <h2 class="title">${this.slide['left'][0]}</h2>
+                                        <div class="content-area">
+                                            <p><?php echo $slide['right'][0] ?></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="content-area">
-                                    <p>${this.slide['right'][0]}</p>
-                                </div>
-                            </div>
-                            <div class="two-column left">
-                                <div>
-                                    <div class="title-area">
-                                        <div class="title-icon">
-                                            <span class="icon z-icon-share-concept"></span>
+
+                                <div class="slides-card">
+                                    <div class="two-column left">
+                                        <div class="title-area">
+                                            <div class="title-icon">
+                                                <span class="icon z-icon-share-concept"></span>
+                                            </div>
+                                            <h2 class="title"><?php echo $slide['left'][1] ?></h2>
                                         </div>
-                                        <h2 class="title">${this.slide['left'][1]}</h2>
+                                        <div class="content-area">
+                                            <p><?php echo $slide['right'][1] ?></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="content-area">
-                                    <p>${this.slide['right'][1]}</p>
-                                </div>
                             </div>
-                        </div>
+                        </slide-switcher>
                     </div>
-                </obey-slide>
                 <?php
                 break;
             case 'left_image':
                 ?>
-                <left-image-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        ${this.renderProgressBar()}
-                        <div class="two-column right">
-                            <div>
-                                <div class="cover-slide center text-center">
-                                    <p><strong>${this.slide['left'][0]}</strong></p>
-                                    <div class="mw-60"><img src="${this.slide['left'][1]}" /></div>
-                                </div>
-                            </div>
-                            <div class="content-area">
-                                <div class="stack center | text-center">
-                                    <div class="qr-code"><a href="${this.slide['right'][0]}" target="_blank"><img src="${this.slide['right'][1]}" /></a></div>
-                                    <p>${this.slide['right'][2]}</p>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="two-column right">
+                                    <div>
+                                        <div class="cover-slide2 center text-center">
+                                            <p><strong><?php echo $slide['left'][0] ?></strong></p>
+                                            <div class="mw-60"><img src="<?php echo $slide['left'][1] ?>" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-area">
+                                        <div class="stack center | text-center">
+                                            <div class="qr-code"><a href="<?php echo $slide['right'][0] ?>" target="_blank"><img src="<?php echo $slide['right'][1] ?>" /></a></div>
+                                            <p><?php echo $slide['right'][2] ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </left-image-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'next_steps':
                 ?>
-                <next-steps-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
+            <div class="slide-switcher">
+                        <slide-switcher>
+                <div class="slide-wrapper">
                     <div class="slides-card">
-                        ${this.renderProgressBar()}
-                        <div class="cover-slide">
-                            <h2 class="title text-center" data-small>${this.slide['center'][0]}</h2>
+                        <div class="cover-slide2">
+                            <h2 class="title text-center" data-small><?php echo $slide['center'][0] ?></h2>
                             <div class="two-column middle" data-align-start>
                                 <div>
                                     <div class="stack align-items-center">
-                                        <p><strong>${this.slide['left'][0]}</strong></p>
-                                        <div class="qr-code"><a href="${this.slide['left'][1]}" target="_blank"><img src="${this.slide['left'][2]}" /></a></div>
-                                        <p>${this.slide['left'][3]}</p>
+                                        <p><strong><?php echo $slide['left'][0] ?></strong></p>
+                                        <div class="qr-code"><a href="<?php echo $slide['left'][1] ?>" target="_blank"><img src="<?php echo $slide['left'][2] ?>" /></a></div>
+                                        <p><?php echo $slide['left'][3] ?></p>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="stack align-items-center">
-                                        <p><strong>${this.slide['right'][0]}</strong></p>
-                                        <div class="qr-code"><a href="${this.slide['right'][1]}" target="_blank"><img src="${this.slide['right'][2]}" /></a></div>
-                                        <p>${this.slide['right'][3]}</p>
+                                        <p><strong><?php echo $slide['right'][0] ?></strong></p>
+                                        <div class="qr-code"><a href="<?php echo $slide['right'][1] ?>" target="_blank"><img src="<?php echo $slide['right'][2] ?>" /></a></div>
+                                        <p><?php echo $slide['right'][3] ?></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </next-steps-slide>
+                   </div>
+                   </slide-switcher>
+            </div>
                 <?php
                 break;
             case 'break':
                 ?>
-                <break-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        ${this.renderProgressBar()}
-                        <div class="cover-slide">
-                            <div class="grow-1 d-flex align-items-center">
-                                <div class="center activity-card stack--2" data-large>
-                                    <span>${this.slide['center'][0]}</span>
-                                    ${
-                                    this.slide['center'][1]
-                                    ? html`<span>${this.slide['center'][1]}</span>`
-                                    : ''
-                                    }
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="cover-slide2">
+                                    <div class="grow-1 d-flex align-items-center">
+                                        <div class="center activity-card stack--2" data-large>
+                                            <span><?php echo $slide['center'][0] ?></span>
+                                            <span><?php echo $slide['center'][1] ?? '' ?></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </break-slide>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'congratulations':
                 ?>
-                <congratulations-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="cover-page container">
-                            <div>
-                                <div class="center activity-card" data-large>
-                                    <p>${this.slide['center'][0]}</p>
-                                </div>
-                                <div class="center">
-                                    <p><img src="${this.slide['center'][1] ?? ''}" /></p>
+                    <div class="slide-switcher">
+                        <slide-switcher>
+                            <div class="slide-wrapper">
+                                <div class="slides-card">
+                                    <div class="cover-page container">
+                                        <div>
+                                            <div class="center activity-card" data-large>
+                                                <p><?php echo $slide['center'][0] ?></p>
+                                            </div>
+                                            <div class="center">
+                                                <p><img src="<?php echo $slide['center'][1] ?>" /></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </slide-switcher>
                     </div>
-                </congratulations-slide>
                 <?php
                 break;
             case 'final':
-                ?>
-                <final-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>">
-                    <div class="slides-card">
-                        <div class="cover-page">
-                            <div class="center stack | text-center w-50">
-                                <div class="w-30"><img src="${this.slide['center'][0]}" /></div>
-                                <p>${this.slide['center'][1]}</p>
-                                <div class="w-30"><img src="${this.slide['center'][2]}" /></div>
-                                <p>${this.slide['center'][3]}</p>
-                                <a class="btn tight" href="${jsObject.home_url}">${jsObject.translations.home}</a>
-                                <button class="btn tight" @click=${this.dispatchOpenMenu}>${jsObject.translations.menu}</button>
-                            </div>
-                        </div>
-                    </div>
-                </final-slide>
-                <?php
                 break;
             default:
                 ?>
@@ -507,20 +545,20 @@ class Zume_Book_Generator extends Zume_Magic_Page
         $item = '';
         foreach( $stack as $i => $v ) {
             if ( is_array( $v ) ) {
-                $item += '<ul class="bullets">';
-                foreach( $stack as $vv ) {
-                    $item += "<li>" . $vv . "</li>";
+                $item .= '<ul class="bullets">';
+                foreach(  $v as $vv ) {
+                    $item .= "<li>" . $vv . "</li>";
                 }
-                $item += '</ul>';
+                $item .= '</ul>';
             }
             else if ( $bold_first && 0 === $i ) {
-                $item += "<p><strong>" . $v . "</strong></p>";
+                $item .= "<p><strong>" . $v . "</strong></p>";
             }
-            else if ( $bold_all ) {
-                $item += "<p><strong>" . $v . "</strong></p>";
+            else if ( $bold_all && ! is_array($v) ) {
+                $item .= "<p><strong>" . $v . "</strong></p>";
             }
             else {
-                $item += "<p>" . $v . "</p>";
+                $item .= "<p>" . $v . "</p>";
             }
         }
 
@@ -528,19 +566,86 @@ class Zume_Book_Generator extends Zume_Magic_Page
     }
 
     public function body(){
-        if ( ! isset( $_GET['type'],  $_GET['lang'] ) ) {
-            return;
+        if ( ! isset( $_GET['type'], $_GET['session'],  $_GET['lang'] ) ) {
+            $this->selector();
         }
+        else {
+            $course = Zume_Course_Builder::builder( $_GET['type'], $_GET['lang'], $_GET['session'] );
 
-        $course = Zume_Course_Builder::builder( $_GET['type'], $_GET['lang'], 0 );
+            ?><div class="print-content"><?php
 
-        foreach( $course as $session_number => $slides ) {
-            foreach( $slides as $slide ) {
+            foreach( $course as $slide ) {
                 $this->_template( $slide );
             }
+
+            ?></div><?php
         }
+    }
 
+    public function selector() {
+        $zume_languages = zume_languages();
+        $base_url = trailingslashit( site_url() ) . $this->root . '/' . $this->type .'?';
 
+        ?>
+        <div class="center p-3" id="form">
+            <select class="input-field" id="type">
+                <option value="10">10 Session</option>
+                <option value="20">20 Session</option>
+                <option value="intensive">Intensive Session</option>
+            </select><br>
+            <select class="input-field" id="session">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="" disabled>---------</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select><br>
+            <select class="input-field" id="lang">
+                <?php
+                foreach($zume_languages as $language ) {
+                    ?><option value="<?php echo $language['code'] ?>"><?php echo $language['name'] ?></option><?php
+                }
+                ?>
+            </select><br>
+            <a class="btn" href="<?php ?>" id="launch" target="_blank">Build</a>
+        </div>
+        <script>
+            jQuery(document).ready(function() {
+
+                function new_href() {
+                    let type = jQuery('#type').val()
+                    let session = jQuery('#session').val()
+                    let lang = jQuery('#lang').val()
+                    let base_url = '<?php echo $base_url; ?>'
+
+                    jQuery('#launch').attr('href', base_url + 'type=' + type + '&session=' + session + '&lang=' +lang )
+
+                    console.log(base_url + 'type=' + type + '&session=' + session + '&lang=' +lang)
+                }
+                new_href()
+
+                jQuery('.input-field').on( 'change', function() {
+                    new_href()
+                })
+            })
+        </script>
+        <?php
     }
 }
 Zume_Book_Generator::instance();

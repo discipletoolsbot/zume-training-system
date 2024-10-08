@@ -45,7 +45,7 @@ function zume_content( $lang_code = 'en' ) {
             'menu' => [
                 __( 'CHECK-IN', 'zume' ),
             ],
-            'length' => [],
+            'length' => [1],
             'center' => [],
             'left' => [
                 __( 'CHECK-IN', 'zume' ),
@@ -75,7 +75,7 @@ function zume_content( $lang_code = 'en' ) {
             'key' => 's1_1_4',
             'type' => 'overview',
             'menu' => [],
-            'length' => [],
+            'length' => [1],
             'center' => [],
             'left' => [
                 __( 'OVERVIEW', 'zume' ),
@@ -117,7 +117,7 @@ function zume_content( $lang_code = 'en' ) {
             'alt_video_id' => 1,
             'script_id' => Zume_Course::get_transcript_by_key( '1' ),
             'menu' => [],
-            'length' => [],
+            'length' => [5],
             'center' => [
                 Zume_Course::get_video_by_key( '1', true, $lang_code, true ), // video
             ],
@@ -348,7 +348,7 @@ function zume_content( $lang_code = 'en' ) {
             'key' => 's1_1_20',
             'type' => 'review',
             'menu' => [],
-            'length' => [],
+            'length' => [1],
             'center' => [],
             'left' => [
                 __( 'REVIEW', 'zume' ),
@@ -664,7 +664,7 @@ function zume_content( $lang_code = 'en' ) {
             'key' => 's1_2_6',
             'type' => 'review',
             'menu' => [],
-            'length' => [],
+            'length' => [1],
             'center' => [],
             'left' => [
                 __( 'REVIEW', 'zume' ),
