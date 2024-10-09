@@ -75,6 +75,15 @@ class Zume_Activites_List100_Printable extends Zume_Activites
             .print_cell {
                 padding: 2em 0 0;
             }
+            table.unstriped tbody tr {
+                border: 1px solid white;
+                background-color: white;
+            }
+            tbody, tfoot, thead {
+                 border: 1px solid white;
+                 background-color: white;
+            }
+
         </style>
         <div class="activity-page">
             <div style="text-align:center;">
@@ -82,22 +91,28 @@ class Zume_Activites_List100_Printable extends Zume_Activites
             </div>
             <hr>
             <div>
-                <table class="unstriped print_table" >
-                <?php
-                for ( $x = 1; $x <= 100; $x++ ) {
-                    ?>
-                    <tr class="print_table_row">
-                        <td class="print_cell print_table_number"><?php echo esc_html( $x ); ?></td>
-                        <td class="print_cell print_table_line"></td>
-                        <td class="print_cell print_table_check_column">&#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></td>
-                    </tr>
-                    <?php
-                }
-                ?>
-                </table>
+                <?php echo $this->list() ?>
             </div>
         </div>
         </hr>
+        <?php
+    }
+
+    public function list() {
+        ?>
+        <table class="unstriped print_table" >
+            <?php
+            for ( $x = 1; $x <= 100; $x++ ) {
+                ?>
+                <tr class="print_table_row">
+                    <td class="print_cell print_table_number"><?php echo esc_html( $x ); ?></td>
+                    <td class="print_cell print_table_line"></td>
+                    <td class="print_cell print_table_check_column">&#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></td>
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
         <?php
     }
 }

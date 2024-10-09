@@ -61,13 +61,15 @@ class Zume_Book_Generator extends Zume_Magic_Page
         ?>
         <style>
             .watch-btn {display:none;}
-            .qr-code img { width: 200px;}
+            .slides-card .qr-code {
+                width: 250px;
+                height: 250px;
+            }
             .title-icon {display:none;}
             .two-column>* {
                 align-items:flex-start !important;
             }
             .slide-wrapper {
-
                 padding:4em 0;
                 margin: 0 auto;
             }
@@ -96,7 +98,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
             .slides-card {
                 max-height:none !important;
             }
-            .stack ul {
+            .stack ul,.stack--2 ul {
                 margin-bottom: 1rem;
                 list-style-position: outside;
                 line-height: 1.6;
@@ -175,7 +177,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                         </div>
                                     </div>
                                     <div class="content-area">
-                                        <div class="activity-card stack--2" expanded-padding>
+                                        <div class="stack--2">
                                             <?php echo $this->render_content( $slide['right'] ) ?>
                                         </div>
                                     </div>
@@ -254,7 +256,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                     <h2 class="title text-center"><?php echo $slide['center'][0] ?? '' ?> <?php echo $slide['length'] ?? '' ?></h2>
                                     <div class="center w-70 justify-content-center">
                                         <div class="stack--2 activity-card">
-                                            <?php echo $this->render_content( $slide['right'], true ) ?>
+                                            <?php echo $this->render_content( $slide['left'], true ) ?>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +266,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 </div>
                 <?php
                 break;
-            case 'watch':
+            case 'watch': // read
                 ?>
                 <div class="slide-switcher">
                     <slide-switcher>
@@ -275,16 +277,16 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                         <div class="stack">
                                             <h2 class="title"><?php echo esc_html__( 'READ', 'zume' ) ?></h2>
                                             <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
-                                            <img style="width:250px;" src="https://zume.training/make/qr?s=qrl&amp;sf=50&amp;wq=0&amp;d=https%3A%2F%2Fzume.training%2Fapp%2Fqr%2F%3Fl%3Den%26a%3Daccountability" />
+                                            <div class="qr-code">
+                                                <img src="<?php echo $slide['qr'] ?>" />
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="content-area">
                                         <div class="stack content-area__text">
                                             <?php echo '<p><strong>'.$slide['right'][0].'</strong></p>' ?>
                                             <?php
-                                            $split = explode( '_', $slide['key'] );
-                                            $id = str_replace( 't', '', $split[0] );
-                                            $script_id = Zume_Course::get_transcript_by_key( $id );
+                                            $script_id = Zume_Course::get_transcript_by_key( $slide['id'] );
                                             $scripts = list_zume_scripts( $this->lang );
                                             echo $scripts[$script_id]['content'] ?? '';
                                             ?>
@@ -318,7 +320,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                         </div>
                                     </div>
                                     <div class="content-area">
-                                        <div class="activity-card | stack--2" expanded-padding>
+                                        <div class="stack--2">
                                             <?php echo $this->render_content( $slide['right'] ) ?>
                                         </div>
                                     </div>
@@ -367,23 +369,20 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                 <div class="two-column left">
                                     <div class="title-area">
                                         <div class="stack">
-                                            <h2 class="title"><?php echo $slide['center'][0] ?></h2>
+                                            <h2 class="title"><?php echo $slide['center'][0] ?? '' ?></h2>
                                             <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
-                                            <img style="width:250px;" src="https://zume.training/make/qr?s=qrl&amp;sf=50&amp;wq=0&amp;d=https%3A%2F%2Fzume.training%2Fapp%2Fqr%2F%3Fl%3Den%26a%3Daccountability" />
+                                            <div class="qr-code">
+                                                <img src="<?php echo $slide['qr'] ?>" />
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="content-area">
-                                        <div class="activity-card | stack--2" data-expanded-padding>
-                                            <?php echo $this->render_content( $slide['left'], true ) ?>
-                                        </div>
-                                        <div class="stack content-area__text">
-                                            <?php
-                                            $split = explode( '_', $slide['key'] );
-                                            $id = str_replace( 't', '', $split[0] );
-                                            $script_id = Zume_Course::get_transcript_by_key( $id );
-                                            $activities = list_zume_activities( $this->lang );
-//                                            dt_write_log($activities);
-                                            ?>
+                                        <div class="stack">
+                                            <div class="activity-card" data-expanded-padding>
+                                                <?php echo $this->render_content( $slide['left'], true ) ?>
+                                            </div>
+                                            <br>
+                                            <?php echo $this->get_zume_activity( $this->lang, $slide['id'] ); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -399,6 +398,9 @@ class Zume_Book_Generator extends Zume_Magic_Page
                     <div class="slide-switcher">
                         <slide-switcher>
                             <div class="slide-wrapper">
+                                <div class="slides-card" style="padding-bottom:1em;">
+                                    <h2 class="title text-center" data-small><?php echo __( 'NEXT STEP', 'zume' ) ?></h2>
+                                </div>
                                 <div class="slides-card" style="padding-bottom:1em;">
                                     <div class="two-column left">
                                         <div class="title-area">
@@ -459,33 +461,33 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 break;
             case 'next_steps':
                 ?>
-            <div class="slide-switcher">
-                        <slide-switcher>
-                <div class="slide-wrapper">
-                    <div class="slides-card">
-                        <div class="cover-slide2">
-                            <h2 class="title text-center" data-small><?php echo $slide['center'][0] ?></h2>
-                            <div class="two-column middle" data-align-start>
-                                <div>
-                                    <div class="stack align-items-center">
-                                        <p><strong><?php echo $slide['left'][0] ?></strong></p>
-                                        <div class="qr-code"><a href="<?php echo $slide['left'][1] ?>" target="_blank"><img src="<?php echo $slide['left'][2] ?>" /></a></div>
-                                        <p><?php echo $slide['left'][3] ?></p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="stack align-items-center">
-                                        <p><strong><?php echo $slide['right'][0] ?></strong></p>
-                                        <div class="qr-code"><a href="<?php echo $slide['right'][1] ?>" target="_blank"><img src="<?php echo $slide['right'][2] ?>" /></a></div>
-                                        <p><?php echo $slide['right'][3] ?></p>
+                <div class="slide-switcher">
+                    <slide-switcher>
+                        <div class="slide-wrapper">
+                            <div class="slides-card">
+                                <div class="cover-slide2">
+                                    <h2 class="title text-center" data-small><?php echo $slide['center'][0] ?></h2>
+                                    <div class="two-column middle" data-align-start>
+                                        <div>
+                                            <div class="stack align-items-center">
+                                                <p><strong><?php echo $slide['left'][0] ?></strong></p>
+                                                <div class="qr-code"><a href="<?php echo $slide['left'][1] ?>" target="_blank"><img src="<?php echo $slide['left'][2] ?>" /></a></div>
+                                                <p><?php echo $slide['left'][3] ?></p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="stack align-items-center">
+                                                <p><strong><?php echo $slide['right'][0] ?></strong></p>
+                                                <div class="qr-code"><a href="<?php echo $slide['right'][1] ?>" target="_blank"><img src="<?php echo $slide['right'][2] ?>" /></a></div>
+                                                <p><?php echo $slide['right'][3] ?></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                   </div>
-                   </slide-switcher>
-            </div>
+                    </slide-switcher>
+                </div>
                 <?php
                 break;
             case 'break':
@@ -497,7 +499,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                 <div class="cover-slide2">
                                     <div class="grow-1 d-flex align-items-center">
                                         <div class="center activity-card stack--2" data-large>
-                                            <span><?php echo $slide['center'][0] ?></span>
+                                            <span><?php echo $slide['center'][0] ?? '' ?></span>
                                             <span><?php echo $slide['center'][1] ?? '' ?></span>
                                         </div>
                                     </div>
@@ -538,6 +540,38 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 <?php
                 break;
 
+        }
+    }
+
+    public function get_zume_activity( $lang, $id ) {
+        if( str_contains($id, '3monthplan' ) ) {
+            $activity = Zume_Activites_3monthplan_Printable::instance()->list();
+        }
+        else if( str_contains($id, 'coachingchecklist' ) ) {
+            $activity = Zume_Activites_Coaching::instance()->body();
+        }
+        else if( str_contains($id, 'listof100' ) ) {
+            $this->list_of_100();
+        }
+        else {
+            $activities = list_zume_activities( $lang );
+            $activity = '';
+            foreach( $activities as $row ) {
+                if ( $id === $row['post_title'] ) {
+                    $activity = zume_replace_placeholder( $row['content'], $lang );
+                    break;
+                }
+            }
+        }
+
+        return $activity;
+    }
+
+    public function list_of_100() {
+        for ( $x = 1; $x <= 100; $x++ ) {
+            ?>
+            <p><?php echo esc_html( $x ); ?> _____________________ &#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></p>
+            <?php
         }
     }
 
