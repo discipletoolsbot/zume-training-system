@@ -11,7 +11,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
     public $root = 'book';
     public $type = 'generator';
     public $lang = 'en';
-    public static $token = 'app_faq';
+    public static $token = 'book_generator';
 
     private static $_instance = null;
     public static function instance() {
@@ -32,11 +32,17 @@ class Zume_Book_Generator extends Zume_Magic_Page
 
         if ( isset( $url_parts[0] ) && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) ) && ! dt_is_rest() ) {
 
+            if ( isset( $_GET['lang'] ) ) {
+                $this->lang = $_GET['lang'];
+                $zume_languages = zume_languages();
+                switch_to_locale($zume_languages[$this->lang]['locale'] );
+            }
+
             $this->register_url_and_access();
             $this->header_content();
 
             // page content
-//            add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, '_header' ] );
 //            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
 //            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
@@ -372,7 +378,6 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 break;
             case 'left_content':
             case 'activity':
-
                 ?>
                 <div class="slide-switcher">
                     <slide-switcher>
@@ -557,6 +562,8 @@ class Zume_Book_Generator extends Zume_Magic_Page
     }
 
     public function get_zume_activity( $lang, $id ) {
+        $activity = '';
+
         if( str_contains($id, '3monthplan' ) ) {
             $activity = Zume_Activites_3monthplan_Printable::instance()->list();
         }
@@ -643,7 +650,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
 
     public function selector() {
         $zume_languages = zume_languages();
-        $base_url = trailingslashit( site_url() ) . $this->root . '/' . $this->type .'?';
+        $site_url = trailingslashit( site_url() );
 
         ?>
         <div class="center p-3" id="form">
@@ -691,11 +698,13 @@ class Zume_Book_Generator extends Zume_Magic_Page
                     let type = jQuery('#type').val()
                     let session = jQuery('#session').val()
                     let lang = jQuery('#lang').val()
-                    let base_url = '<?php echo $base_url; ?>'
+                    let site_url = '<?php echo $site_url; ?>'
+                    let url_root = '<?php echo $this->root; ?>'
+                    let url_type = '<?php echo $this->type; ?>'
 
-                    jQuery('#launch').attr('href', base_url + 'type=' + type + '&session=' + session + '&lang=' +lang )
+                    jQuery('#launch').attr( 'href', site_url + lang + '/' + url_root + '/' + url_type + '?' + 'type=' + type + '&session=' + session + '&lang=' +lang )
 
-                    console.log(base_url + 'type=' + type + '&session=' + session + '&lang=' +lang)
+                    console.log( 'href', site_url + lang + '/' + url_root + '/' + url_type + '?' + 'type=' + type + '&session=' + session + '&lang=' +lang )
                 }
                 new_href()
 
