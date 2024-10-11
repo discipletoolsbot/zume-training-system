@@ -284,15 +284,13 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'left' => [
                 __( 'Practice S.O.A.P.S.', 'zume' ),
-                __( 'Scan QR code and work individually through the SOAPS Bible study pattern using Matthew 6:9-13. (20 min)', 'zume' ),
                 [
-                    __( 'Scripture', 'zume' ),
-                    __( 'Observation', 'zume' ),
-                    __( 'Application', 'zume' ),
-                    __( 'Prayer', 'zume' ),
-                    __( 'Sharing', 'zume' ),
-                ],
-                __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' ),
+                    __( 'Scan the QR code.', 'zume' ),
+//                    __( 'Scan QR code and work individually through the SOAPS Bible study pattern using Matthew 6:9-13. (20 min)', 'zume' ), // @remove and edit translations
+                    __( 'Work individually through the SOAPS Bible study pattern using Matthew 6:9-13. (20 min)', 'zume' ),
+                    __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' ),
+                ]
+
             ],
             'right' => [
                 $activity_base_url . 'soaps',
@@ -595,9 +593,13 @@ function zume_content( $lang_code = 'en' ) {
                 __( 'ACTIVITY', 'zume' ),
             ],
             'left' => [
-                __( 'Pray the Prayer Cycle for an hour individually', 'zume' ),
-                __( 'Scan the QR code to get the prayer cycle guide on your phone.', 'zume' ),
-                __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
+                __( 'Prayer Cycle', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Pray the Prayer Cycle for an hour individually', 'zume' ),
+//                    __( 'Scan the QR code to get the prayer cycle guide on your phone.', 'zume' ),
+                    __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
+                ]
             ],
             'right' => [
                 $activity_base_url . 'prayercycle',
@@ -928,6 +930,8 @@ function zume_content( $lang_code = 'en' ) {
                 __( 'The Gospel', 'zume' ),
                 __( 'One way to share God’s good news is by telling God’s story from Creation to Judgement – from the beginning of humankind all the way to the end of this age.', 'zume' ),
             ],
+            'id' => 10,
+            'qr' => create_qr_url( $video_base_url . '10' ),
         ],
         [
             'key' => 't10_d',
@@ -1848,8 +1852,8 @@ function zume_content( $lang_code = 'en' ) {
                 __( 'Faithfulness', 'zume' ),
                 __( 'When we help multiply disciples, we need to make sure we’re reproducing the right things. It’s important what disciples know – but it’s much more important what they DO with what they know.', 'zume' ),
             ],
-            'id' => 20,
-            'qr' => create_qr_url( $video_base_url . '20' ),
+            'id' => 19,
+            'qr' => create_qr_url( $video_base_url . '19' ),
         ],
         [
             'key' => 't20_b',
@@ -3146,7 +3150,8 @@ function zume_content( $lang_code = 'en' ) {
             'left' => [
                 __( 'Make your Three Month Plan', 'zume' ),
                 [
-                    __( 'Read - Scan the QR code. You don‘t have to commit to every item, rather they are intended as prompts for your plan. (5 min)', 'zume' ),
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Read - You don‘t have to commit to every item, rather they are intended as prompts for your plan. (5 min)', 'zume' ),
                     __( 'Listen - Take time to be as quiet as possible and listen to what God chooses to reveal. (10 min)', 'zume' ),
                     __( 'Record Your Plan - Write commitments on a piece of paper or use the online tool to save your answers. (15 min)', 'zume' ),
                 ],
@@ -5026,7 +5031,7 @@ function zume_content( $lang_code = 'en' ) {
                 __( '3/3 Group Meeting', 'zume' ),
                 [
                     __( 'Scan the QR code.', 'zume' ),
-                    __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ),
+                    __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ), // @todo check translation for this string
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)', 'zume' ),
                 ],
@@ -6115,7 +6120,7 @@ function zume_content( $lang_code = 'en' ) {
                 __( 'Join the Community', 'zume' ),
             ],
             'id' => 'join_the_community',
-            'qr' => create_qr_url( $activity_base_url . 'join_the_community' ),
+            'qr' => create_qr_url( $other_page_base_url . 'join_the_community' ),
         ],
         [
             'key' => 'congratulations',

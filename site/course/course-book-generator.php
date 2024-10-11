@@ -49,8 +49,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return $allowed_js;
-//        return zume_training_magic_url_base_allowed_js();
+        return zume_training_magic_url_base_allowed_js();
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
@@ -60,7 +59,6 @@ class Zume_Book_Generator extends Zume_Magic_Page
     public function header_style(){
         ?>
         <style>
-            .watch-btn {display:none;}
             .slides-card .qr-code {
                 width: 250px;
                 height: 250px;
@@ -76,9 +74,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
             .slide-switcher {
                 border-bottom: 1px dashed var(--z-brand-lighter);
             }
-            @media print{
-                body{ background-color:white}
-            }
+
             body {
                 border-right: 1px solid white !important;
             }
@@ -105,7 +101,22 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 margin-left: 1.5rem;
                 list-style-type: disc;
             }
+            @media print{
+                body{
+                    background-color:white;
+                    font-size: 50%;
+                }
+            }
         </style>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery('#iFrame1').bind('load', function() {
+                    let iframe = document.getElementById( 'iFrame1' )
+                    let height = iframe.contentWindow.document.body.scrollHeight
+                    iframe.setAttribute("height", height );
+                })
+            })
+        </script>
         <?php
     }
 
@@ -288,7 +299,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                             <?php
                                             $script_id = Zume_Course::get_transcript_by_key( $slide['id'] );
                                             $scripts = list_zume_scripts( $this->lang );
-                                            echo $scripts[$script_id]['content'] ?? '';
+                                            echo zume_replace_placeholder( $scripts[$script_id]['content'] ?? '', $this->lang );
                                             ?>
                                         </div>
                                     </div>
@@ -361,6 +372,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                 break;
             case 'left_content':
             case 'activity':
+
                 ?>
                 <div class="slide-switcher">
                     <slide-switcher>
@@ -379,7 +391,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                     <div class="content-area">
                                         <div class="stack">
                                             <div class="activity-card" data-expanded-padding>
-                                                <?php echo $this->render_content( $slide['left'], true ) ?>
+                                                <?php echo $this->render_content( $slide['left'], true, false, true ) ?>
                                             </div>
                                             <br>
                                             <?php echo $this->get_zume_activity( $this->lang, $slide['id'] ); ?>
@@ -390,7 +402,6 @@ class Zume_Book_Generator extends Zume_Magic_Page
                         </div>
                     </slide-switcher>
                 </div>
-
                 <?php
                 break;
             case 'obey':
@@ -448,8 +459,10 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                     </div>
                                     <div class="content-area">
                                         <div class="stack center | text-center">
-                                            <div class="qr-code"><a href="<?php echo $slide['right'][0] ?>" target="_blank"><img src="<?php echo $slide['right'][1] ?>" /></a></div>
                                             <p><?php echo $slide['right'][2] ?></p>
+                                            <div class="qr-code">
+                                                <img src="<?php echo $slide['right'][1] ?>" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -548,7 +561,8 @@ class Zume_Book_Generator extends Zume_Magic_Page
             $activity = Zume_Activites_3monthplan_Printable::instance()->list();
         }
         else if( str_contains($id, 'coachingchecklist' ) ) {
-            $activity = Zume_Activites_Coaching::instance()->body();
+            $activity = Zume_Activites_Coaching::instance()->description();
+            $activity .= '<iframe id="iFrame1" src="https://zume.training/'.$this->lang.'/activities/coachingchecklist?description=false" style="border: none; width: 100%; overflow:hidden;" height="1800px" scrolling="no"></iframe>';
         }
         else if( str_contains($id, 'listof100' ) ) {
             $this->list_of_100();
@@ -575,13 +589,24 @@ class Zume_Book_Generator extends Zume_Magic_Page
         }
     }
 
-    public function render_content( $stack = [], $bold_first = false, $bold_all = false ) {
+    public function render_content( $stack = [], $bold_first = false, $bold_all = false, $is_activity = false ) {
         $item = '';
         foreach( $stack as $i => $v ) {
             if ( is_array( $v ) ) {
                 $item .= '<ul class="bullets">';
-                foreach(  $v as $vv ) {
-                    $item .= "<li>" . $vv . "</li>";
+                foreach(  $v as $ii => $vv ) { // first level bullets
+                    if ( $is_activity && 0 === $ii ) { // remove the scan the QR step
+                        continue;
+                    }
+                    if ( is_array( $vv ) ) { // second level bullets
+                        $item .= '<ul class="bullets">';
+                        foreach( $vv as $vvv ) {
+                            $item .= "<li>" . $vvv . "</li>";
+                        }
+                        $item .= '</ul>';
+                    } else {
+                        $item .= "<li>" . $vv . "</li>";
+                    }
                 }
                 $item .= '</ul>';
             }
