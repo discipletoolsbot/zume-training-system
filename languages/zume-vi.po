@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:47+0000\n"
+"PO-Revision-Date: 2024-10-11 14:15-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/vi/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -1801,7 +1801,7 @@ msgstr ""
 
 #: site/course/course-book-generator.php:295
 msgid "READ"
-msgstr ""
+msgstr "Đánh dấu tất cả là đã đọc"
 
 #: site/course/course-book-generator.php:418
 #: site/course/course-content.php:6109
@@ -1813,34 +1813,28 @@ msgid "(1 min)"
 msgstr "(1 phút)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 phút)"
+msgstr "(2 phút)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 phút)"
+msgstr "(3 phút)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 phút)"
+msgstr "(4 phút)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 phút)"
+msgstr "(6 phút)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 phút)"
+msgstr "(7 phút)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 phút)"
+msgstr "(8 phút)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2146,13 +2140,12 @@ msgid "Scan the QR code."
 msgstr "Quét mã QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Quét mã QR và tự nghiên cứu thông qua phương pháp nghiên cứu Kinh thánh "
-"SOAPS bằng cách sử dụng Ma-thi-ơ 6:9-13. (20 phút)"
+"Làm việc cá nhân thông qua mô hình nghiên cứu Kinh thánh SOAPS sử dụng Ma-"
+"thi-ơ 6:9-13. (20 phút)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3745,13 +3738,12 @@ msgid "Make your Three Month Plan"
 msgstr "Lập Kế Hoạch Ba tháng của bạn"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Đọc - Quét mã QR. Bạn không cần phải cam kết mọi mục, các mục này là gợi ý "
-"cho kế hoạch của bạn. (5 phút)"
+"Đọc - Bạn không cần phải cam kết thực hiện mọi mục, thay vào đó, chúng được "
+"coi là lời nhắc nhở cho kế hoạch của bạn. (5 phút)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4441,13 +4433,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Có sự cố xảy ra khi bạn điểm danh."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Có bất kỳ công cụ hoặc khái niệm nào mà bạn sẽ thêm hoặc bớt khỏi danh sách "
-"kiểm tra không? Tại sao?"
+"Đánh dấu vào bất kỳ công cụ hoặc khái niệm nào bạn đã tuân thủ, chia sẻ hoặc "
+"đào tạo người khác."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -5470,6 +5461,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Hãy đảm bảo hồ sơ của bạn được cập nhật để trưởng nhóm có thể liên lạc với "
+"bạn."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7437,9 +7430,8 @@ msgid "Zúme Annual Report"
 msgstr "Báo cáo thường niên của Zúme"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Slide bài giảng"
+msgstr "Slides"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

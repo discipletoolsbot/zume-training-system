@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:52-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Swahili <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/sw/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1797,34 +1797,28 @@ msgid "(1 min)"
 msgstr "(dakika 1)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(Dakika 20)"
+msgstr "(dakika 2)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(dakika 30)"
+msgstr "(dakika 3)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(dakika 40)"
+msgstr "(dakika 4)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(dakika 60)"
+msgstr "(dakika 6)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(dakika 70)"
+msgstr "(dakika 7)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(dakika 80)"
+msgstr "(dakika 8)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2127,13 +2121,12 @@ msgid "Scan the QR code."
 msgstr "Changanua msimbo wa QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Changanua msimbo wa QR na ufanye kazi kibinafsi kupitia muundo wa kusoma "
-"Biblia wa SOAPS ukitumia Mathayo 6:9-13. (Dakika 20)"
+"Fanya kazi kibinafsi kupitia mfumo wa kusoma Biblia wa SABUNI ukitumia "
+"Mathayo 6:9-13. (Dakika 20)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3710,13 +3703,12 @@ msgid "Make your Three Month Plan"
 msgstr "Tengeneza Mpango wako wa Miezi Mitatu"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Soma - Changanua msimbo wa QR. Sio lazima ujitolee kwa kila kitu, badala "
-"yake zimekusudiwa kama vidokezo vya mpango wako. (Dakika 5)"
+"Soma - Sio lazima ujitolee kwa kila kitu, badala yake vinakusudiwa kama "
+"vidokezo vya mpango wako. (Dakika 5)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4395,13 +4387,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Hitilafu fulani imetokea katika mchakato wako wa kuingia."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Je, kuna zana au dhana zozote ambazo ungeongeza au kupunguza kutoka kwenye "
-"orodha? Kwa nini?"
+"Weka alama kwenye zana au dhana zozote ambazo umetii, kushiriki au kufunza "
+"nazo wengine."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4410,9 +4401,8 @@ msgid "Congratulations"
 msgstr "Hongera sana"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Imefaulu kuingia"
+msgstr "Umeingia"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5419,6 +5409,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Tafadhali hakikisha kuwa wasifu wako umesasishwa, ili viongozi wa kikundi "
+"waweze kuwasiliana nawe."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7373,9 +7365,8 @@ msgid "Zúme Annual Report"
 msgstr "Ripoti ya Mwaka ya Zume"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Slaidi za Kozi"
+msgstr "Slaidi"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

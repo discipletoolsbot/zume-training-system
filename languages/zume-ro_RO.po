@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:49-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Romanian <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/ro_RO/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1820,34 +1820,28 @@ msgid "(1 min)"
 msgstr "(1 min)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 min)"
+msgstr "(2 min)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 min)"
+msgstr "(3 min)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 min)"
+msgstr "(4 min)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 min)"
+msgstr "(6 min)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 min)"
+msgstr "(7 min)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 min)"
+msgstr "(8 min)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2154,13 +2148,12 @@ msgid "Scan the QR code."
 msgstr "Scanați codul QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Scanați codul QR și lucrați individual prin modelul de studiu biblic în 5 "
-"pași folosind Matei 6:9-13. (20 min)"
+"Lucrați individual prin modelul de studiu biblic SOAPS folosind Matei "
+"6:9-13. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3784,14 +3777,12 @@ msgid "Make your Three Month Plan"
 msgstr "Fă-ți un plan pe trei luni"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Citiți - Scanați codul QR. Nu este necesar să vă înregistrați pentru fiecare "
-"articol, acestea sunt doar menționate ca sugestii pentru planul dvs. (5 "
-"minute)"
+"Citește - Nu trebuie să te angajezi să respecți fiecare element, ci mai "
+"degrabă acestea sunt concepute ca îndemnuri pentru planul tău. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4489,13 +4480,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "A apărut o eroare în procesul de înregistrare."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Există instrumente de instruire sau concepte pe care le-ați adăuga sau "
-"scădea din lista de verificare? De ce?"
+"Bifați orice instrumente sau concepte cu care ați ascultat, împărtășit sau "
+"instruit pe alții."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4504,9 +4494,8 @@ msgid "Congratulations"
 msgstr "Felicitări"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "S-a înregistrat cu succes"
+msgstr "Sunteți înregistrat"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5528,6 +5517,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Vă rugăm să vă asigurați că profilul dvs. este actualizat, astfel încât "
+"liderii de grup să vă poată contacta."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7516,9 +7507,8 @@ msgid "Zúme Annual Report"
 msgstr "Raport anual Zúme"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Diapozitive de curs"
+msgstr "Slide-uri"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"
