@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:45-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/pl/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1808,34 +1808,28 @@ msgid "(1 min)"
 msgstr "(1 min)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 min)"
+msgstr "(2 min)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 min)"
+msgstr "(3 min)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 min)"
+msgstr "(4 min)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 min)"
+msgstr "(6 min)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 min)"
+msgstr "(7 min)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 min)"
+msgstr "(8 min)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2140,13 +2134,12 @@ msgid "Scan the QR code."
 msgstr "Zeskanuj kod QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Zeskanuj kod QR i indywidualnie przestudiuj fragment Ewangelii Mateusza "
-"6:9-13 metodą POZMO. (20 min)"
+"Pracuj indywidualnie według schematu studiowania Biblii SOAPS, korzystając z "
+"Ewangelii Mateusza 6:9-13. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3744,13 +3737,12 @@ msgid "Make your Three Month Plan"
 msgstr "Stwórz swój Plan 3-miesięczny"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Przeczytaj – Zeskanuj kod QR. Nie musisz wypełniać wszystkich punktów; mają "
-"one służyć jako sugestie dla Twojego planu. (5 min)"
+"Przeczytaj - nie musisz angażować się w każdy element, są one raczej "
+"przeznaczone jako podpowiedzi do twojego planu. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4436,13 +4428,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Coś poszło nie tak w procesie logowania."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Czy są jakieś narzędzia lub koncepcje, które chciał/a/byś dodać do tej listy "
-"albo z niej usunąć? Dlaczego?"
+"Zaznacz wszystkie narzędzia lub koncepcje, których używałeś, którymi się "
+"dzieliłeś lub szkoliłeś innych."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4451,9 +4442,8 @@ msgid "Congratulations"
 msgstr "Gratulacje"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Pomyślnie zalogowano"
+msgstr "Jesteś zameldowany"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5463,6 +5453,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Upewnij się, że Twój profil jest aktualny, aby liderzy grup mogli się z Tobą "
+"skontaktować."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7419,9 +7411,8 @@ msgid "Zúme Annual Report"
 msgstr "Sprawozdanie roczne Zúme"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Slajdy z kursu"
+msgstr "Slajdy"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

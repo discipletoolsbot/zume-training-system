@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:37-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/ha_NG/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1799,34 +1799,28 @@ msgid "(1 min)"
 msgstr "Minti daya"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "Minti ashirin"
+msgstr "(minti 2)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "Minti talatin"
+msgstr "(minti 3)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "Minti arba'in"
+msgstr "(minti 4)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "Minti sittin"
+msgstr "(minti 6)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "Minti saba'in"
+msgstr "(minti 7)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "Minti tamanin"
+msgstr "(minti 8)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2131,13 +2125,12 @@ msgid "Scan the QR code."
 msgstr "Duba lambar QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Duba lambar QR kuma kuyi aiki daidaiku ta tsarin nazarin Littafi Mai Tsarki "
-"na SOAPS ta amfani da Matta 6: 9-13. (minti ashirin)"
+"Yi aiki ɗaya ɗaya ta hanyar tsarin nazarin Littafi Mai Tsarki na SOAPS ta "
+"amfani da Matta 6:9-13. (minti 20)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3714,13 +3707,12 @@ msgid "Make your Three Month Plan"
 msgstr "Yi Shirin Watanni Uku"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Karanta - Duba lambar QR. Ba dole ba ne ka ƙaddamar da kowane abu, a'a, an "
-"yi nufin su ne don faɗakarwa ga shirinka. (minti biyar)"
+"Karanta - Ba dole ba ne ka ƙaddamar da kowane abu, a'a, an yi nufin su ne "
+"don faɗakarwa ga shirinka. (minti biyar)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4399,13 +4391,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Wani abu ya yi kuskure game da tsarin rajistar ku."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Shin akwai wasu kayan aiki ko ra'ayoyi da za ku ƙara ko ragewa daga jerin "
-"abubuwan dubawa? Me yasa?"
+"Bincika duk wani kayan aiki ko ra'ayoyin da kuka yi biyayya, raba ko horar "
+"da wasu da su."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4414,9 +4405,8 @@ msgid "Congratulations"
 msgstr "Ina taya ku murna"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "An shiga cikin nasara"
+msgstr "An duba ku"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5429,6 +5419,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Da fatan za a tabbatar da cewa bayanan ku na zamani ne, domin shugabannin "
+"rukuni su tuntube ku."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7382,7 +7374,6 @@ msgid "Zúme Annual Report"
 msgstr "Rahoton Shekara-shekara na Zúme"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
 msgstr "Darasi Slides"
 

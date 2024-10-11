@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:30-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Bosnian <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/bs_BA/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1788,34 +1788,28 @@ msgid "(1 min)"
 msgstr "(1 min)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 min)"
+msgstr "(2 min)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 min)"
+msgstr "(3 min)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 min)"
+msgstr "(4 min)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 min)"
+msgstr "(6 min)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 min)"
+msgstr "(7 min)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 min)"
+msgstr "(8 min)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2119,13 +2113,12 @@ msgid "Scan the QR code."
 msgstr "Skenirajte QR kod."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Skenirajte QR kod i radite pojedinačno kroz SOAPS obrazac za proučavanje "
-"Biblije koristeći Matej 6:9-13. (20 min)"
+"Radite individualno kroz SOAPS obrazac proučavanja Biblije koristeći Matej "
+"6:9-13. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3701,13 +3694,12 @@ msgid "Make your Three Month Plan"
 msgstr "Napravi Tromjesečni plan"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Pročitajte - skenirajte QR kod. Ne morate se obavezati na svaku stavku, već "
-"su one namijenjene kao upute za vaš plan. (5 min)"
+"Pročitajte - Ne morate se obavezati na svaku stavku, već su namijenjene kao "
+"upute za vaš plan. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4381,13 +4373,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Nešto nije u redu s vašim procesom prijave."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Postoje li neki alati ili koncepti koje biste dodali ili oduzeli sa "
-"kontrolne liste? Zašto?"
+"Označite sve alate ili koncepte koje ste slušali, dijelili ili obučavali "
+"druge."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4396,9 +4387,8 @@ msgid "Congratulations"
 msgstr "Čestitam"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Uspješna prijava"
+msgstr "Prijavljeni ste"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5405,6 +5395,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Provjerite je li vaš profil ažuran, kako bi vas vođe grupa mogli "
+"kontaktirati."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7355,9 +7347,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme godišnji izvještaj"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Slajdovi kursa"
+msgstr "Slajdovi"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

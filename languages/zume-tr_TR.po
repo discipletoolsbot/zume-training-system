@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:47+0000\n"
+"PO-Revision-Date: 2024-10-11 14:09-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Turkish <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/tr_TR/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -1824,7 +1824,7 @@ msgstr ""
 
 #: site/course/course-book-generator.php:295
 msgid "READ"
-msgstr ""
+msgstr "OKU"
 
 #: site/course/course-book-generator.php:418
 #: site/course/course-content.php:6109
@@ -1836,34 +1836,28 @@ msgid "(1 min)"
 msgstr "(1 dakika)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 dakika)"
+msgstr "(2 dakika)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 dakika)"
+msgstr "(3 dakika)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 dakika)"
+msgstr "(4 dakika)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 dakika)"
+msgstr "(6 dakika)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 dakika)"
+msgstr "(7 dakika)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 dakika)"
+msgstr "(8 dakika)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2168,13 +2162,12 @@ msgid "Scan the QR code."
 msgstr "QR kodunu taratın."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"QR kodunu taratın ve Matta 6:9-13'ü referans alarak A.G.U.D.P. Kutsal Kitap "
-"çalışma modeli üzerinde bireysel olarak çalışın. (20 dakika)"
+"Matta 6:9-13'ü kullanarak SOAPS Kutsal Kitap çalışma modeli üzerinde "
+"bireysel olarak çalışın. (20 dakika)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3776,13 +3769,12 @@ msgid "Make your Three Month Plan"
 msgstr "Üç Aylık Planınızı Oluşturun"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Okuyun – QR kodunu taratın. Her maddeye uymak zorunda değilsiniz, bunlar "
-"planınız için birer ipucu olarak düşünülmüştür. (5 dk)"
+"Okuyun - Her maddeye bağlı kalmak zorunda değilsiniz, bunlar planınız için "
+"birer ipucu olarak düşünülmüştür. (5 dakika)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4469,13 +4461,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Giriş işleminizde bir sorun oluştu."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Kontrol listesine ekleyeceğiniz veya çıkaracağınız herhangi bir araç veya "
-"kavram var mı? Neden?"
+"Uyduğunuz, paylaştığınız veya başkalarını eğittiğiniz araç veya kavramları "
+"işaretleyin."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4484,9 +4475,8 @@ msgid "Congratulations"
 msgstr "Tebrikler"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Başarıyla giriş yapıldı"
+msgstr "Giriş yaptınız"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5496,6 +5486,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Grup liderlerinin sizinle iletişime geçebilmesi için lütfen profilinizin "
+"güncel olduğundan emin olun."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7461,9 +7453,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme Yıllık Raporu"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Kurs Slaytları"
+msgstr "Slaytlar"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

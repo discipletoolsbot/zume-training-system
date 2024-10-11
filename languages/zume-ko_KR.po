@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:44-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Korean <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/ko_KR/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1768,34 +1768,28 @@ msgid "(1 min)"
 msgstr "1분"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "20 분"
+msgstr "(2분)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 분)"
+msgstr "(3분)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "40 분"
+msgstr "(4분)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 분)"
+msgstr "(6분)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "70 분"
+msgstr "(7분)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "80 분"
+msgstr "(8분)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2097,13 +2091,12 @@ msgid "Scan the QR code."
 msgstr "QR코드를 스캔하시오."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"QR코드를 스캔하여 마태복음 6장 9-13절을 참조해 SOAPS성경 읽기를 개인적으로 실"
-"천해보세요(20분)"
+"마태복음 6:9-13을 사용하여 SOAPS 성경 공부 패턴을 통해 개별적으로 활동합니"
+"다. (20분)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3647,13 +3640,12 @@ msgid "Make your Three Month Plan"
 msgstr "3 개월 계획 만들기"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"읽어보세요 - QR코드를 스캔하세요. 당신의 계획을 세우는 데 도움을 주기 위한 것"
-"이기 때문에 모든 항목을 다 할 필요는 없습니다. (5분)"
+"읽기 - 모든 항목에 동의할 필요는 없으며, 계획에 대한 프롬프트로 사용할 수 있"
+"습니다. (5분)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4310,12 +4302,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "죄송합니다. 오류가 있습니다. 다시 시도하십시오."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"체크 리스트에서 추가하거나 빼려는 훈련 도구가 있나요? 이유는 무엇인가요?"
+"다른 사람들과 함께 사용하거나 공유하거나 교육한 도구나 개념이 있다면 모두 체"
+"크해 주세요."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4324,9 +4316,8 @@ msgid "Congratulations"
 msgstr "축하합니다"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "성공적으로 체크인했습니다"
+msgstr "체크인 완료"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5313,7 +5304,7 @@ msgstr "현재 공개 교육이 없습니다."
 msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
-msgstr ""
+msgstr "그룹 리더가 연락할 수 있도록 프로필을 최신 상태로 유지하세요."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7232,9 +7223,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme 연례 보고서"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "코스 슬라이드"
+msgstr "슬라이드"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

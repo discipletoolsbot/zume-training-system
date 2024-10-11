@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:35-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: German <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/de_DE/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1833,34 +1833,28 @@ msgid "(1 min)"
 msgstr "(1 Minute)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 Minuten)"
+msgstr "(2 Minuten)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 Minuten)"
+msgstr "(3 Minuten)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 Minuten)"
+msgstr "(4 Minuten)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 Minuten)"
+msgstr "(6 Minuten)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 Minuten)"
+msgstr "(7 Minuten)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 Minuten)"
+msgstr "(8 Minuten)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2167,13 +2161,12 @@ msgid "Scan the QR code."
 msgstr "Scanne den QR-Code."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Scannt den QR-Code und arbeitet anhand von Matthäus 6,9-13 individuell das "
-"SOAPS-Bibelstudienmuster durch. (20 Minuten)"
+"Arbeiten Sie einzeln das SOAPS-Bibelstudienmuster anhand von Matthäus 6,9-13 "
+"durch. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3239,8 +3232,8 @@ msgstr "Und wir werden dieses Werkzeug aus unserem Werkzeugkasten einüben:"
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
-"Jesus sagte: „(...) wer unter euch groß werden will, der sei euer "
-"Diener,“ (Matthäus 20,26)"
+"Jesus sagte: „(...) wer unter euch groß werden will, der sei euer Diener,“ "
+"(Matthäus 20,26)"
 
 #: site/course/course-content.php:2331
 msgid ""
@@ -3792,13 +3785,12 @@ msgid "Make your Three Month Plan"
 msgstr "Erstelle deinen 3-Monats-Plan"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Lesen - Scanne den QR-Code. Du musst dich nicht zu jedem Punkt verpflichten, "
-"sie sind vielmehr als Anregungen für deinen Plan gedacht. (5 Minuten)"
+"Lesen - Sie müssen sich nicht zu jedem Punkt verpflichten, sie sind vielmehr "
+"als Anregung für Ihren Plan gedacht. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4490,13 +4482,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Bei deinem Anmeldevorgang ist etwas schief gelaufen."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Gibt es Werkzeuge oder Konzepte, die du zur Checkliste hinzufügen oder von "
-"ihr streichen würdest? Warum?"
+"Kreuzen Sie alle Hilfsmittel oder Konzepte an, denen Sie gehorcht haben, die "
+"Sie weitergegeben oder mit denen Sie andere geschult haben."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4505,9 +4496,8 @@ msgid "Congratulations"
 msgstr "Herzlichen Glückwunsch"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Erfolgreich angemeldet"
+msgstr "Sie sind eingecheckt"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5541,6 +5531,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Bitte vergewissern Sie sich, dass Ihr Profil auf dem neuesten Stand ist, "
+"damit die Gruppenleiter Sie kontaktieren können."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7537,9 +7529,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme-Jahresbericht"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Folien zum Kurs"
+msgstr "Slider"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

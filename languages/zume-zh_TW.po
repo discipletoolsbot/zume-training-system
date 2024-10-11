@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
+"PO-Revision-Date: 2024-10-11 13:23-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.disciple."
 "tools/projects/zume-training/zume-training-system/zh_Hant/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1703,34 +1703,28 @@ msgid "(1 min)"
 msgstr "（1 分鐘）"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "（20 分鐘）"
+msgstr "(2分鐘)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "（30 分鐘）"
+msgstr "(3分鐘)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "（40 分鐘）"
+msgstr "(4分鐘)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "（60 分鐘）"
+msgstr "(6分鐘)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "（70 分鐘）"
+msgstr "(7分鐘)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "（80 分鐘）"
+msgstr "(8分鐘)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2024,13 +2018,10 @@ msgid "Scan the QR code."
 msgstr "掃描 QR code。"
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
-msgstr ""
-"掃描 QR code 並用馬太福音 6:9-13 透過 S.O.A.P.S. 聖經學習模式單獨工作。 （20 "
-"分鐘）"
+msgstr "使用馬太福音 6:9-13 的 SOAPS 查經模式進行個別研習。(20分鐘)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3461,13 +3452,10 @@ msgid "Make your Three Month Plan"
 msgstr "制定你的三個月規劃"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
-msgstr ""
-"閱讀 - 掃描 QR code。你不必對每一項都做出承諾，它們只是作為你計畫的提示。 "
-"（5 分鐘）"
+msgstr "閱讀 - 您不需要承諾每一項，它們只是作為您計劃的提示。(5分鐘)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4083,11 +4071,10 @@ msgid "Something went wrong with your checkin process."
 msgstr "你的簽到流程出現問題。"
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
-msgstr "你是否需要從清單中新增或刪除任何工具或觀念？為什麼？"
+msgstr "勾選您曾經服從、分享或訓練他人的工具或概念。"
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4096,9 +4083,8 @@ msgid "Congratulations"
 msgstr "恭喜"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "已成功簽到"
+msgstr "您已報到"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5063,7 +5049,7 @@ msgstr "目前沒有公開培訓。"
 msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
-msgstr ""
+msgstr "請確保您的個人資料是最新的，以便小組領袖能與您聯絡。"
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -6908,9 +6894,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme年度報告"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "課程幻燈片"
+msgstr "幻燈片"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

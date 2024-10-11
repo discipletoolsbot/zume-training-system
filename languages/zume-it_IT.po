@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-09-27 09:59+0000\n"
+"PO-Revision-Date: 2024-10-11 13:41-0600\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/it_IT/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1822,34 +1822,28 @@ msgid "(1 min)"
 msgstr "(1 min)"
 
 #: site/course/course-builder.php:404
-#, fuzzy
 msgid "(2 min)"
-msgstr "(20 min)"
+msgstr "(2 min)"
 
 #: site/course/course-builder.php:405
-#, fuzzy
 msgid "(3 min)"
-msgstr "(30 min)"
+msgstr "(3 min)"
 
 #: site/course/course-builder.php:406
-#, fuzzy
 msgid "(4 min)"
-msgstr "(40 min)"
+msgstr "(4 min)"
 
 #: site/course/course-builder.php:408
-#, fuzzy
 msgid "(6 min)"
-msgstr "(60 min)"
+msgstr "(6 min)"
 
 #: site/course/course-builder.php:409
-#, fuzzy
 msgid "(7 min)"
-msgstr "(70 min)"
+msgstr "(7 min)"
 
 #: site/course/course-builder.php:410
-#, fuzzy
 msgid "(8 min)"
-msgstr "(80 min)"
+msgstr "(8 min)"
 
 #: site/course/course-builder.php:412
 msgid "(15 min)"
@@ -2154,13 +2148,12 @@ msgid "Scan the QR code."
 msgstr "Scansiona il codice QR."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Scansiona il codice QR e lavora da solo utilizzando lo schema dello studio "
-"biblico SOAPC con il passo Matteo 6:9-13. (20 min)"
+"Lavorare individualmente attraverso lo schema di studio biblico SOAPS usando "
+"Matteo 6:9-13. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3781,13 +3774,12 @@ msgid "Make your Three Month Plan"
 msgstr "Crea il tuo Piano di 3 Mesi"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Leggi - Scansiona il codice QR. Non devi prendere ogni punto come impegno, "
-"invece usali come suggerimenti per il tuo piano. (5 min)"
+"Leggere - Non è necessario impegnarsi per ogni voce, ma queste sono intese "
+"come spunti per il vostro piano. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4478,13 +4470,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Qualcosa è andato storto nell'effettuare il check-in."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Ci sono strumenti o concetti che aggiungeresti o che toglieresti dalla Lista "
-"di Controllo del Tutoraggio? Perché?"
+"Spuntate gli strumenti o i concetti con cui avete obbedito, condiviso o "
+"addestrato gli altri."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4493,9 +4484,8 @@ msgid "Congratulations"
 msgstr "Congratulazioni"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
-msgstr "Hai effettuato il check-in con successo"
+msgstr "Il check-in è stato effettuato"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5518,6 +5508,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"Assicuratevi che il vostro profilo sia aggiornato, in modo che i "
+"responsabili dei gruppi possano contattarvi."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -7491,9 +7483,8 @@ msgid "Zúme Annual Report"
 msgstr "Zúme Relazione Annuale"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
-msgstr "Slides del corso"
+msgstr "Slides"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"
@@ -10357,9 +10348,9 @@ msgstr "Sistema di Formazione Zúme"
 #~ "fellowship, and practice obeying and sharing what they've learned. In "
 #~ "this way, a 3/3 Group is not just a small group but a Simple Church."
 #~ msgstr ""
-#~ "Un gruppo di 3/3 è un modo per i seguaci di Gesù di incontrarsi, pregare, "
+#~ "Un gruppo di 3/3 è un modo per i seguaci di Gesù di incontrarsi, pregare, "
 #~ "imparare, crescere, avere comunione, imparare ad ubbidire e condividere "
-#~ "quanto appreso. In questo senso un Gruppo di 3/3 non è soltanto un "
+#~ "quanto appreso. In questo senso un Gruppo di 3/3 non è soltanto un "
 #~ "piccolo gruppo, ma una Chiesa Semplice."
 
 #~ msgid ""
