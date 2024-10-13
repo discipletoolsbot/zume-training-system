@@ -327,9 +327,6 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                 <div class="two-column left">
                                     <div>
                                         <div class="title-area">
-                                            <div class="title-icon">
-                                                <span class="icon z-icon-look-back"></span>
-                                            </div>
                                             <div class="stack">
                                                 <h2 class="title"><?php echo $slide['left'][0] ?></h2>
                                                 <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
