@@ -325,14 +325,12 @@ class Zume_Book_Generator extends Zume_Magic_Page
                         <div class="slide-wrapper">
                             <div class="slides-card">
                                 <div class="two-column left">
-                                    <div>
                                         <div class="title-area">
                                             <div class="stack">
                                                 <h2 class="title"><?php echo $slide['left'][0] ?></h2>
                                                 <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
                                             </div>
                                         </div>
-                                    </div>
                                     <div class="content-area">
                                         <div class="stack--2">
                                             <?php echo $this->render_content( $slide['right'] ) ?>
