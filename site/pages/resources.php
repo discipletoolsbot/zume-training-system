@@ -11,7 +11,6 @@ class Zume_Training_Resources extends Zume_Magic_Page
     public $root = 'app';
     public $type = 'resources';
     public $lang = 'en';
-    public $post = false;
     public static $token = 'app_resources';
 
     private static $_instance = null;
