@@ -181,6 +181,12 @@ class Zume_Downloads_Post_Type
             case 'slides':
                 echo (get_post_meta( $post->ID, 'ppt_10_session', true ) ) ? 'Installed' : '';
                 break;
+            case 'guidebook_10':
+                echo (get_post_meta( $post->ID, 'guidebook_10_session', true ) ) ? 'Installed' : '';
+                break;
+            case 'store_url':
+                echo (get_post_meta( $post->ID, 'purchase_url', true ) ) ? 'Installed' : '';
+                break;
             default:
                 break;
         }
@@ -198,7 +204,7 @@ class Zume_Downloads_Post_Type
      */
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array( 'slides' => __( 'Slides', 'zume' ));
+        $new_columns = array( 'slides' => 'Slides', 'guidebook_10' => 'Book 10', 'store_url' => 'Store URL' );
 
         $last_item = array();
 
@@ -272,11 +278,21 @@ class Zume_Downloads_Post_Type
      */
     public function meta_box_setup() {
         add_meta_box( $this->post_type . '_slides', 'Slide Decks', array( $this, 'load_slides_meta_box' ), $this->post_type, 'normal', 'high' );
-        add_meta_box( $this->post_type . '_scribes', 'Downloads', array( $this, 'load_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
+        add_meta_box( $this->post_type . '_guidebook', 'Guidebooks', array( $this, 'load_guidebooks_meta_box' ), $this->post_type, 'normal', 'high' );
+        add_meta_box( $this->post_type . '_store', 'Store', array( $this, 'load_store_meta_box' ), $this->post_type, 'normal', 'high' );
+        add_meta_box( $this->post_type . '_scribes', 'Scripts', array( $this, 'load_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
     } // End meta_box_setup()
 
     public function load_slides_meta_box() {
         $this->meta_box_content( 'slides' ); // prints
+    }
+
+    public function load_guidebooks_meta_box() {
+        $this->meta_box_content( 'guidebook' ); // prints
+    }
+
+    public function load_store_meta_box() {
+        $this->meta_box_content( 'store' ); // prints
     }
 
     /**
@@ -481,13 +497,7 @@ class Zume_Downloads_Post_Type
         $fields = array();
 
         // Project Update Information Section
-        $fields['33'] = array(
-            'name'        => '(33) Zúme Guidebook ',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'downloads',
-        );
+
         $fields['34'] = array(
             'name'        => '(34) God Uses Ordinary People',
             'description' => '',
@@ -744,6 +754,44 @@ class Zume_Downloads_Post_Type
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
+        );
+
+        // guidebook
+        $fields['guidebook_10_session'] = array(
+            'name'        => 'Guidebook 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'guidebook',
+        );
+        $fields['guidebook_20_session'] = array(
+            'name'        => 'Guidebook 20 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'guidebook',
+        );
+        $fields['guidebook_intensive'] = array(
+            'name'        => 'Guidebook Intensive',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'guidebook',
+        );
+        $fields['33'] = array(
+            'name'        => '(33) v4 Zúme Guidebook ',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'guidebook',
+        );
+
+        $fields['store_url'] = array(
+            'name'        => 'Online Store URL',
+            'description' => '',
+            'type'        => 'url',
+            'default'     => '',
+            'section'     => 'store',
         );
 
 

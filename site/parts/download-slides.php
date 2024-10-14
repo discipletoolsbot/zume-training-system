@@ -28,25 +28,25 @@ if ( ! ( empty( $ppt_10 ) && empty( $key_10 ) ) ) {
                 <div class="stack center | text-center">
                     <div class="center"><strong><?php echo esc_html__( 'Powerpoint', 'zume' ) ?></strong></div>
                     <?php if ( $ppt_10 ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint-10" target="_blank" href="<?php echo esc_url( $ppt_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint_10" target="_blank" href="<?php echo esc_url( $ppt_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a>
                     <?php } ?>
                     <?php if ( $ppt_20 ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint-20" target="_blank" href="<?php echo esc_url( $ppt_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint_20" target="_blank" href="<?php echo esc_url( $ppt_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a>
                     <?php } ?>
                     <?php if ( $ppt_intense ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint-5" target="_blank" href="<?php echo esc_url( $ppt_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="powerpoint_5" target="_blank" href="<?php echo esc_url( $ppt_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?></a>
                     <?php } ?>
                 </div>
                 <div class="stack center | text-center">
                     <div class="center"><strong><?php echo esc_html__( 'Keynote', 'zume' ) ?></strong></div>
                     <?php if ( $key_10 ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="keynote-10" target="_blank" href="<?php echo esc_url( $key_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="keynote_10" target="_blank" href="<?php echo esc_url( $key_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a>
                     <?php } ?>
                     <?php if ( $key_20 ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="keynote-20" target="_blank" href="<?php echo esc_url( $key_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="keynote_20" target="_blank" href="<?php echo esc_url( $key_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a>
                     <?php } ?>
                     <?php if ( $key_intense ) { ?>
-                        <a class="btn w-100 slide-download-button" data-subtype="keynote-5" target="_blank" href="<?php echo esc_url( $key_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?></a>
+                        <a class="btn w-100 slide-download-button" data-subtype="keynote_5" target="_blank" href="<?php echo esc_url( $key_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?></a>
                     <?php } ?>
                 </div>
             </div>
