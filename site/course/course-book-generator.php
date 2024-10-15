@@ -316,7 +316,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
                                 <div class="two-column left">
                                     <div class="title-area">
                                         <div class="stack">
-                                            <h2 class="title"><?php echo esc_html__( 'READ', 'zume' ) ?></h2>
+                                            <h2 class="title"><?php echo __( 'READ', 'zume' ) ?></h2>
                                             <span class="subtitle"><?php echo $slide['length'] ?? '' ?></span>
                                             <div class="qr-code">
                                                 <img src="<?php echo $slide['qr'] ?>" />
