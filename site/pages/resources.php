@@ -38,7 +38,6 @@ class Zume_Training_Resources extends Zume_Magic_Page
 
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
-            $this->post = $post;
             $this->register_url_and_access();
             $this->header_content();
 
