@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-10-11 20:15+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-10-14 12:59+0000\n"
+"Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
 "Language: ar_TN\n"
@@ -16,11 +16,11 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr "الملحمة 404 - موش موجودة"
+msgstr "ملحمة 404 - موش موجودة"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr "الصفحة الّي كنت تلوّج عليها موش موجودة وإلاّ تمّ حذفها"
+msgstr "الصفحة إلّي كنت تلوّج عليها موش موجودة وإلاّ تمّ تفسيخها"
 
 #: 404.php:76 site/course/presenter.php:138
 #: site/pages/_strings-mobile-pwa.php:12
@@ -933,14 +933,14 @@ msgstr "أنواع الأنشطة"
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr "الشخص إلّي \"يقرا \" ميتمّش تسجيل دخولوا لنّظام، أما يقرا في مادة الدورة."
+msgstr "الشخص إلّي \"يقرا \" ميتمّش تسجيل دخولوا لنّظام، أما يقرا مادة الدورة."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
-"الشخص إلّي يقوم \"بالتّدريب\" هو الّي قام بتسجيل الدّخول لنّظام ويخضع لعملية "
+"الشخص إلّي يقوم \"بالتّدريب\" هو إلّي قام بتسجيل الدّخول لنّظام ويخضع لعملية "
 "التّدريب."
 
 #: maps/js-translation-strings.php:35
@@ -1450,7 +1450,7 @@ msgstr "الدّعم والتّشجيع"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Receive updates"
-msgstr "الحصول على التحديثات"
+msgstr "إتحصّل على التحديثات"
 
 #: site/activities/coaching-checklist.php:207
 msgid "Planning Responsibilities"
@@ -2051,13 +2051,12 @@ msgid "Scan the QR code."
 msgstr "سكاني الكر, كود."
 
 #: site/course/course-content.php:290
-#, fuzzy
 msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"سكاني رمز الكر, كود وإخدم بشكل فردي بنمط دراسة الكتاب المقدّس سوبس وإستعمل "
-"متّى 6: 9-13. (20 دقيقة)"
+"سكاني رمز الكر, كود وإخدم بشكل فردي بنمط دراسة الكتاب المقدّس سوبس وإستعمل متّ"
+"ى 6: 9-13. (20 دقيقة)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -2322,7 +2321,7 @@ msgstr ""
 
 #: site/course/course-content.php:550
 msgid "Which ones do you feel unsure about?"
-msgstr "شنية الحاجات إلّي تحسّ فيها روحك موش متأكّد منها؟"
+msgstr "شنية الحاجات إلّي تحسّ في روحك موش متأكّد منها؟"
 
 #: site/course/course-content.php:551
 msgid "How ready do you feel when it comes to training others?"
@@ -3549,7 +3548,6 @@ msgid "Make your Three Month Plan"
 msgstr "قوم بإعداد خطتك لثلاثة شهور"
 
 #: site/course/course-content.php:3154
-#, fuzzy
 msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
@@ -4194,11 +4192,11 @@ msgid "Something went wrong with your checkin process."
 msgstr "صارت غلطة في عملّية تسجيل الوصول الخاصّة بيك."
 
 #: site/dashboard/checkin-dashboard.php:177
-#, fuzzy
 msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
-msgstr "هل فمّا أدوات وإلاّ مفاهيم تحب تزيدها وإلاّ تنحيها مالقائمة؟ علاه؟"
+msgstr ""
+"قوم بتحديد أيّ أدوات وإلاّ مفاهيم تبّعتها وإلاّ شاركتها وإلاّ درّبت ناس أخرى عليها."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4207,7 +4205,6 @@ msgid "Congratulations"
 msgstr "مبروك"
 
 #: site/dashboard/checkin-dashboard.php:180
-#, fuzzy
 msgid "You're checked in"
 msgstr "تمّ تسجيل الدّخول بنجاح"
 
@@ -4738,7 +4735,7 @@ msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
-"عنوان البريد الإلكتروني للمستعمل مطلوب لتكوين حساب ويستعمل للتواصل "
+"عنوان البريد الإلكتروني للمستعمل مطلوب باش تكوّن حساب ونستعملوه للتواصل "
 "المعاملاتي كجزء من تشغيل الموقع."
 
 #: site/dashboard/dashboard.php:305 site/dashboard/wizard.php:208
@@ -5191,6 +5188,7 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
+"يعيّشك تأّكد من تحديث ملفّك الشّخصي، باش ينجّموا قادة المجموعة يتصلوا بيك."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -5581,8 +5579,8 @@ msgstr "إعادة تعيين التّطبيق"
 msgid ""
 "Resetting the app will delete all app data. Are you sure you want to reset?"
 msgstr ""
-"إعادة تعيين التّطبيق باش يؤدّي لتفسيخ بيانات التّطبيق.هل إنتي متأكّد من إنّك تحب "
-"تعاود التعيين؟"
+"إعادة تعيين التّطبيق باش يفسّخ بيانات التّطبيق.هل إنتي متأكّد من إنّك تحب تعاود "
+"التعيين؟"
 
 #: site/pages/_strings-mobile-pwa.php:20
 msgid "Help"
@@ -5794,7 +5792,7 @@ msgid ""
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
-"بفضل البدايات الصّغيرة هذي... إلّي يسميها الكتاب المقدّس بالخميرة...نجّمنا "
+"بفضل البدايات الصّغيرة هذي ... إلّي يسميها الكتاب المقدّس بالخميرة ... نجّمنا "
 "نشوفوا العالم معبّي بالتّلامذة والكنائس المتزايدة.إكتشف تدريب زومّيه وكيفاه "
 "تدّربوا!"
 
@@ -5951,7 +5949,7 @@ msgstr "هل إنتي حاضر؟ سجّل اليوم."
 
 #: site/pages/about.php:276 site/pages/home.php:109
 msgid "Register Free"
-msgstr "سجل بلاش"
+msgstr "سجّل بلاش"
 
 #: site/pages/checkin.php:96 site/pages/friend-invite.php:72
 msgid "Please enter a friend code."
@@ -6253,11 +6251,11 @@ msgstr "20 ساعة تدريبّية"
 
 #: site/pages/home.php:142
 msgid "Free. Anytime. Anywhere."
-msgstr "حرّ.في أيّ وقت.في أيّ بلاصة."
+msgstr "بلاش.في أيّ وقت.في أيّ بلاصة."
 
 #: site/pages/home.php:146
 msgid "Gain insight into..."
-msgstr "إتحصّل على نظرة ثاقبة....."
+msgstr "إتحصّل على نظرة ثاقبة..."
 
 #: site/pages/home.php:151
 msgid "Being A Disciple"
@@ -6424,7 +6422,7 @@ msgstr "هل إنتي حاضر باش تاخوا خطواتك الجّاية؟"
 
 #: site/pages/home.php:365
 msgid "Register Free."
-msgstr "سجل بلاش."
+msgstr "سجّل بلاش."
 
 #: site/pages/home.php:369
 msgid "Gather a Group."
@@ -6774,7 +6772,7 @@ msgstr ""
 
 #: site/pages/training.php:126
 msgid "Get started with Zúme Training"
-msgstr "البدايةمع تدريب زومّيه"
+msgstr "البداية مع تدريب زومّيه"
 
 #: site/pages/training.php:156
 msgid "Course Overview"
@@ -6989,7 +6987,7 @@ msgstr "تمّ طلب المدرّب!"
 
 #: utilities/apis/cta-api.php:274
 msgid "Connected to Coach!"
-msgstr "إتّصل بمدرّب!"
+msgstr "إتّصل بالمدرّب!"
 
 #: utilities/apis/cta-api.php:306 utilities/apis/cta-api.php:308
 msgid "Create 3 Month Plan"
@@ -7089,7 +7087,6 @@ msgid "Zúme Annual Report"
 msgstr "التقرير السنوي لزومّيه"
 
 #: utilities/post-types/posttype-downloads.php:201
-#, fuzzy
 msgid "Slides"
 msgstr "شرائح الدورة"
 
@@ -7169,7 +7166,7 @@ msgstr "المسنجر"
 
 #. Plugin Name of the plugin/theme
 msgid "Zúme - Training System"
-msgstr "تدريب زومّيه"
+msgstr "زومّيه - نظام التدريب"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
