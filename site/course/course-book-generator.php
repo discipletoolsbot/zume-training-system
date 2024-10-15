@@ -63,6 +63,11 @@ class Zume_Book_Generator extends Zume_Magic_Page
     }
 
     public function header_style(){
+        [
+            'lang_code' => $lang_code,
+        ] = zume_get_url_pieces();
+        $languages = zume_languages();
+        $language = $languages[$lang_code];
         ?>
         <style>
             .slides-card .qr-code {
@@ -110,7 +115,26 @@ class Zume_Book_Generator extends Zume_Magic_Page
             @media print{
                 body{
                     background-color:white;
-                    font-size: 50%;
+                    <?php
+                    if ( $language['rtl'] ) {
+                        ?>
+                        direction: rtl !important;
+                        <?php
+                    }
+                    if ( $language['rtl'] ) {
+                        ?>
+                        .slides-card .qr-code {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        .slide-wrapper {
+                            padding:2em 0;
+                            margin: 0 auto;
+                        }
+                        <?php
+                    }
+
+                    ?>
                 }
             }
         </style>
