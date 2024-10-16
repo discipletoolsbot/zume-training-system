@@ -381,14 +381,14 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         <th style="width:1%"></th>
                         <th style="width:8%">Display</th>
                         <th style="width:3%">10s gb</th>
+                        <th style="width:3%">20s gb</th>
                         <th style="width:3%">10s ppt</th>
                         <th style="width:3%">10s key</th>
 
-                        <th style="width:3%">20s gb</th>
-                        <th style="width:3%">Int gb</th>
 
                         <th style="width:3%">20s ppt</th>
                         <th style="width:3%">20s key</th>
+                        <th style="width:3%">Int gb</th>
                         <th style="width:3%">Int ppt</th>
                         <th style="width:3%">Int key</th>
                         <th style="width:3%">Store</th>
@@ -410,15 +410,15 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_html( $language['enDisplayName'] ) ?></a></td>
 
                             <td><?php echo ( $elements['guidebook_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['guidebook_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['ppt_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['key_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
 
-                            <td><?php echo ( $elements['guidebook_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
-                            <td><?php echo ( $elements['guidebook_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
 
                             <td><?php echo ( $elements['ppt_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['key_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
 
+                            <td><?php echo ( $elements['guidebook_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['ppt_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['key_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['store_url'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
