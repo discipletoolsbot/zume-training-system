@@ -338,7 +338,6 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         <th style="width:4%">Translator Enabled</th>
                         <th style="width:4%">v5 Ready</th>
                         <th style="width:4%">Pieces</th>
-                        <th style="width:4%">Slides</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -360,7 +359,65 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             <td><?php echo ( $language['enable_flags']['translator_enabled'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['version_5_ready'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['pieces_pages'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
-                            <td><?php echo ( $language['enable_flags']['course_slides_download'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                        </tr>
+                        <?php
+                        $globe_count++;
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- PUBLISH STATUS SECTION -->
+            <div class="cell medium-12">
+                <h3>DOWNLOADS</h3><hr></hr>
+                <table class="hover click-table" id="global-table">
+                    <thead>
+                    <tr>
+                        <th style="width:1%"></th>
+                        <th style="width:8%">Display</th>
+                        <th style="width:3%">10s gb</th>
+                        <th style="width:3%">10s ppt</th>
+                        <th style="width:3%">10s key</th>
+
+                        <th style="width:3%">20s gb</th>
+                        <th style="width:3%">Int gb</th>
+
+                        <th style="width:3%">20s ppt</th>
+                        <th style="width:3%">20s key</th>
+                        <th style="width:3%">Int ppt</th>
+                        <th style="width:3%">Int key</th>
+                        <th style="width:3%">Store</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $globe_count = 1;
+                    $downloads = zume_get_downloads_list();
+                    foreach ( $column as $name => $code ) {
+                        $language = $zume_languages_full_list[$code];
+                        $elements = $downloads[$code];
+                        if ( empty( $elements ) ) {
+                            continue;
+                        }
+                        ?>
+                        <tr class="<?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
+                            <td><?php echo esc_html( $globe_count ) ?></td>
+                            <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
+
+                            <td><?php echo ( $elements['guidebook_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['ppt_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['key_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+
+                            <td><?php echo ( $elements['guidebook_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['guidebook_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+
+                            <td><?php echo ( $elements['ppt_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['key_20_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+
+                            <td><?php echo ( $elements['ppt_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['key_intensive'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $elements['store_url'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                         </tr>
                         <?php
                         $globe_count++;
@@ -387,7 +444,41 @@ class Zume_Training_Translations extends Zume_Magic_Page
 }
 Zume_Training_Translations::instance();
 
+function zume_get_downloads_list() {
+    global $wpdb;
+    $list_raw = $wpdb->get_results( "
+            SELECT p.ID, p.post_title as lang_code,
+                pm1.meta_value as ppt_10_session,
+                pm2.meta_value as ppt_20_session,
+                pm3.meta_value as ppt_intensive,
+                pm4.meta_value as guidebook_10_session,
+                pm5.meta_value as guidebook_20_session,
+                pm6.meta_value as guidebook_intensive,
+                pm7.meta_value as store_url,
+                pm8.meta_value as key_10_session,
+                pm9.meta_value as key_20_session,
+                pm10.meta_value as key_intensive
+            FROM zume_posts p
+            LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'ppt_10_session'
+            LEFT JOIN zume_postmeta pm2 ON pm2.post_id=p.ID AND pm2.meta_key = 'ppt_20_session'
+            LEFT JOIN zume_postmeta pm3 ON pm3.post_id=p.ID AND pm3.meta_key = 'ppt_intensive'
+            LEFT JOIN zume_postmeta pm4 ON pm4.post_id=p.ID AND pm4.meta_key = 'guidebook_10_session'
+            LEFT JOIN zume_postmeta pm5 ON pm5.post_id=p.ID AND pm5.meta_key = 'guidebook_20_session'
+            LEFT JOIN zume_postmeta pm6 ON pm6.post_id=p.ID AND pm6.meta_key = 'guidebook_intensive'
+            LEFT JOIN zume_postmeta pm7 ON pm7.post_id=p.ID AND pm7.meta_key = 'store_url'
+            LEFT JOIN zume_postmeta pm8 ON pm8.post_id=p.ID AND pm8.meta_key = 'key_10_session'
+            LEFT JOIN zume_postmeta pm9 ON pm9.post_id=p.ID AND pm9.meta_key = 'key_20_session'
+            LEFT JOIN zume_postmeta pm10 ON pm10.post_id=p.ID AND pm10.meta_key = 'key_intensive'
+            WHERE p.post_type = 'zume_download'
+    ", ARRAY_A );
 
+    $list = [];
+    foreach( $list_raw as $item ) {
+        $list[$item['lang_code']] = $item;
+    }
+
+    return $list;
+}
 function zume_string_count_scripts( $language ) {
     $count = 0;
     $scripts = list_zume_scripts( $language );
