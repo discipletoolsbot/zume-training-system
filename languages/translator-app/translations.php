@@ -260,19 +260,23 @@ class Zume_Training_Translations extends Zume_Magic_Page
         </div>
         <div class="grid-x grid-padding-x" style="margin-top: 100px;">
 
-            <!-- OVERVIEW SECTION -->
-            <div class="cell medium-12" style="border-bottom: 1px solid lightgrey; padding-bottom: 1.5em;margin-bottom:1.5em;">
-                <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
-                <strong>Weblate:</strong> <?php echo number_format( $strings ); ?> words |
-                <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> words |
-                <strong>Activities:</strong> <?php echo number_format( $activities ); ?> words |
-                <strong>Messages:</strong> <?php echo number_format( $messages ); ?> words |
-                <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> words ||
-                <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
+            <!-- FOCUS -->
+            <div class="cell medium-12">
+                <select id="focus-list">
+                    <option value="">Focus List</option>
+                    <option disabled>-------</option>
+                    <option value="all">Show All</option>
+                    <?php
+                    foreach ( $zume_languages_full_list as $l ) {
+                        ?><option value="<?php echo $l['code'] ?>"><?php echo $l['name'] ?></option><?php
+                    }
+                    ?>
+                </select>
             </div>
 
             <!-- CONTENT LIST SECTION -->
             <div class="cell medium-12">
+                <h3>TRANSLATION STATUS</h3>
                 <table class="hover click-table" id="content-table">
                     <thead>
                     <tr>
@@ -302,7 +306,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         $pp = translation_get_percent( $p, 160 );
                         $web = round( $weblate[$code] );
                         ?>
-                        <tr class="<?php echo $code ?>" data-value="<?php echo esc_html( $code )  ?>">
+                        <tr class="focus <?php echo $code ?>" data-value="<?php echo esc_html( $code )  ?>">
                             <td><?php echo $count ?></td>
                             <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_attr( $name ) ?></a></td>
                             <td><span class="percent-<?php echo $web ?>"><?php echo $web ?>%</span></td>
@@ -322,7 +326,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
 
             <!-- PUBLISH STATUS SECTION -->
             <div class="cell medium-12">
-                <h3>PUBLISHED STATUS</h3><hr></hr>
+                <h3>PUBLISHED STATUS</h3>
                 <table class="hover click-table" id="global-table">
                     <thead>
                     <tr>
@@ -346,7 +350,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     foreach ( $column as $name => $code ) {
                         $language = $zume_languages_full_list[$code];
                         ?>
-                        <tr class="<?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
+                        <tr class="focus <?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
                             <td><?php echo esc_html( $globe_count ) ?></td>
                             <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
                             <td><?php echo esc_html( $language['nativeName'] ) ?></td>
@@ -370,7 +374,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
 
             <!-- PUBLISH STATUS SECTION -->
             <div class="cell medium-12">
-                <h3>DOWNLOADS</h3><hr></hr>
+                <h3>DOWNLOADS</h3>
                 <table class="hover click-table" id="global-table">
                     <thead>
                     <tr>
@@ -401,7 +405,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             continue;
                         }
                         ?>
-                        <tr class="<?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
+                        <tr class="focus <?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
                             <td><?php echo esc_html( $globe_count ) ?></td>
                             <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
 
@@ -426,6 +430,21 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     </tbody>
                 </table>
             </div>
+
+            <!-- BASICS -->
+            <div class="cell medium-12">
+                <h3>BASICS</h3>
+            </div>
+            <div class="cell medium-12" style="border-bottom: 1px solid lightgrey; padding-bottom: 1.5em;margin-bottom:1.5em;">
+                <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
+                <strong>Weblate:</strong> <?php echo number_format( $strings ); ?> words |
+                <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> words |
+                <strong>Activities:</strong> <?php echo number_format( $activities ); ?> words |
+                <strong>Messages:</strong> <?php echo number_format( $messages ); ?> words |
+                <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> words ||
+                <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
+            </div>
+
             <script>
                 jQuery(document).ready(function(){
                     jQuery('.en').css('background-color', 'yellow' )
@@ -434,6 +453,17 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         jQuery('tr').css('background-color', '')
                         let code = jQuery(this).data('value')
                         jQuery('.'+code).css('background-color', 'yellow' )
+                    })
+
+                    jQuery('#focus-list').on('change', function(){
+                        let lang = jQuery(this).val()
+                        if ( 'all' !== lang ) {
+                            jQuery('.focus').hide()
+                            jQuery('.'+lang).show()
+                        } else {
+                            jQuery('.focus').show()
+                        }
+
                     })
                 })
             </script>
