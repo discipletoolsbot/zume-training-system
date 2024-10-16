@@ -904,8 +904,8 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
-                    'pieces_pages' => false,
+                    'version_5_ready' => true,
+                    'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
             ),
@@ -1569,8 +1569,8 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
-                    'pieces_pages' => false,
+                    'version_5_ready' => true,
+                    'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
             ),
@@ -1854,8 +1854,8 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
-                    'pieces_pages' => false,
+                    'version_5_ready' => true,
+                    'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
             ),
@@ -2869,15 +2869,15 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 'description' => 'Practitioner who has completed the MAWL checklist, but is not multiplying.',
                 'description_full' => 'Practitioner who has completed the MAWL checklist, but is not multiplying.',
                 'characteristics' => [
-                    'Has completed HOST/MAWL checklist',
+                    'Has completed HOST/MAWL',
                     'Consistent effort, inconsistent fruit',
                     'Inconsistent 1st generation fruit',
                 ],
                 'priority_next_step' => 'Consistent 2,3,4 generation fruit',
                 'next_steps' => [
-                    'Consistent 2,3,4 disciple generation fruit',
-                    'Consistent 2,3,4 group generation fruit',
-                    'Peer coaching with S2 and S3 practitioners',
+                    'Consistent 2,3,4 gen disciples',
+                    'Consistent 2,3,4 gen groups',
+                    'Peer coaching/mentoring',
                 ],
                 'pace' => [
                     '1 practitioner completing HOST/MAWL every 20 days', // shared/rest-api.php:714
