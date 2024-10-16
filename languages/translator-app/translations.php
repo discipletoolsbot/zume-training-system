@@ -331,7 +331,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     <thead>
                     <tr>
                         <th style="width:1%"></th>
-                        <th style="width:8%">Display</th>
+                        <th style="width:8%">Language</th>
                         <th style="width:8%">Native</th>
                         <th style="width:4%">Population</th>
                         <th style="width:2%">RTL</th>
@@ -379,7 +379,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     <thead>
                     <tr>
                         <th style="width:1%"></th>
-                        <th style="width:8%">Display</th>
+                        <th style="width:8%">Language</th>
                         <th style="width:3%">10s gb</th>
                         <th style="width:3%">20s gb</th>
                         <th style="width:3%">10s ppt</th>
