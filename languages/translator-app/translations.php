@@ -352,7 +352,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         ?>
                         <tr class="focus <?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
                             <td><?php echo esc_html( $globe_count ) ?></td>
-                            <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
+                            <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_html( $language['enDisplayName'] ) ?></a></td>
                             <td><?php echo esc_html( $language['nativeName'] ) ?></td>
                             <td><?php echo esc_html( number_format( $language['population'] ) ) ?></td>
                             <td><?php echo ( $language['rtl'] ) ?'Yes' :'No' ?></td>
@@ -407,7 +407,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         ?>
                         <tr class="focus <?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
                             <td><?php echo esc_html( $globe_count ) ?></td>
-                            <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
+                            <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_html( $language['enDisplayName'] ) ?></a></td>
 
                             <td><?php echo ( $elements['guidebook_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $elements['ppt_10_session'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
