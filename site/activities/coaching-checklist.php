@@ -76,6 +76,13 @@ class Zume_Activites_Coaching extends Zume_Activites
          endif;
     }
 
+    public function _footer() {
+        if ( ! isset( $_GET['description'] ) ) :
+            wp_footer();
+            $this->footer_javascript();
+        endif;
+    }
+
     public function style() {
         ?>
         <style>

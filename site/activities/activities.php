@@ -45,7 +45,7 @@ class Zume_Activites extends Zume_Magic_Page
             add_action( 'dt_blank_head', [ $this, '_header' ] );
             add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
-            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
+//            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
@@ -130,9 +130,11 @@ class Zume_Activites extends Zume_Magic_Page
     }
 
     public function _footer() {
-        wp_footer();
-        $this->footer_javascript();
-        require plugin_dir_path( __DIR__ ) .'parts/language-selector.php';
+        if ( ! isset( $_GET['description'] ) ) :
+            wp_footer();
+            $this->footer_javascript();
+            require plugin_dir_path( __DIR__ ) .'parts/language-selector.php';
+        endif;
     }
 }
 Zume_Activites::instance();
