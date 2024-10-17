@@ -28,23 +28,24 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
         [
             'url_parts' => $url_parts,
+            'lang_code' => $lang_code,
         ] = zume_get_url_pieces();
 
         $key_code = $this->get_checkin_code();
         /* Redirect /checkin to /{lang_code}/checkin */
         /* This facilitates QR codes sending users to /checkin not knowing what language they may have previously been using */
-        $slug = $url_parts[0];
+/*         $slug = $url_parts[0];
         if ( $slug === $this->type ) {
             $lang_code_from_cookie = zume_get_language_cookie();
             if ( $lang_code_from_cookie !== 'en' ) {
-                $url = $lang_code_from_cookie . '/' . $this->type;
+                $url = '/' . $lang_code_from_cookie . '/' . $this->type;
                 if ( $key_code ) {
                     $url .= "?code=$key_code";
                 }
-                wp_redirect( $url );
+                wp_redirect( site_url( $url ) );
                 exit;
             }
-        }
+        } */
 
         if ( isset( $url_parts[0] ) && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
 
