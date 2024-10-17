@@ -83,6 +83,16 @@ class Zume_Activites_Coaching extends Zume_Activites
         endif;
     }
 
+    public function header_style(){
+        ?>
+        <script>
+            jQuery(document).ready(function($){
+                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            });
+        </script>
+        <?php
+    }
+
     public function style() {
         ?>
         <style>
