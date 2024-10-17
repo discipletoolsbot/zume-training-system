@@ -610,7 +610,7 @@ class Zume_Book_Generator extends Zume_Magic_Page
     public function list_of_100() {
         for ( $x = 1; $x <= 100; $x++ ) {
             ?>
-            <p><?php echo esc_html( $x ); ?> _____________________ &#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></p>
+            <p><?php echo esc_html( $x ); ?> _______________ &#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></p>
             <?php
         }
     }
