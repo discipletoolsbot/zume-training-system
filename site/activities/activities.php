@@ -75,6 +75,7 @@ class Zume_Activites extends Zume_Magic_Page
         <script>
             jQuery(document).ready(function($){
                 document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                jQuery(document).foundation()
             });
         </script>
         <?php
@@ -83,16 +84,29 @@ class Zume_Activites extends Zume_Magic_Page
         global $wpdb;
         $sql = $wpdb->prepare( "SELECT ID FROM zume_posts p WHERE p.post_type = 'zume_activities' AND p.post_title = %s", $this->type );
 
+        $code = zume_current_language();
+        $display_code = zume_get_language_display_code( $code );
+
         //phpcs:ignore
         $post_id = $wpdb->get_var( $sql );
 
         ?>
         <div class="activity content">
-            <header class="bg-brand">
-                <div class="container-md | activity-header">
-                    <div class="logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
+            <div class="header">
+                <div class="d-flex justify-content-between px-1 pt-1">
+                    <div class="d-flex gap-0">
+                        <div class="logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
+                    </div>
+
+                    <nav class="d-flex align-items-center gap-0">
+                        <button class="nav__link" data-open="language-menu-reveal" data-tool="" aria-controls="language-menu-reveal" aria-haspopup="dialog" tabindex="0">
+                            <?php require plugin_dir_path( __DIR__ ) . 'assets/images/globe-outline.svg' ?>
+                            <span><?php echo esc_html( strtoupper( $display_code ) ) ?></span>
+                        </button>
                 </div>
-            </header>
+                </nav>
+            </div>
+
             <div class="container-md">
                 <h1 class="activity-title"><?php self::content_header( $post_id ); ?></h1>
             </div>
@@ -103,6 +117,8 @@ class Zume_Activites extends Zume_Magic_Page
         </div>
         </hr>
         <?php
+
+
     }
     public function content_header( $post_id ){
         $title = get_post_meta( $post_id, 'title_'.$this->language_code, true );
@@ -111,6 +127,12 @@ class Zume_Activites extends Zume_Magic_Page
     public function content_body( $post_id ){
         $content = zume_replace_placeholder( get_post_meta( $post_id, 'content_'.$this->language_code, true ), $this->language_code );
         echo wp_kses( $content, 'post' );
+    }
+
+    public function _footer() {
+        wp_footer();
+        $this->footer_javascript();
+        require plugin_dir_path( __DIR__ ) .'parts/language-selector.php';
     }
 }
 Zume_Activites::instance();
