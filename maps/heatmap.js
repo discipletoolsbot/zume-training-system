@@ -9,12 +9,12 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 window.get_grid_data = ( action, grid_id) => {
   return jQuery.ajax({
     type: "POST",
-    data: JSON.stringify({ action: action, parts: jsObject.parts, grid_id: grid_id, lang_code: jsObject.lang_code }),
+    data: JSON.stringify({ action: action, parts: mapObject.parts, grid_id: grid_id, lang_code: mapObject.lang_code }),
     contentType: "application/json; charset=utf-8",
     dataType: "json",
-    url: jsObject.root + jsObject.parts.root + '/v1/' + jsObject.parts.type,
+    url: mapObject.root + mapObject.parts.root + '/v1/' + mapObject.parts.type,
     beforeSend: function (xhr) {
-      xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+      xhr.setRequestHeader('X-WP-Nonce', mapObject.nonce )
     }
   })
     .fail(function(e) {
@@ -25,12 +25,12 @@ window.get_activity_data = (grid_id) => {
   let offset = new Date().getTimezoneOffset();
   return jQuery.ajax({
     type: "POST",
-    data: JSON.stringify({ action: 'activity_data', parts: jsObject.parts, grid_id: grid_id, offset: offset, lang_code: jsObject.lang_code }),
+    data: JSON.stringify({ action: 'activity_data', parts: mapObject.parts, grid_id: grid_id, offset: offset, lang_code: mapObject.lang_code }),
     contentType: "application/json; charset=utf-8",
     dataType: "json",
-    url: jsObject.root + jsObject.parts.root + '/v1/' + jsObject.parts.type,
+    url: mapObject.root + mapObject.parts.root + '/v1/' + mapObject.parts.type,
     beforeSend: function (xhr) {
-      xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+      xhr.setRequestHeader('X-WP-Nonce', mapObject.nonce )
     }
   })
     .fail(function(e) {
@@ -121,7 +121,7 @@ jQuery(document).ready(function($){
   window.get_grid_data( 'grid_data', 0)
     .done(function(x){
       list = 1
-      jsObject.grid_data = x
+      mapObject.grid_data = x
       if ( loop > 44 && list > 0 && window.load_map_triggered !== 1 ){
         window.load_map_triggered = 1
         load_map()
@@ -129,11 +129,11 @@ jQuery(document).ready(function($){
     })
     .fail(function(){
       console.log('Error getting grid data')
-      jsObject.grid_data = {'data': {}, 'highest_value': 1 }
+      mapObject.grid_data = {'data': {}, 'highest_value': 1 }
     })
   jQuery.each(asset_list, function(i,v) {
     jQuery.ajax({
-      url: jsObject.mirror_url + 'tiles/world/saturation/' + v,
+      url: mapObject.mirror_url + 'tiles/world/saturation/' + v,
       dataType: 'json',
       data: null,
       cache: true,
@@ -181,17 +181,17 @@ function load_map() {
   jQuery('#initialize-screen').hide()
 
   // set title
-  jQuery('#panel-type-title').html(jsObject.title)
+  jQuery('#panel-type-title').html(mapObject.title)
 
   jQuery('.loading-spinner').removeClass('active')
 
   let center = [-98, 38.88]
-  let maxzoom = jsObject.zoom
-  // if ( 'contacts' === jsObject.post_type ) {
+  let maxzoom = mapObject.zoom
+  // if ( 'contacts' === mapObject.post_type ) {
   //   maxzoom = 13
   // }
 
-  mapboxgl.accessToken = jsObject.map_key;
+  mapboxgl.accessToken = mapObject.map_key;
   let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/discipletools/cl1qp8vuf002l15ngm5a7up59',
@@ -247,7 +247,7 @@ function load_map() {
   jQuery.each(asset_list, function(i,v){
 
     jQuery.ajax({
-      url: jsObject.mirror_url + 'tiles/world/saturation/' + v,
+      url: mapObject.mirror_url + 'tiles/world/saturation/' + v,
       dataType: 'json',
       data: null,
       cache: true,
@@ -262,8 +262,8 @@ function load_map() {
         map.on('load', function() {
 
           jQuery.each(geojson.features, function (i, v) {
-            if (typeof jsObject.grid_data.data[v.id] !== 'undefined' ) {
-              geojson.features[i].properties.value = parseInt(jsObject.grid_data.data[v.id].percent)
+            if (typeof mapObject.grid_data.data[v.id] !== 'undefined' ) {
+              geojson.features[i].properties.value = parseInt(mapObject.grid_data.data[v.id].percent)
             } else {
               geojson.features[i].properties.value = 0
             }
@@ -313,7 +313,7 @@ function load_map() {
             'paint': {
               'fill-color': {
                 property: 'value',
-                stops: [[0, 'rgba(0, 0, 0, 0)'], [0.01, 'rgb(50,205,50)'], [jsObject.grid_data.highest_value, 'rgb(0,128,0)']]
+                stops: [[0, 'rgba(0, 0, 0, 0)'], [0.01, 'rgb(50,205,50)'], [mapObject.grid_data.highest_value, 'rgb(0,128,0)']]
               },
               'fill-opacity': 0.75,
               'fill-outline-color': '#006400'
@@ -323,9 +323,9 @@ function load_map() {
           /* end fill map */
           /**********/
 
-          if ( jsObject.custom_marks.length > 0 ) {
+          if ( mapObject.custom_marks.length > 0 ) {
             let lnglat
-            jQuery.each( jsObject.custom_marks, function(i,v) {
+            jQuery.each( mapObject.custom_marks, function(i,v) {
               // lnglat = new mapboxgl.LngLat( v.lng, v.lat )
               // console.log(lnglat)
               new mapboxgl.Marker()
@@ -350,24 +350,24 @@ function load_map() {
                 {hover: true}
               );
               jQuery('#title').html(e.features[0].properties.full_name)
-              jQuery('#meter').val(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
-              jQuery('#saturation-goal').html(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
-              jQuery('#population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
+              jQuery('#meter').val(mapObject.grid_data.data[e.features[0].properties.grid_id].percent)
+              jQuery('#saturation-goal').html(mapObject.grid_data.data[e.features[0].properties.grid_id].percent)
+              jQuery('#population').html(mapObject.grid_data.data[e.features[0].properties.grid_id].population)
 
               //report
               jQuery('#report-modal-title').val(e.features[0].properties.full_name)
               jQuery('#report-grid-id').val(e.features[0].properties.grid_id)
 
-              let reported = jsObject.grid_data.data[e.features[0].properties.grid_id].reported
+              let reported = mapObject.grid_data.data[e.features[0].properties.grid_id].reported
               jQuery('#reported').html(reported)
 
-              let needed = jsObject.grid_data.data[e.features[0].properties.grid_id].needed
+              let needed = mapObject.grid_data.data[e.features[0].properties.grid_id].needed
               jQuery('#needed').html(needed)
             }
           });
           map.on('click', i.toString()+'fills', function (e) {
             jQuery('#modal_tile').html(e.features[0].properties.full_name)
-            jQuery('#modal_population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
+            jQuery('#modal_population').html(mapObject.grid_data.data[e.features[0].properties.grid_id].population)
 
             jQuery('.temp-spinner').html(`<span class="loading-spinner active"></span>`)
 

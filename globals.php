@@ -320,14 +320,18 @@ if ( ! function_exists( 'zume_get_user_language' ) ) {
             $zume_languages_by_code = zume_languages( 'code' );
         }
 
-        $language_code = zume_get_language_cookie();
-        if ( $user_id == get_current_user_id() && empty( $language_code ) ) {
-            $language_code = zume_current_language();
-            zume_set_language_cookie( $language_code );
-        }
+        $contact_id = zume_get_user_contact_id($user_id);
+        $language_code = get_post_meta( $contact_id, 'user_preferred_language', true );
 
         if ( ! $language_code ) {
             $language_code = 'en';
+            update_post_meta( $contact_id, 'user_preferred_language', $language_code );
+        }
+
+
+        $language_code = zume_get_language_cookie();
+        if ( $user_id == get_current_user_id() && ! empty( $language_code ) ) {
+            zume_set_language_cookie( $language_code );
         }
 
         return isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : $zume_languages_by_code['en'];

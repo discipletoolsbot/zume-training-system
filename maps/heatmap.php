@@ -2705,6 +2705,7 @@ class Zume_Funnel_App_Heatmap {
         $utc_time = new DateTime( 'now', new DateTimeZone( $filters['timezone'] ) );
         $timezone_offset = $utc_time->format( 'Z' );
 //        switch_to_locale( $zume_languages_by_code[$language_code]['locale'] );
+        switch_to_locale('en_US');
 
         $training_items = zume_training_items();
         $records = 0;
@@ -2847,7 +2848,7 @@ class Zume_Funnel_App_Heatmap {
     public static function get_activity_grid_id( $grid_id, $timezone_offset, $language_code ) {
         global $zume_languages_by_code;
         $list = [];
-
+        switch_to_locale('en_US');
         $training_items = zume_training_items();
 
         $activity_list = self::query_activity_grid_id( $grid_id, $language_code );

@@ -68,7 +68,7 @@ class Zume_Funnel_Public_Heatmap_Activity extends Zume_Magic_Page
         Zume_Funnel_App_Heatmap::_header();
         ?>
         <script>
-            let jsObject = [<?php echo json_encode([
+            let mapObject = [<?php echo json_encode([
                 'map_key' => DT_Mapbox_API::get_key(),
                 'mirror_url' => dt_get_location_grid_mirror( true ),
                 'theme_uri' => trailingslashit( get_stylesheet_directory_uri() ),
@@ -98,8 +98,8 @@ class Zume_Funnel_Public_Heatmap_Activity extends Zume_Magic_Page
                     gl.append(`
                       <div class="cell">
                           <strong>${data.name}</strong><br>
-                          ${jsObject.translation.population}: <span>${data.population}</span><br>
-                          ${jsObject.translation.activities_reported}: <span>${data.reported}</span><br>
+                          ${mapObject.translation.population}: <span>${data.population}</span><br>
+                          ${mapObject.translation.activities_reported}: <span>${data.reported}</span><br>
                           <hr>
                       </div>
                     `)

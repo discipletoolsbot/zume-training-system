@@ -72,7 +72,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
         Zume_Funnel_App_Heatmap::_header();
         ?>
         <script>
-            let jsObject = [<?php echo json_encode([
+            let mapObject = [<?php echo json_encode([
                 'map_key' => DT_Mapbox_API::get_key(),
                 'mirror_url' => dt_get_location_grid_mirror( true ),
                 'theme_uri' => trailingslashit( get_stylesheet_directory_uri() ),
@@ -103,10 +103,10 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
                             <div class="progress-list-item">
                                 <div class="cell">
                                   <strong>${data.name}</strong><br>
-                                  ${jsObject.translation.population}: <span>${data.population}</span><br>
-                                  ${jsObject.translation.trainees_needed}: <span>${data.needed}</span><br>
-                                  ${jsObject.translation.trainees_reported}: <span class="reported_number">${data.reported}</span><br>
-                                  ${jsObject.translation.goal_reached}: <span>${data.percent}</span>%
+                                  ${mapObject.translation.population}: <span>${data.population}</span><br>
+                                  ${mapObject.translation.trainees_needed}: <span>${data.needed}</span><br>
+                                  ${mapObject.translation.trainees_reported}: <span class="reported_number">${data.reported}</span><br>
+                                  ${mapObject.translation.goal_reached}: <span>${data.percent}</span>%
                                   <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
                                 </div>
                             </div>

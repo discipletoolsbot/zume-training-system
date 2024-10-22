@@ -67,7 +67,7 @@ class Zume_Map_Local_Vision extends Zume_Magic_Page
         Zume_Funnel_App_Heatmap::_header();
         ?>
         <script>
-            let jsObject = [<?php echo json_encode([
+            let mapObject = [<?php echo json_encode([
                 'map_key' => DT_Mapbox_API::get_key(),
                 'mirror_url' => dt_get_location_grid_mirror( true ),
                 'theme_uri' => trailingslashit( get_stylesheet_directory_uri() ),

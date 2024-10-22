@@ -77,7 +77,7 @@ jQuery(document).ready(function(){
         <div class="medium-9 cell">
             <div id="map-wrapper">
                 <div id='map'></div>
-                <div id="map-header"><h3>${jsObject.translation.title}</h3></div>
+                <div id="map-header"><h3>${mapObject.translation.title}</h3></div>
                 <div id="map-spinner" class="loading-spinner-map-center active"></div>
             </div>
         </div>
@@ -91,7 +91,7 @@ jQuery(document).ready(function(){
   `)
   let container = jQuery('#activity-list');
 
-  mapboxgl.accessToken = jsObject.map_key;
+  mapboxgl.accessToken = mapObject.map_key;
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/discipletools/cl1qp8vuf002l15ngm5a7up59',

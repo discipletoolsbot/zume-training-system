@@ -85,7 +85,7 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
     public function header_style(){
         ?>
         <script>
-            let jsObject = [<?php echo json_encode([
+            let mapObject = [<?php echo json_encode([
                 'map_key' => DT_Mapbox_API::get_key(),
                 'root' => esc_url_raw( rest_url() ),
                 'nonce' => wp_create_nonce( 'wp_rest' ),
@@ -97,12 +97,12 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
             window.post_request = ( action, data ) => {
                 return jQuery.ajax({
                     type: "POST",
-                    data: JSON.stringify({ action: action, parts: jsObject.parts, data: data }),
+                    data: JSON.stringify({ action: action, parts: mapObject.parts, data: data }),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    url: jsObject.root + jsObject.parts.root + '/v1/' + jsObject.parts.type,
+                    url: mapObject.root + mapObject.parts.root + '/v1/' + mapObject.parts.type,
                     beforeSend: function (xhr) {
-                        xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+                        xhr.setRequestHeader('X-WP-Nonce', mapObject.nonce )
                     }
                 })
                     .fail(function(e) {
@@ -147,7 +147,7 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
 
         $params = dt_recursive_sanitize_array( $params );
         $action = sanitize_text_field( wp_unslash( $params['action'] ) );
-        $language_code = 'en'; // @todo get parameter
+        $language_code = zume_current_language(); // @todo get parameter
 
         switch ( $action ) {
             case 'load_geojson':

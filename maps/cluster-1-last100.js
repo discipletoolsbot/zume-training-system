@@ -70,13 +70,13 @@ jQuery(document).ready(function(){
                   <button
                       id="exit-btn"
                       class="btn outline | d-flex gap--2 px-1 py--2 | absolute under left"
-                      aria-label="${jsObject.translation.close}"
+                      aria-label="${mapObject.translation.close}"
                       type="button"
                   >
-                      <span>${jsObject.translation.close}</span><span class="icon z-icon-close"></span>
+                      <span>${mapObject.translation.close}</span><span class="icon z-icon-close"></span>
                   </button>
-                  <h3>${jsObject.translation.last_100}</h3>
-                  ${jsObject.translation.countries}: <span id="country_count">0</span> | ${jsObject.translation.languages}: <span id="languages_count">0</span>
+                  <h3>${mapObject.translation.last_100}</h3>
+                  ${mapObject.translation.countries}: <span id="country_count">0</span> | ${mapObject.translation.languages}: <span id="languages_count">0</span>
                 </div>
             </div>
         </div>
@@ -86,17 +86,17 @@ jQuery(document).ready(function(){
 
                     <div>
                         <select name="type" id="type-dropdown" class="input-filter">
-                            <option value="none">${jsObject.translation.all_types}</option>
+                            <option value="none">${mapObject.translation.all_types}</option>
                         </select>
                     </div>
                     <div>
                         <select name="country" id="country-dropdown" class="input-filter">
-                            <option value="none">${jsObject.translation.all_countries}</option>
+                            <option value="none">${mapObject.translation.all_countries}</option>
                         </select>
                     </div>
                     <div>
                         <select name="language" id="language-dropdown" class="input-filter">
-                            <option value="none">${jsObject.translation.all_languages}</option>
+                            <option value="none">${mapObject.translation.all_languages}</option>
                         </select>
                     </div>
                     <div id="stats-list"></div>
@@ -109,19 +109,19 @@ jQuery(document).ready(function(){
         </div>
       </div>
       <div class="reveal" id="welcome-modal" data-reveal>
-            <h1>${jsObject.translation.purpose_of_the_map}</h1>
-            <p>${jsObject.translation.last100_hours}</p>
-            <p><strong style="text-transform: uppercase;">${jsObject.translation.types_of_activities}</strong></p>
-            <p><strong>( ${jsObject.translation.studying} )</strong> ${jsObject.translation.studying_description}</p>
-            <p><strong>( ${jsObject.translation.training} )</strong> ${jsObject.translation.training_description}</p>
-            <p><strong>( ${jsObject.translation.practicing} )</strong> ${jsObject.translation.practicing_description}</p>
-            <p><strong>( ${jsObject.translation.coaching})</strong> ${jsObject.translation.coaching_description}</p>
-            <p><strong style="text-transform: uppercase;">${jsObject.translation.get_on_the_map}</strong></p>
+            <h1>${mapObject.translation.purpose_of_the_map}</h1>
+            <p>${mapObject.translation.last100_hours}</p>
+            <p><strong style="text-transform: uppercase;">${mapObject.translation.types_of_activities}</strong></p>
+            <p><strong>( ${mapObject.translation.studying} )</strong> ${mapObject.translation.studying_description}</p>
+            <p><strong>( ${mapObject.translation.training} )</strong> ${mapObject.translation.training_description}</p>
+            <p><strong>( ${mapObject.translation.practicing} )</strong> ${mapObject.translation.practicing_description}</p>
+            <p><strong>( ${mapObject.translation.coaching})</strong> ${mapObject.translation.coaching_description}</p>
+            <p><strong style="text-transform: uppercase;">${mapObject.translation.get_on_the_map}</strong></p>
             <ul>
-                <li>${jsObject.translation.always_sign_in}</li>
-                <li>${jsObject.translation.always_checkin}</li>
-                <li>${jsObject.translation.always_update_progress}</li>
-                <li>${jsObject.translation.always_report}</li>
+                <li>${mapObject.translation.always_sign_in}</li>
+                <li>${mapObject.translation.always_checkin}</li>
+                <li>${mapObject.translation.always_update_progress}</li>
+                <li>${mapObject.translation.always_report}</li>
             </ul>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
@@ -130,7 +130,7 @@ jQuery(document).ready(function(){
   `)
   let container = jQuery('#activity-list');
 
-  mapboxgl.accessToken = jsObject.map_key;
+  mapboxgl.accessToken = mapObject.map_key;
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/discipletools/cl1qp8vuf002l15ngm5a7up59',
@@ -346,11 +346,11 @@ jQuery(document).ready(function(){
     })
 
     if ( ! window.activity_list.list  ) {
-      container.append(`<li><strong>${jsObject.translation.results}</strong> 0</li>`)
+      container.append(`<li><strong>${mapObject.translation.results}</strong> 0</li>`)
     }
 
     if ( window.activity_list.count > 250 ) {
-      container.append(`<hr><li><strong>${window.activity_list.count - 250} ${jsObject.translation.additional_records}</strong></li><br><br>`)
+      container.append(`<hr><li><strong>${window.activity_list.count - 250} ${mapObject.translation.additional_records}</strong></li><br><br>`)
     }
 
     spinner.removeClass('active')
@@ -363,7 +363,7 @@ jQuery(document).ready(function(){
     country_dropdown.empty()
 
     let add_selected = ''
-    country_dropdown.append(`<option value="none">${jsObject.translation.all_countries}</option>`)
+    country_dropdown.append(`<option value="none">${mapObject.translation.all_countries}</option>`)
     country_dropdown.append(`<option disabled>---</option>`)
     jQuery.each(points.countries, function(i,v){
       add_selected = ''
@@ -380,7 +380,7 @@ jQuery(document).ready(function(){
     language_dropdown.empty()
 
     let add_selected = ''
-    language_dropdown.append(`<option value="none">${jsObject.translation.all_languages}</option>`)
+    language_dropdown.append(`<option value="none">${mapObject.translation.all_languages}</option>`)
     language_dropdown.append(`<option disabled>---</option>`)
     jQuery.each(points.languages, function(i,v){
       add_selected = ''
@@ -399,20 +399,20 @@ jQuery(document).ready(function(){
     let add_selected = ''
     type_dropdown.empty().append(
       `
-        <option value="none">${jsObject.translation.all_types}</option>
+        <option value="none">${mapObject.translation.all_types}</option>
         <option disabled>---</option>
-        <option value="" class="dd studying">${jsObject.translation.studying}: 0</option>
-        <option value="" class="dd training">${jsObject.translation.training}: 0</option>
-        <option value="" class="dd practicing">${jsObject.translation.practicing}: 0</option>
-        <option value="" class="dd coaching">${jsObject.translation.coaching}: 0</option>
+        <option value="" class="dd studying">${mapObject.translation.studying}: 0</option>
+        <option value="" class="dd training">${mapObject.translation.training}: 0</option>
+        <option value="" class="dd practicing">${mapObject.translation.practicing}: 0</option>
+        <option value="" class="dd coaching">${mapObject.translation.coaching}: 0</option>
         `
     )
     stats_list.empty().append(`
     <div>
-        <span class="stats studying">${jsObject.translation.studying}: 0</span><br>
-        <span class="stats training">${jsObject.translation.training}: 0</span><br>
-        <span class="stats practicing">${jsObject.translation.practicing}: 0</span><br>
-        <span class="stats coaching">${jsObject.translation.coaching}: 0</span><br>
+        <span class="stats studying">${mapObject.translation.studying}: 0</span><br>
+        <span class="stats training">${mapObject.translation.training}: 0</span><br>
+        <span class="stats practicing">${mapObject.translation.practicing}: 0</span><br>
+        <span class="stats coaching">${mapObject.translation.coaching}: 0</span><br>
         <span>Total: ${points.total}</span>
     </div>
     <hr>
