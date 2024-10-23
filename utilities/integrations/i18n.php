@@ -26,20 +26,23 @@ function zume_determine_locale( string $locale ) : string {
             'lang_code' => $lang_code,
         ] = zume_get_url_pieces();
 
-//        $language_code = zume_get_language_cookie();
+        $language_code = zume_get_language_cookie();
+        if ( empty( $language_code !== $lang_code ) ) {
+            zume_set_language_cookie( $lang_code );
+        }
+
+
 
         /* ... Unless we are in the checkin wizard, in which case use the cookie language */
 /*         if ( $url_parts[0] === 'wizard' && $url_parts[1] === 'checkin' ) {
             if ( empty( $language_code ) ) {
                 $language_code = $lang_code;
-                zume_set_language_cookie( $lang_code );
+
             }
             return zume_get_language_locale( $language_code );
         } */
 
-//        if ( empty( $language_code !== $lang_code ) {
-//            zume_set_language_cookie( $lang_code );
-//        }
+//
     }
 
     $locale = zume_get_language_locale( $lang_code );

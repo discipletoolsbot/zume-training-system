@@ -113,6 +113,18 @@ class Zume_Training {
         require_once( 'maps/loader.php' );
 
         require_once( 'languages/translator-app/loader.php' );
+
+        if ( ! dt_is_rest() ) {
+            [
+                'lang_code' => $lang_code,
+            ] = zume_get_url_pieces();
+
+            $language_code = zume_get_language_cookie();
+            if ( $language_code !== $lang_code ) {
+                zume_set_language_cookie( $lang_code );
+            }
+        }
+
     }
     public static function activation() {
     }

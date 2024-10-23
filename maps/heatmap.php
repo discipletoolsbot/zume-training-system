@@ -2705,7 +2705,7 @@ class Zume_Funnel_App_Heatmap {
         $utc_time = new DateTime( 'now', new DateTimeZone( $filters['timezone'] ) );
         $timezone_offset = $utc_time->format( 'Z' );
 //        switch_to_locale( $zume_languages_by_code[$language_code]['locale'] );
-        switch_to_locale('en_US');
+//        switch_to_locale('en_US');
 
         $training_items = zume_training_items();
         $records = 0;
