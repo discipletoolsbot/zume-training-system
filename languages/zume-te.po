@@ -2,21 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-10-11 14:05-0600\n"
-"Last-Translator: Manikumar Miriyala <mani@zume.training>\n"
-"Language-Team: Telugu <https://translate.disciple.tools/projects/zume-training/zume-training-system/te/>\n"
+"PO-Revision-Date: 2024-10-24 11:00+0000\n"
+"Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
+"Language-Team: Telugu <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/te/>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Weblate 5.8.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
-"esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -25,7 +27,7 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr "ఎపిక్ 404 - కనుగొనబడలేదు"
+msgstr "Epic 404 - Not Found"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -33,7 +35,7 @@ msgstr "మీరు వెతుకుతున్న పేజీ కనుగ
 
 #: 404.php:76 site/course/presenter.php:138 site/pages/_strings-mobile-pwa.php:12
 msgid "Home"
-msgstr "హోమ్"
+msgstr "హోం"
 
 #: 404.php:77 site/course/presenter.php:142 site/pages/_strings-mobile-pwa.php:14 site/pages/about.php:26
 #: site/parts/footer.php:10 site/parts/mobile-nav.php:26 site/parts/nav.php:24
@@ -550,7 +552,7 @@ msgstr "3-సర్కిల్స్ (వృత్తములు)"
 #: site/dashboard/wizard.php:176 site/pages/follow-jesus.php:341 site/parts/footer.php:77 site/parts/footer.php:84
 #: site/parts/footer.php:91 site/parts/language-menu.php:4 utilities/apis/pieces-api.php:151
 msgid "Close"
-msgstr "ముగించండి"
+msgstr "ముగింపు"
 
 #: globals.php:8135
 msgid "No Results"
@@ -3396,7 +3398,7 @@ msgstr "కోర్సు ప్రెజెంటర్"
 
 #: site/course/presenter.php:136
 msgid "Links"
-msgstr "లింకులు"
+msgstr "లింక్స్"
 
 #: site/course/presenter.php:144 site/dashboard/dashboard.php:270 site/pages/resources.php:28 site/pages/resources.php:102
 #: site/parts/checkin-nav.php:14 site/parts/footer.php:41 site/parts/mobile-nav.php:8 site/parts/mobile-nav.php:28
@@ -3479,11 +3481,11 @@ msgstr "పూర్తయింది"
 
 #: site/dashboard/dashboard.php:170
 msgid "Edit"
-msgstr "సవరించండి"
+msgstr "ఎడిట్"
 
 #: site/dashboard/dashboard.php:172 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
-msgstr "తొలగించు"
+msgstr "డిలీట్"
 
 #: site/dashboard/dashboard.php:174
 msgid "Status"
@@ -3550,7 +3552,7 @@ msgstr "ఫోన్"
 #: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:213 site/login/login-template.php:450
 #: site/login/login-template.php:451 site/profile/profile.php:119 zume-training-system.php:362
 msgid "Email"
-msgstr "ఇమెయిల్"
+msgstr "ఈమెయిలు"
 
 #: site/dashboard/dashboard.php:192
 msgid "Linked Accounts"
@@ -3582,11 +3584,11 @@ msgstr "సమయం"
 #: site/pages/_strings-mobile-pwa.php:17 site/parts/language-menu.php:7 site/profile/profile.php:133
 #: utilities/post-types/posttype-pieces.php:300
 msgid "Language"
-msgstr "బాష"
+msgstr "భాష"
 
 #: site/dashboard/dashboard.php:199 site/dashboard/wizard.php:249
 msgid "Timezone"
-msgstr "టైమ్ జోన్"
+msgstr "టైం జోన్"
 
 #: site/dashboard/dashboard.php:200 site/dashboard/wizard.php:329
 msgid "Meeting link"
@@ -4712,7 +4714,7 @@ msgstr "లాగిన్ చేయండి"
 
 #: site/pages/_strings-mobile-pwa.php:13
 msgid "Account"
-msgstr "ఖాతా"
+msgstr "ఎకౌంటు"
 
 #: site/pages/_strings-mobile-pwa.php:15
 msgid "Settings"
@@ -4800,7 +4802,7 @@ msgstr "ఈ యాప్‌ను ఇన్‌స్టాల్ చేయడా
 
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "Update"
-msgstr "నవీకరణ"
+msgstr "అప్డేట్"
 
 #: site/pages/_strings-mobile-pwa.php:44
 msgid "A new version of this app is available. Click to update this app."

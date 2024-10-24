@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-10-11 13:50-0600\n"
+"PO-Revision-Date: 2024-10-22 23:00+0000\n"
 "Last-Translator: Aleksandra <aleksandra.alex.bilbija@gmail.com>\n"
-"Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/sl_SI/>\n"
+"Language-Team: Slovenian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/sl_SI/>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -1761,7 +1761,7 @@ msgstr "Oceni sebe - Oceni se in označi ustrezne stolpce na coaching seznamu."
 
 #: site/course/course-book-generator.php:295
 msgid "READ"
-msgstr "BERITE"
+msgstr "BERI"
 
 #: site/course/course-book-generator.php:418
 #: site/course/course-content.php:6109
@@ -2101,8 +2101,8 @@ msgid ""
 "Work individually through the SOAPS Bible study pattern using Matthew "
 "6:9-13. (20 min)"
 msgstr ""
-"Individualno delo po vzorcu za preučevanje Svetega pisma SOAPS na podlagi "
-"Evangelija po Mateju 6,9-13. (20 min)"
+"Individualno preučevanje Evangelija po Mateju 6,9-13 po SOAPS metodi "
+"preučevanja Svetega pisma. (20 min)"
 
 #: site/course/course-content.php:291
 msgid ""
@@ -3672,8 +3672,8 @@ msgid ""
 "Read - You don‘t have to commit to every item, rather they are intended as "
 "prompts for your plan. (5 min)"
 msgstr ""
-"Preberi - Ni se vam treba zavezati k vsaki postavki, temveč so namenjene kot "
-"spodbude za vaš načrt. (5 min)"
+"Beri - Ni se ti treba ustaviti pri vsaki postavki; mišljene so le kot pomoč "
+"pri načrtovanju. (5 min)"
 
 #: site/course/course-content.php:3155
 msgid ""
@@ -4348,8 +4348,8 @@ msgid ""
 "Check off any tools or concepts you have obeyed, shared or trained others "
 "with."
 msgstr ""
-"Označite vsa orodja ali koncepte, ki ste jih poslušali, delili ali "
-"usposabljali druge."
+"Označi vse pripomočke ali koncepte, ki si jih poslušal, delil ali naučil "
+"druge."
 
 #: site/dashboard/checkin-dashboard.php:179 utilities/apis/cta-api.php:231
 #: utilities/apis/cta-api.php:261 utilities/apis/cta-api.php:275
@@ -4359,7 +4359,7 @@ msgstr "Čestitke"
 
 #: site/dashboard/checkin-dashboard.php:180
 msgid "You're checked in"
-msgstr "Prijavljeni ste"
+msgstr "Prijavljen si"
 
 #: site/dashboard/checkin-dashboard.php:181
 #: site/pages/_strings-mobile-pwa.php:41
@@ -5368,8 +5368,8 @@ msgid ""
 "Please make sure that your profile is up to date, so that group leaders can "
 "contact you."
 msgstr ""
-"Poskrbite, da bo vaš profil posodobljen, da bodo vodje skupin lahko stopili "
-"v stik z vami."
+"Prosimo, preveri, da so podatki na tvojem profilu pravi, da bodo vodje "
+"skupin lahko stopili v stik s tabo."
 
 #: site/dashboard/wizard.php:257
 msgid "Connecting with friend"
@@ -5377,7 +5377,7 @@ msgstr "Povezovanje s prijateljem"
 
 #: site/dashboard/wizard.php:259
 msgid "The friend link is broken. Please try again."
-msgstr "Povezava do prijatelja je pokvarjena. Prosimo, poskusi znova."
+msgstr "Povezava do prijatelja ne deluje. Prosimo, poskusi znova."
 
 #: site/dashboard/wizard.php:260
 #, php-format
@@ -7316,7 +7316,7 @@ msgstr "Zúme letno poročilo"
 
 #: utilities/post-types/posttype-downloads.php:201
 msgid "Slides"
-msgstr "Prezentacije"
+msgstr "Predstavitev"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"

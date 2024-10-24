@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-10-14 12:59+0000\n"
+"PO-Revision-Date: 2024-10-23 12:00+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -2420,8 +2420,8 @@ msgid ""
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
 msgstr ""
-"‫عدّي شوّية وقت الجمعة هذي صلّي على خاطر خمسة أشخاص مالقائمة إلّي تضمّ 100 شخص "
-"صنّفتهم على أنّهم \"موش مؤمنين\" وإلاّ \"موش معروفين\".أطلب من ربّي يحضّر قلوبهم "
+"‫عدّي شوّية وقت الجمعة هذي صلّي على خاطر خمسة أشخاص مالقائمة إلّي تضمّ 100 شخص صنّ"
+"فتهم على إنّهم \"موش مؤمنين\" وإلاّ \"موش معروفين\".أطلب من ربّي يحضّر قلوبهم "
 "باش تكون محلولة ويستقبلوا قصّتو."
 
 #: site/course/course-content.php:723 site/course/course-content.php:3695
@@ -2549,7 +2549,7 @@ msgid ""
 "\"Unknown.\""
 msgstr ""
 "عدّي شوّية وقت الجمعة هذي في ممارسة قصّة ربّي, وبعد شاركها مع شخص واحد على الأقلّ "
-"من قائمتك المتكوّنة من 100 شخص وإلّي قمت بتصنيفها على أنّها \"موش مؤمن\" وإلاّ "
+"من قائمتك المتكوّنة من 100 شخص وإلّي قمت بتصنيفها على إنّها \"موش مؤمن\" وإلاّ "
 "\"موش معروف.\""
 
 #: site/course/course-content.php:1087
@@ -2712,7 +2712,7 @@ msgid ""
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
 "عدّي شوّية وقت الجمعة هاذي في ممارسة شهادتك إلّي إدّوم 3 دقايق \" وبعد شاركها مع "
-"شخص واحد على الأقلّ من قائمتك المتكوّنة من 100 شخص وإلّي قمت بتصنيفها على أنّها "
+"شخص واحد على الأقلّ من قائمتك المتكوّنة من 100 شخص وإلّي قمت بتصنيفها على إنّها "
 "\"موش مؤمن\" وإلاّ \"موش معروف.\""
 
 #: site/course/course-content.php:1493 site/course/course-content.php:4379
@@ -4455,8 +4455,7 @@ msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
-"الوصول الكامل لمحتوى التدريب الخاصّ بيك والجدول الزمني وتفاصيل المجموعة "
-"وأدوات المشاركة."
+"الوصول الكامل لمحتوى تدريبك والجدول الزمني وتفاصيل المجموعة وأدوات المشاركة."
 
 #: site/dashboard/dashboard.php:229
 msgid "Create Your Plan"
@@ -4530,7 +4529,7 @@ msgid ""
 "simple church generations that grow out of your spiritual family."
 msgstr ""
 "تسهّل عليك أداة \"كنائسي\" متابعة كنيستك البسيطة وأجيال الكنيسة البسيطة إلّي "
-"تنشأ من عائلتك الروحية."
+"تكبر من عائلتك الروحية."
 
 #: site/dashboard/dashboard.php:245
 msgid "My Maps"
@@ -6223,7 +6222,7 @@ msgstr "45+"
 
 #: site/pages/home.php:125
 msgid "Becoming more like Jesus... Together"
-msgstr "نوليّوا نشبهوا ليسوع برشة.... مع بعضنا"
+msgstr "نوليّوا نشبهوا برشة ليسوع .... مع بعضنا"
 
 #: site/pages/home.php:129
 msgid "Overview"
@@ -6334,8 +6333,8 @@ msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
-"أجمع شوية من أصحابك وإلاّ قوم بمتابعة الدّورة مع مجموعة صغيرة موجودة.كوّن "
-"مجموعتك التّدريبية وتبّع تقدّمك."
+"أجمع شوية من أصحابك وإلاّ تبّع الدّورة مع مجموعة صغيرة موجودة.كوّن مجموعتك التّ"
+"دريبية وتبّع تقدّمك."
 
 #: site/pages/home.php:259 site/pages/training.php:134
 msgid "Create"
@@ -6346,8 +6345,8 @@ msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
-"إذا منجّمتش تجمع مجموعة توّا، فكّر إنظم لإحدى مجموعات التّدريب عبر الأنترنت وإلّي "
-"يقودها مدرّب زومّيه عندوا خبرة."
+"إذا منجّمتش تجمّع مجموعة توّا، خمّم إنظم لوحدة من مجموعات التّدريب عبر الأنترنت "
+"وإلّي يقودها مدرّب زومّيه عندوا خبرة."
 
 #: site/pages/home.php:270 site/pages/training.php:145
 msgid "Request a coach"
@@ -6358,7 +6357,7 @@ msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
-"نجّموا نوصّلوك بمدرّب زومّيه بلاش وملتزم بمعاونتك على فهم التّدريب باش تولّي تلميذ "
+"نجّموا نوصّلوك بمدرّب زومّيه بلاش وملتزم ويعاونك على فهم التّدريب باش تولّي تلميذ "
 "مثمر."
 
 #: site/pages/home.php:275 site/pages/training.php:150

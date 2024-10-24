@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-07-31 10:40+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-10-24 11:00+0000\n"
+"Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
 "Language-Team: Urdu <https://translate.disciple.tools/projects/zume-training/"
 "zume-training-system/ur/>\n"
 "Language: ur\n"
@@ -11,14 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "ایپک‎404 - نہیں ملا"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -36,7 +36,7 @@ msgstr ""
 #: 404.php:76 site/course/presenter.php:138
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Home"
-msgstr "گھر"
+msgstr "ہوم"
 
 #: 404.php:77 site/course/presenter.php:142
 #: site/pages/_strings-mobile-pwa.php:14 site/pages/about.php:26
@@ -667,7 +667,7 @@ msgstr ""
 #: site/parts/footer.php:77 site/parts/footer.php:84 site/parts/footer.php:91
 #: site/parts/language-menu.php:4 utilities/apis/pieces-api.php:151
 msgid "Close"
-msgstr "بند / موقوف"
+msgstr "بند"
 
 #: globals.php:8135
 msgid "No Results"
@@ -3876,7 +3876,7 @@ msgstr ""
 
 #: site/course/presenter.php:136
 msgid "Links"
-msgstr ""
+msgstr "لنکس"
 
 #: site/course/presenter.php:144 site/dashboard/dashboard.php:270
 #: site/pages/resources.php:28 site/pages/resources.php:102
@@ -3968,11 +3968,11 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:170
 msgid "Edit"
-msgstr ""
+msgstr "ترمیم کریں۔"
 
 #: site/dashboard/dashboard.php:172 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
-msgstr "رد کجئے"
+msgstr "حذف کریں۔"
 
 #: site/dashboard/dashboard.php:174
 msgid "Status"
@@ -4075,11 +4075,11 @@ msgstr ""
 #: site/parts/language-menu.php:7 site/profile/profile.php:133
 #: utilities/post-types/posttype-pieces.php:300
 msgid "Language"
-msgstr "لینگویج"
+msgstr "زبان"
 
 #: site/dashboard/dashboard.php:199 site/dashboard/wizard.php:249
 msgid "Timezone"
-msgstr ""
+msgstr "ٹائم زون"
 
 #: site/dashboard/dashboard.php:200 site/dashboard/wizard.php:329
 msgid "Meeting link"
@@ -4731,7 +4731,7 @@ msgstr ""
 #: site/dashboard/wizard.php:252 site/dashboard/wizard.php:320
 #: site/pages/_strings-mobile-pwa.php:35
 msgid "Next"
-msgstr "آئندہ"
+msgstr "اگلا"
 
 #: site/dashboard/wizard.php:174 site/dashboard/wizard.php:309
 msgid "Skip"
@@ -5290,7 +5290,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:13
 msgid "Account"
-msgstr "اكاونٹ"
+msgstr "اکاونٹ"
 
 #: site/pages/_strings-mobile-pwa.php:15
 msgid "Settings"
@@ -5387,7 +5387,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "Update"
-msgstr "اپ ڈیٹ"
+msgstr "اپڈیٹکریں۔"
 
 #: site/pages/_strings-mobile-pwa.php:44
 msgid "A new version of this app is available. Click to update this app."

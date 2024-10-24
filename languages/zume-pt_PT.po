@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-10-11 13:02-0600\n"
-"PO-Revision-Date: 2024-10-11 13:47-0600\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-10-24 11:00+0000\n"
+"Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr "Epic 404 - Não encontrado"
+msgstr "404 Épico - Não encontrado"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -675,7 +675,7 @@ msgstr "Três Círculos"
 #: site/parts/footer.php:77 site/parts/footer.php:84 site/parts/footer.php:91
 #: site/parts/language-menu.php:4 utilities/apis/pieces-api.php:151
 msgid "Close"
-msgstr "Perto"
+msgstr "Fechar"
 
 #: globals.php:8135
 msgid "No Results"
@@ -4468,7 +4468,7 @@ msgstr "Editar"
 
 #: site/dashboard/dashboard.php:172 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
-msgstr "Deletar"
+msgstr "Excluir"
 
 #: site/dashboard/dashboard.php:174
 msgid "Status"
